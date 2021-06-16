@@ -1,0 +1,13 @@
+name = "pluvial-xyz"
+type = "javascript"
+workers_dev = true
+account_id = 'f6e9b9e1c57fe88281bd5409924e8311'
+
+[build]
+command = "npm install && npm run build"
+[build.upload]
+format = "service-worker"
+
+[site]
+bucket = "./build"
+entry-point = "./workers-site"
