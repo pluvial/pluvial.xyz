@@ -10,6 +10,7 @@
     "clean": "rm -rf .svelte-kit .vercel_build_output build functions workers-site"
   },
   "devDependencies": {
+    "@sveltejs/adapter-cloudflare": "next",
     "@sveltejs/adapter-cloudflare-workers": "next",
     "@sveltejs/adapter-netlify": "next",
     "@sveltejs/adapter-static": "next",

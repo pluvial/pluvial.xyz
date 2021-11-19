@@ -1,4 +1,5 @@
-import cloudflare from '@sveltejs/adapter-cloudflare-workers';
+import cloudflare from '@sveltejs/adapter-cloudflare';
+import cloudflareWorkers from '@sveltejs/adapter-cloudflare-workers';
 import netlify from '@sveltejs/adapter-netlify';
 import adapter from '@sveltejs/adapter-static';
 import vercel from '@sveltejs/adapter-vercel';
@@ -9,8 +10,10 @@ const config = {
     // hydrate the <div id="svelte"> element in src/app.html
     target: '#svelte',
     // in a production build, use the adapter implied by the platform's environment variables
-    adapter: process.env.CF_ACCOUNT_ID
+    adapter: process.env.CF_PAGES
       ? cloudflare()
+      : process.env.CF_ACCOUNT_ID
+      ? cloudflareWorkers()
       : process.env.VERCEL
       ? vercel()
       : process.env.NETLIFY

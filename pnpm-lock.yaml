@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@sveltejs/adapter-cloudflare': next
   '@sveltejs/adapter-cloudflare-workers': next
   '@sveltejs/adapter-netlify': next
   '@sveltejs/adapter-static': next
@@ -14,6 +15,7 @@ specifiers:
   svelte: ^3.42.6
 
 devDependencies:
+  '@sveltejs/adapter-cloudflare': 1.0.0-next.2
   '@sveltejs/adapter-cloudflare-workers': 1.0.0-next.25
   '@sveltejs/adapter-netlify': 1.0.0-next.35
   '@sveltejs/adapter-static': 1.0.0-next.21
@@ -96,6 +98,12 @@ packages:
     resolution: {integrity: sha512-ziQ/WC9F5okX3f90nlD6Mp5HMj26Kn0h/Mkmi/vhBLwrEF6v5u3GGbdSoIyAHaWUQ0vN9fz9pT/es1/MH8v7eA==}
     dependencies:
       '@iarna/toml': 2.2.5
+      esbuild: 0.13.14
+    dev: true
+
+  /@sveltejs/adapter-cloudflare/1.0.0-next.2:
+    resolution: {integrity: sha512-4Q7ZuoMck7wwzIO7gd8gqnm7gWflztTDHU/C1DzLr8V2UprQFQwsUE/padtQhFPXkgAiXJ8AwLksey4A8qjOsA==}
+    dependencies:
       esbuild: 0.13.14
     dev: true
 
