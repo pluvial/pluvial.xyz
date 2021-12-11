@@ -32,6 +32,7 @@
     justify-content: center;
     align-items: center;
     flex: 1;
+    margin: var(--column-margin-top) auto 0 auto;
   }
 
   h1 {
