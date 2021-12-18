@@ -4,7 +4,7 @@ workers_dev = true
 account_id = 'f6e9b9e1c57fe88281bd5409924e8311'
 
 [build]
-command = "pnpm i && pnpm build"
+command = "pnpm i && pnpm clean && pnpm build"
 [build.upload]
 format = "service-worker"
 
