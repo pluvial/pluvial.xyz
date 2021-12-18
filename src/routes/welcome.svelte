@@ -5,6 +5,10 @@
   export const prerender = true;
 </script>
 
+<script>
+  import Counter from '$lib/Counter.svelte';
+</script>
+
 <svelte:head>
   <title>Home</title>
   <meta name="author" content="pluvial" />
@@ -12,14 +16,13 @@
 </svelte:head>
 
 <section>
-  <h1>pluvial</h1>
+  <h1>Welcome to your new SvelteKit app</h1>
 
   <h2>
-    <a href="https://github.com/pluvial">GitHub</a>
+    try editing <strong>src/routes/index.svelte</strong>
   </h2>
-  <h2>
-    <a href="https://github.com/pluvial/pluvial.xyz">Source</a>
-  </h2>
+
+  <Counter />
 </section>
 
 <style>
