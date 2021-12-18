@@ -14,14 +14,15 @@ const config = {
     // hydrate the <div id="svelte"> element in src/app.html
     target: '#svelte',
     // in a production build, use the adapter implied by the platform's environment variables
+    // TODO: evaluate migration to @sveltejs/adapter-auto if extra features justify
     adapter: process.env.CF_PAGES
       ? cloudflare()
       : process.env.CF_ACCOUNT_ID
       ? cloudflareWorkers()
-      : process.env.VERCEL
-      ? vercel()
       : process.env.NETLIFY
       ? netlify()
+      : process.env.VERCEL
+      ? vercel()
       : // otherwise use the static adapter
         adapter(),
   },
