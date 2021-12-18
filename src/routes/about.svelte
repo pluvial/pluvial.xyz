@@ -14,11 +14,15 @@
   export const prerender = true;
 </script>
 
+<script>
+  import Layout from '$lib/Layout.svelte';
+</script>
+
 <svelte:head>
   <title>About</title>
 </svelte:head>
 
-<div class="content">
+<Layout>
   <h1>About this app</h1>
 
   <p>
@@ -34,12 +38,4 @@
     Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
     the devtools network panel and reloading.
   </p>
-</div>
-
-<style>
-  .content {
-    width: 100%;
-    max-width: var(--column-width);
-    margin: var(--column-margin-top) auto 0 auto;
-  }
-</style>
+</Layout>

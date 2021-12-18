@@ -5,11 +5,15 @@
   export const prerender = true;
 </script>
 
+<script>
+  import Layout from '$lib/Layout.svelte';
+</script>
+
 <svelte:head>
   <title>Debug</title>
 </svelte:head>
 
-<div class="content">
+<Layout>
   <h1>Color Palette</h1>
   <div class="flex">
     {#each { length: 8 } as _, index}
@@ -22,15 +26,9 @@
       <div class="block" style="background-color: var(--c{(2 * index + 1).toString(16)})" />
     {/each}
   </div>
-</div>
+</Layout>
 
 <style>
-  .content {
-    width: 100%;
-    max-width: var(--column-width);
-    margin: var(--column-margin-top) auto 0 auto;
-  }
-
   .flex {
     display: flex;
   }
