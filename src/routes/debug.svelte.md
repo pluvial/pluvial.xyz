@@ -23,6 +23,24 @@ title: 'Debug'
   {/each}
 </div>
 
+# Code block
+
+```svelte
+<script>
+  import Example from '$lib/Example.svelte';
+</script>
+
+<h1>Hello Prism</h1>
+
+<Example />
+
+<style>
+  h1 {
+    color: #0DD;
+  }
+</style>
+```
+
 <style>
   .flex {
     display: flex;
