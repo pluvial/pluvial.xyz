@@ -9,11 +9,7 @@
   import Layout from '$lib/Layout.svelte';
 </script>
 
-<svelte:head>
-  <title>Debug</title>
-</svelte:head>
-
-<Layout>
+<Layout title="Debug">
   <h1>Color Palette</h1>
   <div class="flex">
     {#each { length: 8 } as _, index}

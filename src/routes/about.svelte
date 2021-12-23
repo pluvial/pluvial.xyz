@@ -18,11 +18,7 @@
   import Layout from '$lib/Layout.svelte';
 </script>
 
-<svelte:head>
-  <title>About</title>
-</svelte:head>
-
-<Layout>
+<Layout title="About">
   <h1>About this app</h1>
 
   <p>

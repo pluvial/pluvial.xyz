@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-  <title>Home</title>
+  <title>Welcome</title>
   <meta name="author" content="pluvial" />
   <meta name="description" content="pluvial.xyz" />
 </svelte:head>
