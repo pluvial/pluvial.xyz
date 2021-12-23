@@ -9,6 +9,7 @@
   import { cubicIn, cubicOut } from 'svelte/easing';
   import { fade } from 'svelte/transition';
   import Header from '$lib/header/Header.svelte';
+  import '$lib/prism-themes/prism-xonokai.css';
   import '../app.css';
 
   /** @type {string} */
