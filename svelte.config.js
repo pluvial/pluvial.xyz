@@ -25,6 +25,13 @@ const config = {
       ? vercel()
       : // otherwise use the static adapter
         adapter(),
+    vite: {
+      server: {
+        fs: {
+          allow: ['.'],
+        },
+      },
+    },
   },
 };
 
