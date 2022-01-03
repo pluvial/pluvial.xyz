@@ -8,10 +8,9 @@
   const posts = import.meta.glob('/content/**/*.md');
 
   /** @type {import('@sveltejs/kit').Load} */
-  export async function load({ page }) {
-    const { slug } = page.params;
+  export async function load({ params }) {
     // build the filename from the folder prefix and extension suffix
-    const file = `${prefix}/${slug}.${suffix}`;
+    const file = `${prefix}/${params.slug}.${suffix}`;
     if (file in posts) {
       const module = await posts[file]();
       const { default: component, metadata } = module;

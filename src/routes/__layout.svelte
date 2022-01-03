@@ -1,7 +1,7 @@
 <script context="module">
   /** @type {import('@sveltejs/kit').Load} */
-  export async function load({ page: { path } }) {
-    return { props: { path } };
+  export async function load({ url }) {
+    return { props: { path: url.pathname } };
   }
 </script>
 
