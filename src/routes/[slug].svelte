@@ -14,7 +14,8 @@
     const file = `${prefix}/${slug}.${suffix}`;
     if (file in posts) {
       const module = await posts[file]();
-      return { props: { component: module.default } };
+      const { default: component, metadata } = module;
+      return { props: { component, metadata } };
     }
   }
 </script>
@@ -22,6 +23,18 @@
 <script>
   /** @type {import('svelte').SvelteComponent} */
   export let component;
+
+  /** @type {{ title: string, author: string, description: string }} */
+  export let metadata;
+
+  const defaults = { title: 'pluvial.xyz', author: 'pluvial', description: 'pluvial.xyz' };
+  const { title, author, description } = { ...defaults, ...metadata };
 </script>
+
+<svelte:head>
+  <title>{title}</title>
+  <meta name="author" content={author} />
+  <meta name="description" content={description} />
+</svelte:head>
 
 <svelte:component this={component} />
