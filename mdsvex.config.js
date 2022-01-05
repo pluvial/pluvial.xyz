@@ -1,4 +1,4 @@
-import wikiLinkPlugin from 'remark-wiki-link';
+import wikiLinkPlugin from './plugins/remark-wiki-link.js';
 
 const config = {
   extensions: ['.svelte.md', '.md', '.svx'],
@@ -7,7 +7,7 @@ const config = {
     dashes: 'oldschool',
   },
 
-  remarkPlugins: [[wikiLinkPlugin, { hrefTemplate: permalink => `${permalink}` }]],
+  remarkPlugins: [[wikiLinkPlugin, { hrefTemplate: permalink => `/${permalink}` }]],
   rehypePlugins: [],
 };
 
