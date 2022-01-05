@@ -34,6 +34,12 @@ title: 'Debug'
 </style>
 ```
 
+# Wiki links
+
+Link: [[about]]
+
+Link alias: [[readme:README.md]]
+
 <style>
   .flex {
     display: flex;
