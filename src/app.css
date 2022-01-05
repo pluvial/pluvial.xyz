@@ -40,25 +40,6 @@ body {
   min-height: 100vh;
   margin: 0;
   background-color: var(--background-color);
-  /* background: linear-gradient(
-    180deg,
-    var(--secondary-color) 0%,
-    var(--background-color) 15%,
-    var(--background-color) 70%,
-    var(--tertiary-color) 100%
-  ); */
-}
-
-body::before {
-  content: '';
-  width: 80vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 10vw;
-  z-index: -1;
-  /* background: radial-gradient(50% 50% at 50% 50%, var(--gf) 0%, rgba(255, 255, 255, 0) 100%); */
-  opacity: 0.05;
 }
 
 #svelte {
