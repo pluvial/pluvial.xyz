@@ -5,4 +5,5 @@ build/
 functions/
 package/
 workers-site/
+.netlify/
 .vercel_build_output/
