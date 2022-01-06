@@ -4,6 +4,7 @@
 // MIT License
 
 // Copyright (c) 2017 Mark Hudnall
+// Copyright (c) 2021 João Paquim
 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -25,49 +26,45 @@
 
 const LINK_REGEX = /^\[\[(.+?)\]\]/;
 
-function locator(value, fromIndex) {
-  return value.indexOf('[', fromIndex);
-}
+const locator = (value, fromIndex) => value.indexOf('[', fromIndex);
 
-function wikiLinkPlugin(opts = {}) {
-  let permalinks = opts.permalinks || [];
-  let defaultPageResolver = name => [name.replace(/ /g, '_').toLowerCase()];
-  let pageResolver = opts.pageResolver || defaultPageResolver;
-  let newClassName = opts.newClassName || 'new';
-  let wikiLinkClassName = opts.wikiLinkClassName || 'internal';
-  let defaultHrefTemplate = permalink => `#/page/${permalink}`;
-  let hrefTemplate = opts.hrefTemplate || defaultHrefTemplate;
-  let aliasDivider = opts.aliasDivider || ':';
+const defaultPageResolver = name => [name.replace(/ /g, '_').toLowerCase()];
 
-  function isAlias(pageTitle) {
-    return pageTitle.indexOf(aliasDivider) !== -1;
-  }
+const defaultHrefTemplate = permalink => `#/page/${permalink}`;
+
+function wikiLinkPlugin({
+  permalinks = [],
+  pageResolver = defaultPageResolver,
+  newClassName = 'new',
+  wikiLinkClassName = 'internal',
+  hrefTemplate = defaultHrefTemplate,
+  aliasDivider = ':',
+} = {}) {
+  const isAlias = pageTitle => pageTitle.indexOf(aliasDivider) !== -1;
 
   function parseAliasLink(pageTitle) {
-    var [name, displayName] = pageTitle.split(aliasDivider);
+    const [name, displayName] = pageTitle.split(aliasDivider);
     return { name, displayName };
   }
 
-  function parsePageTitle(pageTitle) {
-    if (isAlias(pageTitle)) {
-      return parseAliasLink(pageTitle);
-    }
-    return {
-      name: pageTitle,
-      displayName: pageTitle,
-    };
-  }
+  const parsePageTitle = pageTitle =>
+    isAlias(pageTitle)
+      ? parseAliasLink(pageTitle)
+      : {
+          name: pageTitle,
+          displayName: pageTitle,
+        };
 
   function inlineTokenizer(eat, value) {
-    let match = LINK_REGEX.exec(value);
+    const match = LINK_REGEX.exec(value);
 
     if (match) {
       const pageName = match[1].trim();
       const { name, displayName } = parsePageTitle(pageName);
 
-      let pagePermalinks = pageResolver(name);
+      const pagePermalinks = pageResolver(name);
       let permalink = pagePermalinks.find(p => permalinks.indexOf(p) != -1);
-      let exists = permalink != undefined;
+      const exists = permalink != undefined;
 
       if (!exists) {
         permalink = pagePermalinks[0];
@@ -103,18 +100,13 @@ function wikiLinkPlugin(opts = {}) {
 
   inlineTokenizer.locator = locator;
 
-  const Parser = this.Parser;
-
-  const inlineTokenizers = Parser.prototype.inlineTokenizers;
-  const inlineMethods = Parser.prototype.inlineMethods;
+  const { inlineTokenizers, inlineMethods } = this.Parser.prototype;
   inlineTokenizers.wikiLink = inlineTokenizer;
   inlineMethods.splice(inlineMethods.indexOf('link'), 0, 'wikiLink');
 
   // Stringify for wiki link
-  const Compiler = this.Compiler;
-
-  if (Compiler != null) {
-    const visitors = Compiler.prototype.visitors;
+  if (this.Compiler != null) {
+    const { visitors } = this.Compiler.prototype;
     if (visitors) {
       visitors.wikiLink = function (node) {
         if (node.data.alias != node.value) {
