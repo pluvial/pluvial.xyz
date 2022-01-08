@@ -1,5 +1,6 @@
 {
   "name": "@pluvial/pluvial.xyz",
+  "type": "module",
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev",
@@ -9,6 +10,10 @@
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
     "clean": "rm -rf .svelte-kit .vercel_build_output build functions workers-site"
   },
+  "workspaces": [
+    "plugins",
+    "scripts"
+  ],
   "devDependencies": {
     "@sveltejs/adapter-cloudflare": "next",
     "@sveltejs/adapter-cloudflare-workers": "next",
@@ -24,7 +29,6 @@
     "prettier-plugin-svelte": "^2.5.1",
     "svelte": "^3.44.3"
   },
-  "type": "module",
   "dependencies": {
     "@fontsource/fira-mono": "^4.5.0"
   }

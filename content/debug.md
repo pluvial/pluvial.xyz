@@ -34,11 +34,13 @@ title: 'Debug'
 </style>
 ```
 
-# Wiki links
+# Links
 
-Link: [[about]]
+Wiki link: [[about]]
 
-Link alias: [[readme:README.md]]
+Wiki link alias: [[readme:README.md]]
+
+External link: [Repo](https://github.com/pluvial/pluvial.xyz)
 
 <style>
   .flex {

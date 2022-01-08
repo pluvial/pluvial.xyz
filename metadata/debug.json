@@ -1,0 +1,18 @@
+{
+  "links": [
+    {
+      "href": "https://github.com/pluvial/pluvial.xyz",
+      "content": "Repo"
+    }
+  ],
+  "wikiLinks": [
+    {
+      "href": "/about",
+      "content": "about"
+    },
+    {
+      "href": "/readme",
+      "content": "README.md"
+    }
+  ]
+}
