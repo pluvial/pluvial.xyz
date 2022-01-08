@@ -15,7 +15,7 @@
   /** @type {string} */
   export let path;
 
-  const duration = 300;
+  const duration = 200;
   const delay = duration + 50;
   /** @type {import('svelte/transition').FadeParams} */
   const transitionIn = { duration, delay, easing: cubicOut };
