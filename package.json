@@ -3,8 +3,10 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
+    "predev": "./build-metadata.sh",
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
+    "prebuild": "./build-metadata.sh",
     "preview": "svelte-kit preview",
     "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",

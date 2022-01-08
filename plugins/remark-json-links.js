@@ -7,7 +7,7 @@ export default function jsonLinksPlugin() {
       visit(tree, 'wikiLink', node => {
         const link = { href: node.data.hProperties.href, content: node.data.hChildren[0].value };
         console.error(link);
-        result.wikiLinks.push(link);
+        result.links.push(link);
       });
       visit(tree, 'link', node => {
         const link = { href: node.url, content: node.children[0].value };
