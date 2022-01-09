@@ -36,13 +36,17 @@
    * @property {string} description
    * @property {{ href: string, content: string }} links
    * @property {{ href: string, content: string }} externalLinks
+   * @property {{ href: string, content: string }} backlinks
    */
 
   /** @type {Metadata} */
   export let metadata;
 
   const defaults = { title: 'pluvial.xyz', author: 'pluvial', description: 'pluvial.xyz' };
-  const { title, author, description, links, externalLinks } = { ...defaults, ...metadata };
+  const { title, author, description, links, externalLinks, backlinks } = {
+    ...defaults,
+    ...metadata,
+  };
 </script>
 
 <svelte:head>
@@ -71,6 +75,17 @@
       {#each externalLinks as link (link.href)}
         <li>
           <a href={link.href} rel="external">{link.content}</a>
+        </li>
+      {/each}
+    </ul>
+  {/if}
+
+  {#if backlinks.length}
+    <p>Backlinks:</p>
+    <ul>
+      {#each backlinks as slug (slug)}
+        <li>
+          <a sveltekit:prefetch href="/{slug}">{slug}</a>
         </li>
       {/each}
     </ul>
