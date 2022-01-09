@@ -1,0 +1,19 @@
+{
+  "links": {
+    "about": [],
+    "debug": [
+      "about",
+      "readme"
+    ],
+    "readme": [],
+    "welcome": []
+  },
+  "backlinks": {
+    "about": [
+      "debug"
+    ],
+    "readme": [
+      "debug"
+    ]
+  }
+}
