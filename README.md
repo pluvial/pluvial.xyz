@@ -33,3 +33,9 @@ pnpm build
 ```
 
 > You can preview the built app with `pnpm preview`. This should _not_ be used to serve the app in production.
+
+## License
+
+The content of this project itself is licensed under the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0),
+and the underlying source code used to format and display that content is
+licensed under the [MIT license](https://github.com/pluvial/pluvial.xyz/blob/main/LICENSE).

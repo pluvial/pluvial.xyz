@@ -1,12 +1,12 @@
 {
   "name": "@pluvial/plugins",
+  "license": "MIT",
+  "type": "module",
   "version": "0.0.1",
   "description": "",
-  "type": "module",
   "scripts": {},
   "keywords": [],
   "author": "",
-  "license": "MIT",
   "dependencies": {
     "unist-util-visit": "^4.1.0"
   }

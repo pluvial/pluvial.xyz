@@ -1,14 +1,14 @@
 {
   "name": "@pluvial/scripts",
+  "license": "MIT",
+  "type": "module",
   "version": "0.0.1",
   "description": "",
-  "type": "module",
   "scripts": {
     "start": "mkdir -p ../metadata && node parse-links.js < ../content/debug.md > ../metadata/debug.json"
   },
   "keywords": [],
   "author": "",
-  "license": "MIT",
   "dependencies": {
     "rehype-stringify": "^9.0.2",
     "remark-parse": "^10.0.1",
