@@ -11,9 +11,7 @@
   </div>
 
   <nav>
-    <svg viewBox="0 0 2 3" aria-hidden="true">
-      <path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-    </svg>
+    <div class="nav-corner left" />
     <ul>
       <li class:active={$page.url.pathname === '/'}><a sveltekit:prefetch href="/">Home</a></li>
       <li class:active={$page.url.pathname === '/readme'}>
@@ -29,14 +27,8 @@
         <a sveltekit:prefetch href="/debug">Debug</a>
       </li>
     </ul>
-    <svg viewBox="0 0 2 3" aria-hidden="true">
-      <path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-    </svg>
+    <div class="nav-corner right" />
   </nav>
-
-  <div class="corner">
-    <!-- TODO put something else here? github link? -->
-  </div>
 </header>
 
 <style>
@@ -70,21 +62,26 @@
     --background: var(--background-without-opacity);
   }
 
-  svg {
-    width: 2em;
-    height: 3em;
-    display: block;
+  .nav-corner {
+    width: 0;
+    margin: 0;
+    border-top: 2em solid transparent;
+    border-bottom: 2em solid transparent;
   }
 
-  path {
-    fill: var(--background);
+  .nav-corner.left {
+    border-right: 0.5em solid var(--background);
+  }
+
+  .nav-corner.right {
+    border-left: 0.5em solid var(--background);
   }
 
   ul {
     position: relative;
     padding: 0;
     margin: 0;
-    height: 3em;
+    /* height: 3em; */
     display: flex;
     justify-content: center;
     align-items: center;
