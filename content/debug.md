@@ -2,19 +2,13 @@
 title: 'Debug'
 ---
 
-# Color Palette
+# Links
 
-<div class="flex">
-  {#each { length: 8 } as _, index}
-    <div class="block" style="background-color: var(--g{(2 * index + 1).toString(16)})" />
-  {/each}
-</div>
+Wiki link: [[about]]
 
-<div class="flex">
-  {#each { length: 8 } as _, index}
-    <div class="block" style="background-color: var(--c{(2 * index + 1).toString(16)})" />
-  {/each}
-</div>
+Wiki link alias: [[readme:README.md]]
+
+External link: [Repo](https://github.com/pluvial/pluvial.xyz)
 
 # Code block
 
@@ -34,21 +28,27 @@ title: 'Debug'
 </style>
 ```
 
-# Links
+# Color Palette
 
-Wiki link: [[about]]
+<div class="flex">
+  {#each { length: 8 } as _, index}
+    <div class="block" style="background-color: var(--g{(2 * index + 1).toString(16)})" />
+  {/each}
+</div>
 
-Wiki link alias: [[readme:README.md]]
-
-External link: [Repo](https://github.com/pluvial/pluvial.xyz)
+<div class="flex">
+  {#each { length: 8 } as _, index}
+    <div class="block" style="background-color: var(--c{(2 * index + 1).toString(16)})" />
+  {/each}
+</div>
 
 <style>
   .flex {
     display: flex;
   }
 
-  .block {
-    flex: 1;
-    height: 8rem;
-  }
+.block {
+flex: 1;
+height: 8rem;
+}
 </style>
