@@ -1,7 +1,10 @@
 import * as fs from 'fs/promises';
 import * as path from 'path';
 
-const metadataDir = path.join(process.cwd(), './metadata');
+const { build_dir } = process.env;
+console.error({ build_dir, script: path.basename(import.meta.url) });
+
+const metadataDir = build_dir ?? new URL('../.metadata', import.meta.url);
 
 const links = {};
 const backlinks = {};

@@ -5,5 +5,8 @@
       "href": "https://kit.svelte.dev",
       "content": "SvelteKit"
     }
+  ],
+  "backlinks": [
+    "debug"
   ]
 }
