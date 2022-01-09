@@ -1,3 +1,5 @@
+export { links, backlinks } from '../../metadata.json';
+
 const prefix = '/content/';
 const suffix = '.md';
 // vite does not support variables in glob imports, but the glob should match
@@ -17,11 +19,10 @@ export const posts = Object.entries(imports).map(([path, module]) => {
   const metadataPath = `/metadata/${slug}.json`;
   const importMetadata = importsMeta[metadataPath].default;
   return {
-    component,
     html,
-    css,
     metadata: { ...metadata, ...importMetadata },
     slug,
+    ...(css.code ? { css: css.code } : undefined),
   };
 });
 

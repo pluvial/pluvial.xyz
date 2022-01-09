@@ -4,16 +4,20 @@
   /** @type {import('@sveltejs/kit').Load} */
   export async function load({ fetch }) {
     const response = await fetch('/posts.json');
-    const posts = await response.json();
-    return { props: { posts: posts.list } };
+    const { posts, links, backlinks } = await response.json();
+    return { props: { posts: posts.list, links, backlinks } };
   }
 </script>
 
 <script>
-  /**
-   * @type {{ metadata: { title: string, description: string }, slug: string }[]}
-   */
+  /** @type {{ metadata: { title: string, description: string }, slug: string }[]} */
   export let posts;
+
+  /** @type {{ [slug: string]: string[]}} */
+  export let links;
+
+  /** @type {{ [slug: string]: string[]}} */
+  export let backlinks;
 </script>
 
 <svelte:head>
@@ -39,6 +43,8 @@
   <h2>
     <a href="https://github.com/pluvial/pluvial.xyz">Source</a>
   </h2>
+
+  <pre><code>{JSON.stringify({ links, backlinks }, null, 2)}</code></pre>
 </section>
 
 <style>
@@ -51,7 +57,8 @@
     margin: var(--column-margin-top) auto 0 auto;
   }
 
-  h1 {
+  h1,
+  pre {
     width: 100%;
   }
 
