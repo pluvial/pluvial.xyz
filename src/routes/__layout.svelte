@@ -42,20 +42,15 @@
     position: relative;
     width: 100%;
     max-width: 1024px;
-    /* TODO: this won't scale with the content, change height with JS at runtime */
+    /* TODO: this won't scale with the content, change height with JS at runtime? */
     min-height: 450px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .container {
     position: absolute;
     box-sizing: border-box;
     width: 100%;
-    max-width: var(--column-width);
-    margin: var(--column-margin-top) auto 0 auto;
     padding: 0;
   }
 </style>

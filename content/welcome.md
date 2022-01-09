@@ -23,9 +23,6 @@ title: Welcome
     align-items: center;
     flex: 1;
     margin: var(--column-margin-top) auto 0 auto;
-  }
-
-  h1 {
-    width: 100%;
+    white-space: nowrap;
   }
 </style>
