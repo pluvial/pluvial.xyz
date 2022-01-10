@@ -37,13 +37,32 @@
   const frameworks = frameworksStr.split(',');
 
   export let selected = frameworks[0];
+
+  let loading = false;
+  let previous = selected;
 </script>
 
 <svelte:head>
-  <link rel="stylesheet" type="text/css" href="{baseUrl}/{selected}.min.css" />
+  <!-- keep the previous <link> stylesheet rendered while loading/switching, to
+  avoid flashing unstyled contents -->
+  {#if loading}
+    <link rel="stylesheet" type="text/css" href="{baseUrl}/{previous}.min.css" />
+  {/if}
+  <link
+    on:load={() => (loading = false)}
+    rel="stylesheet"
+    type="text/css"
+    href="{baseUrl}/{selected}.min.css"
+  />
 </svelte:head>
 
-<select bind:value={selected}>
+<select
+  on:change={event => {
+    previous = selected;
+    loading = true;
+    selected = event.target.value;
+  }}
+>
   {#each frameworks as framework}
     <option value={framework}>{framework}</option>
   {/each}
