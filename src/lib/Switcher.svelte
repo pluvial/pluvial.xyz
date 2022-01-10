@@ -23,7 +23,8 @@
   SOFTWARE.
 -->
 <script>
-  const baseUrl = 'https://dohliam.github.io/dropin-minimal-css/min';
+  // const baseUrl = 'https://dohliam.github.io/dropin-minimal-css/min';
+  const baseUrl = `/css/min`;
 
   const frameworksStr =
     // dark themes
