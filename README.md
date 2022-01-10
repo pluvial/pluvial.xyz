@@ -2,15 +2,23 @@
 
 ## Deployments
 
-Main: [pluvial.xyz](https://pluvial.xyz) (Vercel)
+Deployed automatically when pushing to the `main` branch:
 
-Cloudflare Pages: [https://pluvial-xyz.pages.dev](https://pluvial-xyz.pages.dev)
+- Main: [pluvial.xyz](https://pluvial.xyz) (Vercel)
 
-Cloudflare Workers: [https://pluvial-xyz.pluvial.workers.dev](https://pluvial-xyz.pluvial.workers.dev)
+- Cloudflare Pages: [https://pluvial-xyz.pages.dev](https://pluvial-xyz.pages.dev)
 
-Netlify: [https://pluvial-xyz.netlify.app](https://pluvial-xyz.netlify.app)
+- Netlify: [https://pluvial-xyz.netlify.app](https://pluvial-xyz.netlify.app)
 
-Vercel: [https://pluvial-xyz.vercel.app](https://pluvial-xyz.vercel.app)
+- Vercel: [https://pluvial-xyz.vercel.app](https://pluvial-xyz.vercel.app)
+
+Deployed manually from dev machine:
+
+- Cloudflare Workers: [https://pluvial-xyz.pluvial.workers.dev](https://pluvial-xyz.pluvial.workers.dev)
+
+```sh
+env CF_ACCOUNT_ID='<account-id>' wrangler publish
+```
 
 ## Developing
 
