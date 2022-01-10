@@ -10,7 +10,7 @@ console.error({ slug, script: path.basename(import.meta.url) });
 
 const processor = unified()
   .use(remarkParse)
-  .use(wikiLinkPlugin, { hrefTemplate: permalink => `/${permalink}` })
+  .use(wikiLinkPlugin, { aliasDivider: '|', hrefTemplate: permalink => `/${permalink}` })
   .use(jsonLinksPlugin);
 
 process.stdin.pipe(stream(processor)).pipe(process.stdout);

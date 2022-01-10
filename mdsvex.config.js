@@ -7,7 +7,9 @@ const config = {
     dashes: 'oldschool',
   },
 
-  remarkPlugins: [[wikiLinkPlugin, { hrefTemplate: permalink => `/${permalink}` }]],
+  remarkPlugins: [
+    [wikiLinkPlugin, { aliasDivider: '|', hrefTemplate: permalink => `/${permalink}` }],
+  ],
   rehypePlugins: [],
 };
 

@@ -6,7 +6,7 @@ title: 'Debug'
 
 Wiki link: [[about]]
 
-Wiki link alias: [[readme:README.md]]
+Wiki link alias: [[readme|README.md]]
 
 External link: [Repo](https://github.com/pluvial/pluvial.xyz)
 
