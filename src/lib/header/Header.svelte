@@ -22,6 +22,9 @@
       <li class:active={$page.url.pathname === '/about'}>
         <a sveltekit:prefetch href="/about">About</a>
       </li>
+      <li class:active={$page.url.pathname === '/dropin-minimal-css'}>
+        <a sveltekit:prefetch href="/dropin-minimal-css">CSS</a>
+      </li>
       <li class:active={$page.url.pathname === '/debug'}>
         <a sveltekit:prefetch href="/debug">Debug</a>
       </li>

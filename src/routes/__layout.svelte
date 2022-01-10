@@ -24,7 +24,7 @@
   const transitionOut = { duration, easing: cubicIn };
 </script>
 
-<Switcher selected="ok" />
+<Switcher selected="new" />
 
 <Header />
 
