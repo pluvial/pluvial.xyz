@@ -1,6 +1,16 @@
 <script>
   import { page } from '$app/stores';
   import logo from './svelte-logo.svg';
+
+  /** @type {[slug: string, content: string][] }*/
+  const navLinks = [
+    ['', 'Home'],
+    ['readme', 'Readme'],
+    ['welcome', 'Welcome'],
+    ['about', 'About'],
+    ['dropin-minimal-css', 'CSS Switcher'],
+    ['debug', 'Debug'],
+  ];
 </script>
 
 <header>
@@ -12,22 +22,11 @@
 
   <nav>
     <ul>
-      <li class:active={$page.url.pathname === '/'}><a sveltekit:prefetch href="/">Home</a></li>
-      <li class:active={$page.url.pathname === '/readme'}>
-        <a sveltekit:prefetch href="/readme">Readme</a>
-      </li>
-      <li class:active={$page.url.pathname === '/welcome'}>
-        <a sveltekit:prefetch href="/welcome">Welcome</a>
-      </li>
-      <li class:active={$page.url.pathname === '/about'}>
-        <a sveltekit:prefetch href="/about">About</a>
-      </li>
-      <li class:active={$page.url.pathname === '/dropin-minimal-css'}>
-        <a sveltekit:prefetch href="/dropin-minimal-css">CSS Switcher</a>
-      </li>
-      <li class:active={$page.url.pathname === '/debug'}>
-        <a sveltekit:prefetch href="/debug">Debug</a>
-      </li>
+      {#each navLinks as [slug, content]}
+        <li class:active={$page.url.pathname === `/${slug}`}>
+          <a sveltekit:prefetch href="/{slug}">{content}</a>
+        </li>
+      {/each}
     </ul>
   </nav>
 </header>
