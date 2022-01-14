@@ -1,0 +1,1 @@
+const n={env:{print(t){console.log(t)}}};let s,e,a;const i=WebAssembly.instantiateStreaming(fetch("/_app/assets/wasm/main.wasm"),n).then(t=>{({module:s,instance:e}=t),{exports:a}=e});export{a as exports,e as instance,i as instantiated,s as module};

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="apple-touch-icon" href="/images/svelte-192.png" />
+    <meta http-equiv="content-security-policy" content=""><title>README</title><link rel="stylesheet" type="text/css" href="/css/min/new.min.css" data-svelte="svelte-1wvniz8"><meta name="author" content="pluvial" data-svelte="svelte-y21vlh"><meta name="description" content="pluvial.xyz" data-svelte="svelte-y21vlh">
+	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-b6bb72ce.css">
+	<link rel="stylesheet" href="/_app/assets/pages/_slug_.svelte-1fdc913b.css">
+	<link rel="modulepreload" href="/_app/start-5ed70704.js">
+	<link rel="modulepreload" href="/_app/chunks/vendor-0683de8a.js">
+	<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
+	<link rel="modulepreload" href="/_app/chunks/singletons-a6a7384f.js">
+	<link rel="modulepreload" href="/_app/pages/__layout.svelte-ef9842c8.js">
+	<link rel="modulepreload" href="/_app/pages/_slug_.svelte-eb48bbd9.js">
+				<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('/service-worker.js');
+		}
+	</script>
+  </head>
+  <body>
+    <div>
+
+
+
+
+
+
+
+
+
+<header class="svelte-1uctjs4"><div class="corner svelte-1uctjs4"><a href="https://kit.svelte.dev" class="svelte-1uctjs4"><img src="/_app/assets/svelte-logo-87df40b8.svg" alt="SvelteKit" class="svelte-1uctjs4"></a></div>
+
+  <nav class="svelte-1uctjs4"><ul class="svelte-1uctjs4"><li class="svelte-1uctjs4"><a sveltekit:prefetch href="/" class="svelte-1uctjs4">Home</a>
+        </li><li class="svelte-1uctjs4 active"><a sveltekit:prefetch href="/readme" class="svelte-1uctjs4">Readme</a>
+        </li><li class="svelte-1uctjs4"><a sveltekit:prefetch href="/welcome" class="svelte-1uctjs4">Welcome</a>
+        </li><li class="svelte-1uctjs4"><a sveltekit:prefetch href="/about" class="svelte-1uctjs4">About</a>
+        </li><li class="svelte-1uctjs4"><a sveltekit:prefetch href="/dropin-minimal-css" class="svelte-1uctjs4">CSS Switcher</a>
+        </li><li class="svelte-1uctjs4"><a sveltekit:prefetch href="/wasm" class="svelte-1uctjs4">Wasm</a>
+        </li><li class="svelte-1uctjs4"><a sveltekit:prefetch href="/debug" class="svelte-1uctjs4">Debug</a>
+        </li></ul></nav>
+</header>
+
+<div class="search svelte-jwc7cj"><input type="text" class="svelte-jwc7cj">
+
+  
+</div>
+
+<main class="svelte-11ej000"><div class="container svelte-11ej000">
+
+<h1>pluvial.xyz</h1>
+<h2>Deployments</h2>
+<p>Deployed automatically when pushing to the <code>main</code> branch:</p>
+<ul><li><p>Main: <a href="https://pluvial.xyz" rel="nofollow">pluvial.xyz</a> (Vercel)</p></li>
+<li><p>Cloudflare Pages: <a href="https://pluvial-xyz.pages.dev" rel="nofollow">https://pluvial-xyz.pages.dev</a></p></li>
+<li><p>Netlify: <a href="https://pluvial-xyz.netlify.app" rel="nofollow">https://pluvial-xyz.netlify.app</a></p></li>
+<li><p>Vercel: <a href="https://pluvial-xyz.vercel.app" rel="nofollow">https://pluvial-xyz.vercel.app</a></p></li></ul>
+<p>Deployed automatically when pushing to the <code>deno</code> branch:</p>
+<ul><li>Deno Deploy: <a href="https://pluvial-xyz.deno.dev" rel="nofollow">https://pluvial-xyz.deno.dev</a></li></ul>
+<p>Deployed manually from dev machine:</p>
+<ul><li>Cloudflare Workers: <a href="https://pluvial-xyz.pluvial.workers.dev" rel="nofollow">https://pluvial-xyz.pluvial.workers.dev</a></li></ul>
+<pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh">env CF_ACCOUNT_ID=&#39;&lt;account-id&gt;&#39; wrangler publish</code><!-- HTML_TAG_END --></pre>
+<ul><li>Deno Deploy: <a href="https://pluvial-xyz.deno.dev" rel="nofollow">https://pluvial-xyz.deno.dev</a></li></ul>
+<pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh">env DENO_DEPLOY_TOKEN=&#39;&lt;token&gt;&#39; deployctl deploy --project=pluvial-xyz --exclude=node_modules build/index.js</code><!-- HTML_TAG_END --></pre>
+<h2>Developing</h2>
+<p>Install dependencies with <code>pnpm install</code> (or <code>pnpm i</code>), and start a development server:</p>
+<pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh">pnpm dev
+
+# or start the server and open the app in a new browser tab
+pnpm dev -- --open</code><!-- HTML_TAG_END --></pre>
+<h2>Building</h2>
+<p>To create a production version of the app, a different <a href="https://kit.svelte.dev/docs#adapters" rel="nofollow">adapter</a>
+is used for each target environment. To build using the default <code>adapter-static</code>, use:</p>
+<pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh">pnpm build</code><!-- HTML_TAG_END --></pre>
+<blockquote><p>You can preview the built app with <code>pnpm preview</code>. This should <em>not</em> be used to serve the app in production.</p></blockquote>
+<h2>License</h2>
+<p>The content of this project itself is licensed under the <a href="http://creativecommons.org/licenses/by/4.0" rel="nofollow">Creative Commons Attribution 4.0 International License</a>,
+and the underlying source code used to format and display that content is
+licensed under the <a href="https://github.com/pluvial/pluvial.xyz/blob/main/LICENSE" rel="nofollow">MIT license</a>.</p>
+
+<footer class="svelte-n739cz">
+
+  
+
+  <p>Backlinks:</p>
+    <ul><li><a sveltekit:prefetch href="/debug">Debug</a>
+        </li></ul>
+</footer></div>
+</main>
+
+
+		<script type="module" data-hydrate="ojrqc2">
+		import { start } from "/_app/start-5ed70704.js";
+		start({
+			target: document.querySelector('[data-hydrate="ojrqc2"]').parentNode,
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/_app/pages/__layout.svelte-ef9842c8.js"),
+						import("/_app/pages/_slug_.svelte-eb48bbd9.js")
+				],
+				params: {slug:"readme"}
+			}
+		});
+	</script><script type="application/json" data-type="svelte-data" data-url="/posts.json">{"status":200,"statusText":"","headers":{"content-type":"application/json; charset=utf-8"},"body":"{\"posts\":{\"list\":[{\"metadata\":{\"title\":\"About\",\"links\":[],\"externalLinks\":[{\"href\":\"https:\u002F\u002Fkit.svelte.dev\",\"content\":\"SvelteKit\"}]},\"slug\":\"about\"},{\"metadata\":{\"title\":\"Debug\",\"links\":[{\"href\":\"\u002Fabout\",\"content\":\"about\"},{\"href\":\"\u002Freadme\",\"content\":\"README.md\"}],\"externalLinks\":[{\"href\":\"https:\u002F\u002Fgithub.com\u002Fpluvial\u002Fpluvial.xyz\",\"content\":\"Repo\"}]},\"slug\":\"debug\"},{\"metadata\":{\"title\":\"README\",\"links\":[],\"externalLinks\":[]},\"slug\":\"readme\"},{\"metadata\":{\"title\":\"WebAssembly\",\"links\":[],\"externalLinks\":[]},\"slug\":\"wasm\"},{\"metadata\":{\"title\":\"Welcome\",\"links\":[],\"externalLinks\":[]},\"slug\":\"welcome\"}],\"map\":{\"about\":{\"metadata\":{\"title\":\"About\",\"links\":[],\"externalLinks\":[{\"href\":\"https:\u002F\u002Fkit.svelte.dev\",\"content\":\"SvelteKit\"}]},\"slug\":\"about\"},\"debug\":{\"metadata\":{\"title\":\"Debug\",\"links\":[{\"href\":\"\u002Fabout\",\"content\":\"about\"},{\"href\":\"\u002Freadme\",\"content\":\"README.md\"}],\"externalLinks\":[{\"href\":\"https:\u002F\u002Fgithub.com\u002Fpluvial\u002Fpluvial.xyz\",\"content\":\"Repo\"}]},\"slug\":\"debug\"},\"readme\":{\"metadata\":{\"title\":\"README\",\"links\":[],\"externalLinks\":[]},\"slug\":\"readme\"},\"wasm\":{\"metadata\":{\"title\":\"WebAssembly\",\"links\":[],\"externalLinks\":[]},\"slug\":\"wasm\"},\"welcome\":{\"metadata\":{\"title\":\"Welcome\",\"links\":[],\"externalLinks\":[]},\"slug\":\"welcome\"}}},\"links\":{\"about\":[],\"debug\":[\"about\",\"readme\"],\"readme\":[],\"wasm\":[],\"welcome\":[]},\"backlinks\":{\"about\":[\"debug\"],\"readme\":[\"debug\"]}}"}</script></div>
+  </body>
+</html>

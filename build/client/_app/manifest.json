@@ -1,0 +1,164 @@
+{
+  ".svelte-kit/runtime/client/start.js": {
+    "file": "start-5ed70704.js",
+    "src": ".svelte-kit/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_vendor-0683de8a.js",
+      "_preload-helper-ec9aa979.js",
+      "_singletons-a6a7384f.js"
+    ],
+    "dynamicImports": [
+      "src/routes/__layout.svelte",
+      ".svelte-kit/runtime/components/error.svelte",
+      "src/routes/index.svelte",
+      "src/routes/dropin-minimal-css.svelte",
+      "src/routes/[slug].svelte"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "pages/__layout.svelte-ef9842c8.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-0683de8a.js",
+      "_preload-helper-ec9aa979.js",
+      "_singletons-a6a7384f.js"
+    ],
+    "dynamicImports": [
+      "_flexsearch.bundle-19c2f27a.js"
+    ],
+    "css": [
+      "assets/pages/__layout.svelte-b6bb72ce.css"
+    ],
+    "assets": [
+      "assets/svelte-logo-87df40b8.svg",
+      "assets/fira-mono-cyrillic-ext-400-normal-3df7909e.woff2",
+      "assets/fira-mono-all-400-normal-1e3b098c.woff",
+      "assets/fira-mono-cyrillic-400-normal-c7d433fd.woff2",
+      "assets/fira-mono-greek-ext-400-normal-9e2fe623.woff2",
+      "assets/fira-mono-greek-400-normal-a8be01ce.woff2",
+      "assets/fira-mono-latin-ext-400-normal-6bfabd30.woff2",
+      "assets/fira-mono-latin-400-normal-e43b3538.woff2"
+    ]
+  },
+  ".svelte-kit/runtime/components/error.svelte": {
+    "file": "error.svelte-b60f4724.js",
+    "src": ".svelte-kit/runtime/components/error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-0683de8a.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "pages/index.svelte-5d41017e.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-0683de8a.js"
+    ],
+    "css": [
+      "assets/pages/index.svelte-98a4e898.css"
+    ]
+  },
+  "src/routes/dropin-minimal-css.svelte": {
+    "file": "pages/dropin-minimal-css.svelte-824b14b9.js",
+    "src": "src/routes/dropin-minimal-css.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-0683de8a.js"
+    ]
+  },
+  "src/routes/[slug].svelte": {
+    "file": "pages/_slug_.svelte-eb48bbd9.js",
+    "src": "src/routes/[slug].svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_preload-helper-ec9aa979.js",
+      "_vendor-0683de8a.js"
+    ],
+    "dynamicImports": [
+      "content/about.md",
+      "content/debug.md",
+      "content/readme.md",
+      "content/wasm.md",
+      "content/welcome.md"
+    ],
+    "css": [
+      "assets/pages/_slug_.svelte-1fdc913b.css"
+    ]
+  },
+  "_vendor-0683de8a.js": {
+    "file": "chunks/vendor-0683de8a.js"
+  },
+  "_singletons-a6a7384f.js": {
+    "file": "chunks/singletons-a6a7384f.js"
+  },
+  "_preload-helper-ec9aa979.js": {
+    "file": "chunks/preload-helper-ec9aa979.js"
+  },
+  "_flexsearch.bundle-19c2f27a.js": {
+    "file": "chunks/flexsearch.bundle-19c2f27a.js",
+    "isDynamicEntry": true
+  },
+  "content/about.md": {
+    "file": "chunks/about-11c73747.js",
+    "src": "content/about.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-0683de8a.js"
+    ]
+  },
+  "content/debug.md": {
+    "file": "chunks/debug-76f33c78.js",
+    "src": "content/debug.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-0683de8a.js"
+    ],
+    "css": [
+      "assets/debug-4bd222b0.css"
+    ]
+  },
+  "content/readme.md": {
+    "file": "chunks/readme-5414dcdb.js",
+    "src": "content/readme.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-0683de8a.js"
+    ]
+  },
+  "content/wasm.md": {
+    "file": "chunks/wasm-b95c7c07.js",
+    "src": "content/wasm.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_preload-helper-ec9aa979.js",
+      "_vendor-0683de8a.js"
+    ],
+    "dynamicImports": [
+      "src/lib/main.zig?instantiate"
+    ]
+  },
+  "content/welcome.md": {
+    "file": "chunks/welcome-5642c752.js",
+    "src": "content/welcome.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-0683de8a.js"
+    ],
+    "css": [
+      "assets/welcome-9e8b37c6.css"
+    ]
+  },
+  "src/lib/main.zig?instantiate": {
+    "file": "chunks/main-9576c89d.js",
+    "src": "src/lib/main.zig?instantiate",
+    "isDynamicEntry": true
+  }
+}
