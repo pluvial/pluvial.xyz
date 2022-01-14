@@ -3,6 +3,7 @@ import cloudflareWorkers from '@sveltejs/adapter-cloudflare-workers';
 import netlify from '@sveltejs/adapter-netlify';
 import adapter from '@sveltejs/adapter-static';
 import vercel from '@sveltejs/adapter-vercel';
+import deno from 'svelte-adapter-deno';
 import { mdsvex } from 'mdsvex';
 import mdsvexConfig from './mdsvex.config.js';
 
@@ -23,6 +24,8 @@ const config = {
       ? netlify()
       : process.env.VERCEL
       ? vercel()
+      : process.env.DENO
+      ? deno()
       : // otherwise use the static adapter
         adapter(),
     vite: {

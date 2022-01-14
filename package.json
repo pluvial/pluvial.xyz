@@ -9,6 +9,7 @@
     "build": "svelte-kit build",
     "prebuild": "./build-metadata.sh",
     "preview": "svelte-kit preview",
+    "start-deno": "deno run --allow-env --allow-read --allow-net build/index.js",
     "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
     "clean": "rm -rf .svelte-kit .vercel_build_output build functions workers-site"
@@ -30,7 +31,8 @@
     "mdsvex": "^0.9.8",
     "prettier": "^2.5.1",
     "prettier-plugin-svelte": "^2.5.1",
-    "svelte": "^3.44.3"
+    "svelte": "^3.44.3",
+    "svelte-adapter-deno": "^0.5.0"
   },
   "dependencies": {
     "@fontsource/fira-mono": "^4.5.0"
