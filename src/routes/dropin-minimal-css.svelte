@@ -401,7 +401,7 @@ q r s t u v w x y z {'{'} | } ~ </pre>
       </article>
       <article id="embedded__iframe">
         <h2>IFrame</h2>
-        <div><iframe src="index.html" height="300" title="embedded iframe" /></div>
+        <div><iframe src="/" height="300" title="embedded iframe" /></div>
         <footer>
           <p><a href="#top">[Top]</a></p>
         </footer>
