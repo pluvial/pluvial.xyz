@@ -6,22 +6,34 @@
   // vite does not support variables in glob imports, but the glob should match
   // const pattern = `${prefix}*${suffix}`
   const importsPosts = import.meta.glob('/content/*.md');
-  const importsMeta = import.meta.glob('/metadata/*.json');
 
   /** @type {import('@sveltejs/kit').Load} */
-  export async function load({ params }) {
+  export async function load({ fetch, params }) {
     const { slug } = params;
+    const response = await fetch('/posts.json');
+    const { posts, backlinks } = await response.json();
     // build the filename from the folder prefix and extension suffix
     const file = `${prefix}${slug}${suffix}`;
     if (file in importsPosts) {
-      const metadataFile = `/metadata/${slug}.json`;
-      const [module, moduleMetadata] = await Promise.all([
-        importsPosts[file](),
-        importsMeta[metadataFile](),
-      ]);
-      const { default: component, metadata } = module;
-      return { props: { component, metadata: { ...metadata, ...moduleMetadata.default } } };
+      const module = await importsPosts[file]();
+      // merge metadata from .md module (frontmatter), and derived metadata calculated
+      // in $lib/posts.js, exposed via the posts.json endpoint
+      const metadata = {
+        ...module.metadata,
+        ...posts.map[slug].metadata,
+        // get the backlinks for this particular page, deriving the href from the slug,
+        // and using the corresponding page title as the backlink content
+        backlinks:
+          backlinks[slug]?.map(link => ({
+            href: `/${link}`,
+            content: posts.map[link].metadata.title,
+          })) ?? [],
+      };
+      return { props: { component: module.default, metadata } };
     }
+    // TODO: render fallback content here, use a placeholder page for known links,
+    // and a regular page not found otherwise
+    console.warn(`Trying to render missing page: ${slug}, did not find ${file}`);
   }
 </script>
 
@@ -83,9 +95,9 @@
   {#if backlinks.length}
     <p>Backlinks:</p>
     <ul>
-      {#each backlinks as slug (slug)}
+      {#each backlinks as { href, content } (href)}
         <li>
-          <a sveltekit:prefetch href="/{slug}">{slug}</a>
+          <a sveltekit:prefetch {href}>{content}</a>
         </li>
       {/each}
     </ul>

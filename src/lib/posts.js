@@ -17,8 +17,10 @@ export const backlinks = {};
 
 // list of posts in file-alphabetical order
 export const posts = Object.entries(imports).map(([path, module]) => {
-  const { default: component, metadata } = module;
-  const { html, css } = component.render();
+  // TODO: review, html and css are not currently being used
+  // const { default: component, metadata } = module;
+  // const { html, css } = component.render();
+  const { metadata } = module;
   const slug = metadata.slug ?? pathToSlug(path);
   // collect link slugs into map
   links[slug] = metadata.links.map(({ href }) => hrefToSlug(href));
@@ -28,10 +30,10 @@ export const posts = Object.entries(imports).map(([path, module]) => {
     backlinks[linkSlug] = backlinks[linkSlug]?.concat(slug) ?? [slug];
   });
   return {
-    html,
     metadata,
     slug,
-    ...(css.code ? { css: css.code } : undefined),
+    // html,
+    // ...(css.code ? { css: css.code } : undefined),
   };
 });
 
