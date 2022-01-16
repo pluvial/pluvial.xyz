@@ -1,3 +1,4 @@
+import frontmatterLinksPlugin from './plugins/remark-fm-links.js';
 import wikiLinkPlugin from './plugins/remark-wiki-link.js';
 
 const config = {
@@ -9,6 +10,7 @@ const config = {
 
   remarkPlugins: [
     [wikiLinkPlugin, { aliasDivider: '|', hrefTemplate: permalink => `/${permalink}` }],
+    frontmatterLinksPlugin,
   ],
   rehypePlugins: [],
 };
