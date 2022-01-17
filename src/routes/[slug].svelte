@@ -7,15 +7,21 @@
   // const pattern = `${prefix}*${suffix}`
   const importsPosts = import.meta.glob('/content/*.md');
 
+  // cached posts and backlinks to avoid fetching (even if from cache) on every page navigation
+  let posts, backlinks;
+
   /** @type {import('@sveltejs/kit').Load} */
   export async function load({ fetch, params }) {
     const { slug } = params;
-    const response = await fetch('/posts.json');
-    const { posts, backlinks } = await response.json();
     // build the filename from the folder prefix and extension suffix
     const file = `${prefix}${slug}${suffix}`;
     if (file in importsPosts) {
       const module = await importsPosts[file]();
+
+      if (!posts || !backlinks) {
+        const response = await fetch('/posts.json');
+        ({ posts, backlinks } = await response.json());
+      }
       // merge metadata from .md module (frontmatter), and derived metadata calculated
       // in $lib/posts.js, exposed via the posts.json endpoint
       const metadata = {

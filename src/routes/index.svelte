@@ -1,10 +1,15 @@
 <script context="module">
   export const prerender = true;
 
+  // cached posts and backlinks to avoid fetching (even if from cache) on every page navigation
+  let posts, links, backlinks;
+
   /** @type {import('@sveltejs/kit').Load} */
   export async function load({ fetch }) {
-    const response = await fetch('/posts.json');
-    const { posts, links, backlinks } = await response.json();
+    if (!posts || !links || !backlinks) {
+      const response = await fetch('/posts.json');
+      ({ posts, links, backlinks } = await response.json());
+    }
     return { props: { posts: posts.list, links, backlinks } };
   }
 </script>
