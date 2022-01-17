@@ -13,8 +13,7 @@
     "clean": "rm -rf .svelte-kit .vercel_build_output build functions workers-site"
   },
   "workspaces": [
-    "plugins",
-    "scripts"
+    "plugins"
   ],
   "devDependencies": {
     "@sveltejs/adapter-cloudflare": "next",
