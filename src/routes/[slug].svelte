@@ -6,6 +6,8 @@
   // vite does not support variables in glob imports, but the glob should match
   // const pattern = `${prefix}*${suffix}`
   const importsPosts = import.meta.glob('/content/*.md');
+  // resolved imports map indexed by slug
+  const resolvedPosts = {};
 
   // cached posts and backlinks to avoid fetching (even if from cache) on every page navigation
   let posts, backlinks;
@@ -16,7 +18,8 @@
     // build the filename from the folder prefix and extension suffix
     const file = `${prefix}${slug}${suffix}`;
     if (file in importsPosts) {
-      const module = await importsPosts[file]();
+      resolvedPosts[slug] ??= await importsPosts[file]();
+      const module = resolvedPosts[slug];
 
       if (!posts || !backlinks) {
         const response = await fetch('/posts.json');
