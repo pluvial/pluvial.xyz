@@ -1,7 +1,7 @@
 <script context="module">
   export const prerender = true;
 
-  // cached posts and backlinks to avoid fetching (even if from cache) on every page navigation
+  // cached to avoid fetching (even if from cache) on every page navigation
   let posts, links, backlinks;
 
   /** @type {import('@sveltejs/kit').Load} */

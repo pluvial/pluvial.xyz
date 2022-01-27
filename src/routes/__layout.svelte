@@ -3,8 +3,8 @@
 
   const index = new FlexSearch.Index({ tokenize: 'forward' });
 
-  // cached posts and backlinks to avoid fetching (even if from cache) on every page navigation
-  let posts, links, backlinks;
+  // cached to avoid fetching (even if from cache) on every page navigation
+  let posts, links, backlinks, searchIndex;
 
   /** @type {import('@sveltejs/kit').Load} */
   export async function load({ fetch, url }) {
@@ -12,7 +12,10 @@
       const response = await fetch('/posts.json');
       ({ posts, links, backlinks } = await response.json());
     }
-    const { searchIndex } = await (await fetch('/search.json')).json();
+    if (!searchIndex) {
+      const response = await fetch('/search.json');
+      ({ searchIndex } = await response.json());
+    }
     for (const [key, value] of searchIndex) {
       index.add(key, value);
     }

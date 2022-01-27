@@ -9,7 +9,7 @@
   // resolved imports map indexed by slug
   const resolvedPosts = {};
 
-  // cached posts and backlinks to avoid fetching (even if from cache) on every page navigation
+  // cached to avoid fetching (even if from cache) on every page navigation
   let posts, backlinks;
 
   /** @type {import('@sveltejs/kit').Load} */
