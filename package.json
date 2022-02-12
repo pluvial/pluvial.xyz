@@ -36,5 +36,8 @@
   "dependencies": {
     "@fontsource/fira-mono": "^4.5.0",
     "flexsearch": "^0.7.21"
+  },
+  "overrides": {
+    "zx": "^4.3.0"
   }
 }
