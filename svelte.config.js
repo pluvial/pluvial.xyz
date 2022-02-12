@@ -4,6 +4,7 @@ import netlify from '@sveltejs/adapter-netlify';
 import adapter from '@sveltejs/adapter-static';
 import vercel from '@sveltejs/adapter-vercel';
 import deno from 'svelte-adapter-deno';
+import zig from 'vite-plugin-zig';
 import { mdsvex } from 'mdsvex';
 import mdsvexConfig from './mdsvex.config.js';
 
@@ -12,8 +13,6 @@ const config = {
   extensions: ['.svelte', ...mdsvexConfig.extensions],
   preprocess: [mdsvex(mdsvexConfig)],
   kit: {
-    // hydrate the <div id="svelte"> element in src/app.html
-    target: '#svelte',
     // in a production build, use the adapter implied by the platform's environment variables
     // TODO: evaluate migration to @sveltejs/adapter-auto if extra features justify
     adapter: process.env.CF_PAGES
@@ -29,6 +28,7 @@ const config = {
       : // otherwise use the static adapter
         adapter(),
     vite: {
+      plugins: [zig()],
       server: {
         fs: {
           allow: ['.'],

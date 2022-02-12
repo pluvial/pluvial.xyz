@@ -7,4 +7,6 @@ package/
 workers-site/
 .netlify/
 .vercel_build_output/
-.metadata/
+
+zig-cache/
+zig-out/
