@@ -28,7 +28,7 @@ const config = {
       : // otherwise use the static adapter
         adapter(),
     vite: {
-      plugins: [zig({ tmpDir: process.cwd() })],
+      plugins: [zig()],
       server: {
         fs: {
           allow: ['.'],

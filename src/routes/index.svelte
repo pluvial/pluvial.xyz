@@ -34,6 +34,17 @@
 <section>
   <h1>pluvial</h1>
 
+  <h2>Source</h2>
+  <ul>
+    <li>
+      <a href="https://github.com/pluvial/pluvial.xyz">pluvial/pluvial.xyz</a>
+    </li>
+    <li>
+      <a href="https://github.com/pluvial">pluvial</a>
+    </li>
+  </ul>
+
+  <h2>Pages</h2>
   <ul>
     {#each posts as post (post.slug)}
       <li>
@@ -41,13 +52,6 @@
       </li>
     {/each}
   </ul>
-
-  <h2>
-    <a href="https://github.com/pluvial">GitHub</a>
-  </h2>
-  <h2>
-    <a href="https://github.com/pluvial/pluvial.xyz">Source</a>
-  </h2>
 
   <pre><code>{JSON.stringify({ links, backlinks }, null, 2)}</code></pre>
 </section>
@@ -65,15 +69,5 @@
   h1,
   pre {
     width: 100%;
-  }
-
-  ul {
-    list-style: none;
-    display: flex;
-    min-width: 20em;
-  }
-
-  li {
-    flex: auto;
   }
 </style>

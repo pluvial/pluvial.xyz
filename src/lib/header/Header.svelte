@@ -9,6 +9,7 @@
     ['welcome', 'Welcome'],
     ['about', 'About'],
     ['dropin-minimal-css', 'CSS Switcher'],
+    ['wasm', 'Wasm'],
     ['debug', 'Debug'],
   ];
 </script>

@@ -1,5 +1,5 @@
 ---
-title: Zig WebAssembly
+title: WebAssembly
 ---
 
 <script>
@@ -19,8 +19,8 @@ title: Zig WebAssembly
 
 # WebAssembly Example
 
-<p>
+<h2>
   {#if result}
     {a} + {b} = {result}
   {/if}
-</p>
+</h2>

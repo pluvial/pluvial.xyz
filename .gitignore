@@ -8,5 +8,6 @@ workers-site/
 .netlify/
 .vercel_build_output/
 
+*.wasm
 zig-cache/
 zig-out/
