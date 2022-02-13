@@ -24,7 +24,7 @@ importers:
       prettier-plugin-svelte: ^2.5.1
       svelte: ^3.44.3
       svelte-adapter-deno: ^0.5.0
-      vite-plugin-zig: ^0.0.9
+      vite-plugin-zig: ^0.0.10
     dependencies:
       '@fontsource/fira-mono': 4.5.2
       flexsearch: 0.7.21
@@ -44,7 +44,7 @@ importers:
       prettier-plugin-svelte: 2.6.0_prettier@2.5.1+svelte@3.46.4
       svelte: 3.46.4
       svelte-adapter-deno: 0.5.0
-      vite-plugin-zig: 0.0.9
+      vite-plugin-zig: 0.0.10
 
   plugins:
     specifiers:
@@ -1652,8 +1652,8 @@ packages:
       unist-util-stringify-position: 2.0.3
     dev: true
 
-  /vite-plugin-zig/0.0.9:
-    resolution: {integrity: sha512-RmBmqCAiYndqcHChldFexe7XPVH/5t4RoRNZgwuwQZvzWAveZZoArG4tVADVtOKcKyZZrSjdifCn60uzK9I3kw==}
+  /vite-plugin-zig/0.0.10:
+    resolution: {integrity: sha512-mGp88SkRnciG4n/M+Ja23ULWkGGU4z7QmlVinsSk67lMy/V/m/eOFb61rBvakZ3Ce7NePgDdZPPjS4KiUovibQ==}
     dev: true
 
   /vite/2.8.1:
