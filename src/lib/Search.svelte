@@ -1,13 +1,11 @@
 <script>
-  import { onMount, tick } from 'svelte';
-  import { goto } from '$app/navigation';
+  import { createEventDispatcher, onMount, tick } from 'svelte';
 
   export let documents;
 
   let searchIndex;
   let value;
   let selectedResultIndex = 0;
-  let selectedHref = '';
 
   $: resultIds =
     searchIndex
@@ -15,16 +13,17 @@
       .flatMap(({ result }) => result.map(({ id }) => id)) ?? [];
   // deduplicate results across different indices
   $: results = [...new Set(resultIds)].map(id => documents[id]);
-  $: selectedResult = results[selectedResultIndex];
 
   function reset() {
     selectedResultIndex = 0;
     value = '';
   }
 
+  const dispatch = createEventDispatcher();
+
   function selectResult() {
-    selectedHref = selectedResult.href;
-    goto(selectedHref);
+    const selectedResult = results[selectedResultIndex];
+    dispatch('select', selectedResult);
     reset();
   }
 

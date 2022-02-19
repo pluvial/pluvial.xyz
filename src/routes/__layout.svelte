@@ -19,6 +19,7 @@
 <script>
   import { cubicIn, cubicOut } from 'svelte/easing';
   import { fade } from 'svelte/transition';
+  import { goto } from '$app/navigation';
   import Header from '$lib/header/Header.svelte';
   import Search from '$lib/Search.svelte';
   import Switcher from '$lib/Switcher.svelte';
@@ -40,7 +41,7 @@
 
 <Header />
 
-<Search documents={searchDocuments} />
+<Search documents={searchDocuments} on:select={e => goto(e.detail.href)} />
 
 <main>
   {#key path}
