@@ -1,8 +1,35 @@
 <script>
-  import { tick } from 'svelte';
+  import { onMount, tick } from 'svelte';
   import { goto } from '$app/navigation';
+  import FlexSearch from 'flexsearch';
 
-  export let index;
+  // options from flexsearch documentation example
+  const index = new FlexSearch.Document({
+    id: 'id',
+    index: [
+      {
+        field: 'title',
+        tokenize: 'forward',
+        optimize: true,
+        resolution: 9,
+      },
+      {
+        field: 'content',
+        tokenize: 'strict',
+        optimize: true,
+        resolution: 5,
+        minlength: 3,
+        context: {
+          depth: 1,
+          resolution: 3,
+        },
+      },
+    ],
+    store: true,
+    cache: true,
+  });
+
+  export let documents;
 
   let value;
   let selectedResultIndex = 0;
@@ -47,6 +74,12 @@
         break;
     }
   }
+
+  onMount(() => {
+    for (const document of documents) {
+      index.add(document);
+    }
+  });
 </script>
 
 <div class="search">

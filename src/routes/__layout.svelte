@@ -1,32 +1,4 @@
 <script context="module">
-  import FlexSearch from 'flexsearch';
-
-  // options from flexsearch documentation example
-  const index = new FlexSearch.Document({
-    id: 'id',
-    index: [
-      {
-        field: 'title',
-        tokenize: 'forward',
-        optimize: true,
-        resolution: 9,
-      },
-      {
-        field: 'content',
-        tokenize: 'strict',
-        optimize: true,
-        resolution: 5,
-        minlength: 3,
-        context: {
-          depth: 1,
-          resolution: 3,
-        },
-      },
-    ],
-    store: true,
-    cache: true,
-  });
-
   // cached to avoid fetching (even if from cache) on every page navigation
   let posts, links, backlinks, searchDocuments;
 
@@ -39,9 +11,6 @@
     if (!searchDocuments) {
       const response = await fetch('/search.json');
       ({ searchDocuments } = await response.json());
-    }
-    for (const document of searchDocuments) {
-      index.add(document);
     }
     return { props: { path: url.pathname } };
   }
@@ -71,7 +40,7 @@
 
 <Header />
 
-<Search {index} />
+<Search documents={searchDocuments} />
 
 <main>
   {#key path}
