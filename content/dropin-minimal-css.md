@@ -1,3 +1,7 @@
+---
+title: Drop-in Minimal CSS
+---
+
 <!--
   forked from https://github.com/dohliam/dropin-minimal-css/blob/gh-pages/index.html
 
@@ -569,6 +573,7 @@ q r s t u v w x y z {'{'} | } ~ </pre>
         <p><a href="#top">[Top]</a></p>
       </form>
     </section>
+
   </main>
   <footer>
     <p>View this project on <a href="https://github.com/pluvial/pluvial.xyz">GitHub</a>.</p>
