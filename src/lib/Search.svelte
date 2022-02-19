@@ -4,14 +4,15 @@
 
   export let documents;
 
-  let index;
+  let searchIndex;
   let value;
   let selectedResultIndex = 0;
   let selectedHref = '';
 
   $: results =
-    index?.search(value, { enrich: true }).flatMap(({ result }) => result.map(({ doc }) => doc)) ??
-    [];
+    searchIndex
+      ?.search(value, { enrich: true })
+      .flatMap(({ result }) => result.map(({ doc }) => doc)) ?? [];
   $: selectedResult = results[selectedResultIndex];
 
   function reset() {
@@ -52,7 +53,7 @@
   onMount(async () => {
     const { default: FlexSearch } = await import('flexsearch');
     // options from flexsearch documentation example
-    index = new FlexSearch.Document({
+    searchIndex = new FlexSearch.Document({
       id: 'id',
       index: [
         {
@@ -78,7 +79,7 @@
     });
 
     for (const document of documents) {
-      index.add(document);
+      searchIndex.add(document);
     }
   });
 </script>
@@ -100,7 +101,7 @@
             }}
           >
             {title}
-            <span>{description ?? content.slice(0, 30)}</span>
+            <pre>{description ?? content.split('\n').slice(0, 3).join('\n')}</pre>
           </a>
         </li>
       {/each}
@@ -136,5 +137,10 @@
 
   .selected {
     color: var(--accent-color);
+  }
+
+  pre {
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 </style>
