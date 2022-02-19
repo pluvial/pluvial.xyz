@@ -9,10 +9,12 @@
   let selectedResultIndex = 0;
   let selectedHref = '';
 
-  $: results =
+  $: resultIds =
     searchIndex
-      ?.search(value, { enrich: true })
-      .flatMap(({ result }) => result.map(({ doc }) => doc)) ?? [];
+      ?.search(value, { enrich: true, limit: 10 })
+      .flatMap(({ result }) => result.map(({ id }) => id)) ?? [];
+  // deduplicate results across different indices
+  $: results = [...new Set(resultIds)].map(id => documents[id]);
   $: selectedResult = results[selectedResultIndex];
 
   function reset() {
@@ -73,6 +75,7 @@
             resolution: 3,
           },
         },
+        'slug',
       ],
       store: true,
       cache: true,
