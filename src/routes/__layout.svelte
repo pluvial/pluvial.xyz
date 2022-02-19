@@ -12,7 +12,7 @@
       const response = await fetch('/search.json');
       ({ searchDocuments } = await response.json());
     }
-    return { props: { path: url.pathname } };
+    return { props: { path: url.pathname }, stuff: { posts, links, backlinks } };
   }
 </script>
 

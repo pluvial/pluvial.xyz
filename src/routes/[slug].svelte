@@ -9,22 +9,15 @@
   // resolved imports map indexed by slug
   const resolvedPosts = {};
 
-  // cached to avoid fetching (even if from cache) on every page navigation
-  let posts, backlinks;
-
   /** @type {import('@sveltejs/kit').Load} */
-  export async function load({ fetch, params }) {
+  export async function load({ params, stuff }) {
+    const { posts, backlinks } = stuff;
     const { slug } = params;
     // build the filename from the folder prefix and extension suffix
     const file = `${prefix}${slug}${suffix}`;
     if (file in importsPosts) {
       resolvedPosts[slug] ??= await importsPosts[file]();
       const module = resolvedPosts[slug];
-
-      if (!posts || !backlinks) {
-        const response = await fetch('/posts.json');
-        ({ posts, backlinks } = await response.json());
-      }
       // merge metadata from .md module (frontmatter), and derived metadata calculated
       // in $lib/posts.js, exposed via the posts.json endpoint
       const metadata = {
