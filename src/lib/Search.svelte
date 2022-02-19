@@ -3,27 +3,19 @@
   import { goto } from '$app/navigation';
 
   export let index;
-  export let posts;
 
   let value;
   let selectedResultIndex = 0;
   let selectedHref = '';
 
-  $: results = search(value);
+  $: results = index
+    .search(value, { enrich: true })
+    .flatMap(({ result }) => result.map(({ doc }) => doc));
   $: selectedResult = results[selectedResultIndex];
 
   function reset() {
     selectedResultIndex = 0;
     value = '';
-  }
-
-  function search(text) {
-    const slugs = index.search(text);
-    const results = slugs.map(slug => {
-      const post = posts.map[slug];
-      return { text: post.metadata.title, href: `/${slug}` };
-    });
-    return results;
   }
 
   function selectResult() {
@@ -62,10 +54,10 @@
 
   {#if results.length > 0}
     <ul>
-      {#each results as result, index}
+      {#each results as { title, content, description, href }, index}
         <li>
           <a
-            href={result.href}
+            {href}
             class:selected={selectedResultIndex === index}
             on:click|preventDefault={async () => {
               selectedResultIndex = index;
@@ -73,8 +65,8 @@
               selectResult();
             }}
           >
-            {result.text}
-            {#if result.description}<span>– {result.description}</span>{/if}
+            {title}
+            <span>{description ?? content.slice(0, 30)}</span>
           </a>
         </li>
       {/each}

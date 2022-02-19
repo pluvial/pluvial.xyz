@@ -1,10 +1,34 @@
 <script context="module">
   import FlexSearch from 'flexsearch';
 
-  const index = new FlexSearch.Index({ tokenize: 'forward' });
+  // options from flexsearch documentation example
+  const index = new FlexSearch.Document({
+    id: 'id',
+    index: [
+      {
+        field: 'title',
+        tokenize: 'forward',
+        optimize: true,
+        resolution: 9,
+      },
+      {
+        field: 'content',
+        tokenize: 'strict',
+        optimize: true,
+        resolution: 5,
+        minlength: 3,
+        context: {
+          depth: 1,
+          resolution: 3,
+        },
+      },
+    ],
+    store: true,
+    cache: true,
+  });
 
   // cached to avoid fetching (even if from cache) on every page navigation
-  let posts, links, backlinks, searchIndex;
+  let posts, links, backlinks, searchDocuments;
 
   /** @type {import('@sveltejs/kit').Load} */
   export async function load({ fetch, url }) {
@@ -12,12 +36,12 @@
       const response = await fetch('/posts.json');
       ({ posts, links, backlinks } = await response.json());
     }
-    if (!searchIndex) {
+    if (!searchDocuments) {
       const response = await fetch('/search.json');
-      ({ searchIndex } = await response.json());
+      ({ searchDocuments } = await response.json());
     }
-    for (const [key, value] of searchIndex) {
-      index.add(key, value);
+    for (const document of searchDocuments) {
+      index.add(document);
     }
     return { props: { path: url.pathname } };
   }
@@ -47,7 +71,7 @@
 
 <Header />
 
-<Search {index} {posts} />
+<Search {index} />
 
 <main>
   {#key path}

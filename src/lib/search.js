@@ -6,9 +6,12 @@
 
 const imports = import.meta.globEager('/content/*.md');
 
-export const searchIndex = Object.entries(imports).map(([path, module]) => {
+export const searchDocuments = Object.entries(imports).map(([path, module], index) => {
   const slug = path.slice('/content/'.length, -'.md'.length);
+  const href = `/${slug}`;
+  const { title } = module.metadata;
   // TODO: search over html text elements only?
-  const text = module.default.render().html;
-  return [slug, text];
+  const content = module.default.render().html;
+  const document = { id: index, title, content, href, slug };
+  return document;
 });
