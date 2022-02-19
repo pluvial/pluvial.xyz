@@ -1,43 +1,17 @@
 <script>
   import { onMount, tick } from 'svelte';
   import { goto } from '$app/navigation';
-  import FlexSearch from 'flexsearch';
-
-  // options from flexsearch documentation example
-  const index = new FlexSearch.Document({
-    id: 'id',
-    index: [
-      {
-        field: 'title',
-        tokenize: 'forward',
-        optimize: true,
-        resolution: 9,
-      },
-      {
-        field: 'content',
-        tokenize: 'strict',
-        optimize: true,
-        resolution: 5,
-        minlength: 3,
-        context: {
-          depth: 1,
-          resolution: 3,
-        },
-      },
-    ],
-    store: true,
-    cache: true,
-  });
 
   export let documents;
 
+  let index;
   let value;
   let selectedResultIndex = 0;
   let selectedHref = '';
 
-  $: results = index
-    .search(value, { enrich: true })
-    .flatMap(({ result }) => result.map(({ doc }) => doc));
+  $: results =
+    index?.search(value, { enrich: true }).flatMap(({ result }) => result.map(({ doc }) => doc)) ??
+    [];
   $: selectedResult = results[selectedResultIndex];
 
   function reset() {
@@ -75,7 +49,34 @@
     }
   }
 
-  onMount(() => {
+  onMount(async () => {
+    const { default: FlexSearch } = await import('flexsearch');
+    // options from flexsearch documentation example
+    index = new FlexSearch.Document({
+      id: 'id',
+      index: [
+        {
+          field: 'title',
+          tokenize: 'forward',
+          optimize: true,
+          resolution: 9,
+        },
+        {
+          field: 'content',
+          tokenize: 'strict',
+          optimize: true,
+          resolution: 5,
+          minlength: 3,
+          context: {
+            depth: 1,
+            resolution: 3,
+          },
+        },
+      ],
+      store: true,
+      cache: true,
+    });
+
     for (const document of documents) {
       index.add(document);
     }
