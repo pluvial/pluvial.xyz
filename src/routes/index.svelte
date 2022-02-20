@@ -4,7 +4,7 @@
   /** @type {import('@sveltejs/kit').Load} */
   export async function load({ stuff }) {
     const { posts, links, backlinks } = stuff;
-    return { props: { posts: posts.list, links, backlinks } };
+    return { props: { posts, links, backlinks } };
   }
 </script>
 

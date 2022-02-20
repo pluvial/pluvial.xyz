@@ -11,7 +11,7 @@
 
   /** @type {import('@sveltejs/kit').Load} */
   export async function load({ params, stuff }) {
-    const { posts, backlinks } = stuff;
+    const { ids, posts, backlinks } = stuff;
     const { slug } = params;
     // build the filename from the folder prefix and extension suffix
     const file = `${prefix}${slug}${suffix}`;
@@ -22,13 +22,13 @@
       // in $lib/posts.js, exposed via the posts.json endpoint
       const metadata = {
         ...module.metadata,
-        ...posts.map[slug].metadata,
+        ...posts[ids[slug]].metadata,
         // get the backlinks for this particular page, deriving the href from the slug,
         // and using the corresponding page title as the backlink content
         backlinks:
           backlinks[slug]?.map(link => ({
             href: `/${link}`,
-            content: posts.map[link].metadata.title,
+            content: posts[ids[link]].metadata.title,
           })) ?? [],
       };
       return { props: { component: module.default, metadata } };

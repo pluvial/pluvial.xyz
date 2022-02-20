@@ -4,12 +4,9 @@
 
   /** @type {import('@sveltejs/kit').Load} */
   export async function load({ fetch, url }) {
-    promise ??= Promise.all([
-      fetch('/posts.json').then(response => response.json()),
-      fetch('/search.json').then(response => response.json()),
-    ]);
-    const [{ posts, links, backlinks }, { searchDocuments }] = await promise;
-    return { props: { path: url.pathname, searchDocuments }, stuff: { posts, links, backlinks } };
+    promise ??= fetch('/posts.json').then(response => response.json());
+    const { ids, posts, links, backlinks } = await promise;
+    return { props: { path: url.pathname, posts }, stuff: { ids, posts, links, backlinks } };
   }
 </script>
 
@@ -26,7 +23,7 @@
   /** @type {string} */
   export let path;
 
-  export let searchDocuments;
+  export let posts;
 
   const duration = 200;
   const delay = duration + 50;
@@ -40,7 +37,7 @@
 
 <Header />
 
-<Search documents={searchDocuments} on:select={e => goto(e.detail.href)} />
+<Search documents={posts} on:select={e => goto(e.detail.href)} />
 
 <main>
   {#key path}
