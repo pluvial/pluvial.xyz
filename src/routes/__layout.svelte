@@ -1,18 +1,15 @@
 <script context="module">
   // cached to avoid fetching (even if from cache) on every page navigation
-  let posts, links, backlinks, searchDocuments;
+  let promise;
 
   /** @type {import('@sveltejs/kit').Load} */
   export async function load({ fetch, url }) {
-    if (!posts || !links || !backlinks) {
-      const response = await fetch('/posts.json');
-      ({ posts, links, backlinks } = await response.json());
-    }
-    if (!searchDocuments) {
-      const response = await fetch('/search.json');
-      ({ searchDocuments } = await response.json());
-    }
-    return { props: { path: url.pathname }, stuff: { posts, links, backlinks } };
+    promise ??= Promise.all([
+      fetch('/posts.json').then(response => response.json()),
+      fetch('/search.json').then(response => response.json()),
+    ]);
+    const [{ posts, links, backlinks }, { searchDocuments }] = await promise;
+    return { props: { path: url.pathname, searchDocuments }, stuff: { posts, links, backlinks } };
   }
 </script>
 
@@ -28,6 +25,8 @@
 
   /** @type {string} */
   export let path;
+
+  export let searchDocuments;
 
   const duration = 200;
   const delay = duration + 50;

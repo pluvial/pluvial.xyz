@@ -1,3 +1,6 @@
+import * as fs from 'fs';
+import { join } from 'path';
+
 const prefix = '/content/';
 const suffix = '.md';
 // vite does not support variables in glob imports, but the glob should match
@@ -39,3 +42,22 @@ export const posts = Object.entries(imports).map(([path, module]) => {
 
 // map of posts indexed by slug
 export const postsMap = Object.fromEntries(posts.map(post => [post.slug, post]));
+
+// YAML frontmatter marker
+const fmMarker = '---\n';
+// Script section marker
+const scriptMarker = '</script>';
+
+export const searchDocuments = Object.entries(imports).map(([path, module], index) => {
+  const slug = path.slice('/content/'.length, -'.md'.length);
+  const href = `/${slug}`;
+  const { title } = module.metadata;
+  // TODO: find a better way to read raw .md file contents, raw vite import not working correctly
+  const md = fs.readFileSync(join(process.cwd(), path), 'utf-8');
+  const fmEnd = md.lastIndexOf(fmMarker) + fmMarker.length;
+  const scriptEnd = md.lastIndexOf(scriptMarker) + scriptMarker.length;
+  // TODO: index html text elements only?
+  const content = md.slice(Math.max(fmEnd, scriptEnd)).trim();
+  const document = { id: index, title, content, href, slug };
+  return document;
+});
