@@ -22,8 +22,10 @@ const fmMarker = '---\n';
 // Script section marker
 const scriptMarker = '</script>';
 
-// map of links and backlinks indexed by slug
+// maps of links and backlinks indexed by slug
+/** @type {{ [key: string]: string[]}} */
 export const links = {};
+/** @type {{ [key: string]: string[]}} */
 export const backlinks = {};
 
 // list of posts in file-alphabetical order
