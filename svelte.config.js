@@ -27,6 +27,9 @@ const config = {
       ? deno()
       : // otherwise use the static adapter
         adapter(),
+    prerender: {
+      default: true,
+    },
     vite: {
       plugins: [zig()],
       server: {
