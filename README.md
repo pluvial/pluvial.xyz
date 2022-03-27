@@ -12,9 +12,7 @@ Deployed automatically when pushing to the `main` branch:
 
 - Vercel: [https://pluvial-xyz.vercel.app](https://pluvial-xyz.vercel.app)
 
-Deployed automatically when pushing to the `deno` branch:
-
-- Deno Deploy: [https://pluvial-xyz.deno.dev](https://pluvial-xyz.deno.dev)
+- Deno Deploy (via GitHub Action): [https://pluvial-xyz.deno.dev](https://pluvial-xyz.deno.dev)
 
 Deployed manually from dev machine:
 
