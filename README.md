@@ -14,18 +14,14 @@ Deployed automatically when pushing to the `main` branch:
 
 - Deno Deploy (via GitHub Action): [https://pluvial-xyz.deno.dev](https://pluvial-xyz.deno.dev)
 
-Deployed manually from dev machine:
+```sh
+env DENO_DEPLOY_TOKEN='<token>' deployctl deploy --project=pluvial-xyz --exclude=node_modules build/index.js
+```
 
-- Cloudflare Workers: [https://pluvial-xyz.pluvial.workers.dev](https://pluvial-xyz.pluvial.workers.dev)
+- Cloudflare Workers (via GitHub Action): [https://pluvial-xyz.pluvial.workers.dev](https://pluvial-xyz.pluvial.workers.dev)
 
 ```sh
 env CF_ACCOUNT_ID='<account-id>' wrangler publish
-```
-
-- Deno Deploy: [https://pluvial-xyz.deno.dev](https://pluvial-xyz.deno.dev)
-
-```sh
-env DENO_DEPLOY_TOKEN='<token>' deployctl deploy --project=pluvial-xyz --exclude=node_modules build/index.js
 ```
 
 ## Developing
@@ -41,7 +37,7 @@ pnpm dev -- --open
 
 ## Building
 
-To create a production version of the app, a different [adapter](https://kit.svelte.dev/docs#adapters)
+To create a production version of the app, a different [adapter](https://kit.svelte.dev/docs/adapters)
 is used for each target environment. To build using the default `adapter-static`, use:
 
 ```sh

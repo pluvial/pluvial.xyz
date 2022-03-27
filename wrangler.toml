@@ -2,19 +2,17 @@ name = "pluvial-xyz"
 type = "javascript"
 workers_dev = true
 account_id = 'f6e9b9e1c57fe88281bd5409924e8311'
-compatibility_date = "2021-12-01"
+compatibility_date = "2022-03-01"
 compatibility_flags = []
 # usage_model = ''
 # route = ''
 # zone_id = ''
 
 [build]
-command = "pnpm i && pnpm clean && pnpm build"
+command = "npm i && npm run clean && npm run build"
 [build.upload]
 format = "service-worker"
 
 [site]
 bucket = "./build"
 entry-point = "./workers-site"
-
-

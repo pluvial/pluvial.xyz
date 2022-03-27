@@ -1,4 +1,4 @@
-name: ci
+name: Deno Deploy
 
 on:
   push:
