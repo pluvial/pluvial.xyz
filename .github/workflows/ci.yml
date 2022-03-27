@@ -44,12 +44,14 @@ jobs:
         env:
           DENO: 1
 
-      - name: Move to deno-deploy dir
-        run: mkdir deno-deploy && mv build deno-deploy
+      # equivalent to removing node_modules, isolate build files
+      - name: Move build files and import map to deploy dir
+        run: mkdir deno-deploy && mv build deno-import-map.json deno-deploy
 
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
         with:
           project: pluvial-xyz
           entrypoint: build/index.js
+          import-map: deno-import-map.json
           root: deno-deploy
