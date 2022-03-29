@@ -1,4 +1,4 @@
-name: Deno Deploy
+name: deploy
 
 on:
   push:
@@ -9,8 +9,25 @@ on:
       - main
 
 jobs:
-  deploy:
-    name: deploy
+  cf-workers-deploy:
+    name: cf-workers-deploy
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v2
+
+      - name: Build site and deploy to Cloudflare Workers
+        uses: cloudflare/wrangler-action@next
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+        env:
+          CF_ACCOUNT_ID: 'f6e9b9e1c57fe88281bd5409924e8311'
+  deno-deploy:
+    name: deno-deploy
     runs-on: ubuntu-latest
     permissions:
       id-token: write
