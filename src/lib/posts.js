@@ -1,11 +1,9 @@
-import * as fs from 'fs';
-import { join } from 'path';
-
 const prefix = '/content/';
 const suffix = '.md';
 // vite does not support variables in glob imports, but the glob should match
 // const pattern = `${prefix}*${suffix}`
 const imports = import.meta.globEager('/content/*.md');
+const importsRaw = import.meta.globEager('/content/*.md', { assert: { type: 'raw' } });
 
 // derive slug by slicing the prefix and suffix from the path
 const pathToSlug = path => path.slice(prefix.length, -suffix.length);
@@ -44,8 +42,7 @@ export const posts = Object.entries(imports).map(([path, module], index) => {
     backlinks[linkSlug] = backlinks[linkSlug]?.concat(slug) ?? [slug];
   });
   const { title } = metadata;
-  // TODO: find a better way to read raw .md file contents, raw vite import not working correctly
-  const md = fs.readFileSync(join(process.cwd(), path), 'utf-8');
+  const md = importsRaw[path];
   const fmEnd = md.lastIndexOf(fmMarker) + fmMarker.length;
   const scriptEnd = md.lastIndexOf(scriptMarker) + scriptMarker.length;
   // TODO: index html text elements only?

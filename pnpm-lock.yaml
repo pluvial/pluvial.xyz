@@ -26,7 +26,7 @@ importers:
       svelte-adapter-deno: ^0.5.6
       vite-plugin-zig: ^0.0.11
     dependencies:
-      '@fontsource/fira-mono': 4.5.6
+      '@fontsource/fira-mono': 4.5.7
       flexsearch: 0.7.21
     devDependencies:
       '@sveltejs/adapter-cloudflare': 1.0.0-next.16
@@ -71,8 +71,8 @@ packages:
       - supports-color
     dev: true
 
-  /@fontsource/fira-mono/4.5.6:
-    resolution: {integrity: sha512-sEt0MoN25QabXfq4xrtOyHQT257hNkJwR2Z10Y3xH9dEqH6Zlr9id7biiI+nwX1nnhgaywpnc7UH1cv/8t0VLA==}
+  /@fontsource/fira-mono/4.5.7:
+    resolution: {integrity: sha512-oQhYhIDXQwbLSK07arXWGv8H6+GGKlHHy/hfgHnv+DgkyD5i3z8l08tiYp5Bu0IVOYgX2s3lhs4H56yOBAxEYQ==}
     dev: false
 
   /@humanwhocodes/config-array/0.9.5:
@@ -1066,8 +1066,8 @@ packages:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
     dev: true
 
-  /nanoid/3.3.1:
-    resolution: {integrity: sha512-n6Vs/3KGyxPQd6uO0eH4Bv0ojGSUvuLlIHtC3Y0kEO23YRge8H9x1GCzLn28YX0H66pMkxuaeESFq4tKISKwdw==}
+  /nanoid/3.3.2:
+    resolution: {integrity: sha512-CuHBogktKwpm5g2sRgv83jEy2ijFzBwMoYA60orPDR7ynsLijJDqgsi4RDGj3OJpy3Ieb+LYwiRmIOGyytgITA==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
     dev: true
@@ -1151,7 +1151,7 @@ packages:
     resolution: {integrity: sha512-lg6eITwYe9v6Hr5CncVbK70SoioNQIq81nsaG86ev5hAidQvmOeETBqs7jm43K2F5/Ley3ytDtriImV6TpNiSg==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
-      nanoid: 3.3.1
+      nanoid: 3.3.2
       picocolors: 1.0.0
       source-map-js: 1.0.2
     dev: true
