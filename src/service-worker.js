@@ -1,22 +1,25 @@
-import { timestamp, build } from '$service-worker';
+import { build, version } from '$service-worker';
 
-const name = `cache-${timestamp}`;
+const name = `cache-${version}`;
 
 self.addEventListener('install', event => {
+  // @ts-expect-error
   event.waitUntil(caches.open(name).then(cache => cache.addAll(build)));
 });
 
 self.addEventListener('activate', event => {
+  // @ts-expect-error
   event.waitUntil(
     caches.keys().then(async keys => {
       for (const key of keys) {
-        if (!key.includes(String(timestamp))) caches.delete(key);
+        if (!key.includes(version)) caches.delete(key);
       }
     }),
   );
 });
 
 self.addEventListener('fetch', event => {
+  // @ts-expect-error
   const { request } = event;
 
   if (request.method !== 'GET' || request.headers.has('range')) return;
@@ -26,6 +29,7 @@ self.addEventListener('fetch', event => {
 
   if (url.origin === location.origin && build.includes(url.pathname)) {
     // always return build files from cache
+    // @ts-expect-error
     event.respondWith(cached);
   } else if (url.protocol === 'https:' || location.hostname === 'localhost') {
     // hit the network for everything else...
@@ -43,6 +47,7 @@ self.addEventListener('fetch', event => {
     });
 
     // ...but if it fails, fall back to cache if available
+    // @ts-expect-error
     event.respondWith(promise.catch(() => cached || promise));
   }
 });
