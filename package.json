@@ -29,8 +29,8 @@
     "mdsvex": "^0.10.5",
     "prettier": "^2.6.1",
     "prettier-plugin-svelte": "^2.6.0",
-    "svelte": "^3.46.4",
-    "svelte-adapter-deno": "^0.5.6",
+    "svelte": "^3.46.6",
+    "svelte-adapter-deno": "^0.6.2",
     "vite-plugin-zig": "^0.0.11"
   },
   "dependencies": {
