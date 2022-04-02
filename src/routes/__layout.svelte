@@ -38,17 +38,18 @@
 
 <Search {pages} on:select={e => goto(e.detail.href)} />
 
-<main>
+<div class="container">
   {#key path}
-    <div class="container" in:fade={transitionIn} out:fade={transitionOut}>
+    <main in:fade={transitionIn} out:fade={transitionOut}>
       <slot />
       <Footer stuff={$page.stuff} />
-    </div>
+    </main>
   {/key}
-</main>
+  <!-- TODO: this container div won't scale with the content -->
+</div>
 
 <style>
-  main {
+  .container {
     flex: 1;
     position: relative;
     width: 100%;
@@ -58,7 +59,7 @@
     margin: 0 auto;
   }
 
-  .container {
+  main {
     position: absolute;
     box-sizing: border-box;
     width: 100%;

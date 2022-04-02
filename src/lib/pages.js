@@ -49,7 +49,6 @@ export const pages = Object.entries(imports).map(([path, module], index) => {
     const linkSlug = hrefToSlug(href);
     backlinks[linkSlug] = backlinks[linkSlug]?.concat(slug) ?? [slug];
   });
-  const { title } = metadata;
   const md = importsRaw[path];
   const fmEnd = md.lastIndexOf(fmMarker) + fmMarker.length;
   const scriptEnd = md.lastIndexOf(scriptMarker) + scriptMarker.length;
@@ -61,7 +60,6 @@ export const pages = Object.entries(imports).map(([path, module], index) => {
     href,
     metadata,
     slug,
-    title,
     // html,
     // ...(css.code ? { css: css.code } : undefined),
   };
