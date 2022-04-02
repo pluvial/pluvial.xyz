@@ -3,7 +3,7 @@ import { ids, pages, links, backlinks, getPageBacklinks } from '$lib/pages';
 
 const stuff = { ids, pages, links, backlinks };
 
-/** @type {import('@sveltejs/kit').RequestHandler} */
+/** @type {import('./[...slug]').RequestHandler} */
 export async function get({ params }) {
   const { slug } = params;
   if (!(slug in ids)) {

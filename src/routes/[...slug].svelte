@@ -7,7 +7,7 @@
   // resolved imports map indexed by slug
   const modules = {};
 
-  /** @type {import('@sveltejs/kit').Load} */
+  /** @type {import('./[...slug]').Load} */
   export async function load({ params, props: { metadata, stuff } }) {
     // fallback to index.md for the '' route
     const slug = params.slug || 'index';
@@ -21,7 +21,7 @@
     }
     modules[slug] ??= await imports[path]();
     const { default: component } = modules[slug];
-    return { props: { ...metadata, component }, stuff };
+    return { props: { ...metadata, component }, stuff: { metadata, ...stuff } };
   }
 </script>
 

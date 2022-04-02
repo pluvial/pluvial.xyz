@@ -1,5 +1,5 @@
 <script context="module">
-  /** @type {import('@sveltejs/kit').Load} */
+  /** @type {import('./__layout').Load} */
   export async function load({ url }) {
     // route transitions do not work correctly when using only $page.url.pathname
     return { props: { path: url.pathname } };
