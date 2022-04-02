@@ -2,6 +2,10 @@
 title: Debug
 ---
 
+<script>
+  import { page } from '$app/stores'
+</script>
+
 # Links
 
 Wiki link: [[about]]
@@ -23,7 +27,7 @@ External link: [Repo](https://github.com/pluvial/pluvial.xyz)
 
 <style>
   h1 {
-    color: #0DD;
+    color: #0dd;
   }
 </style>
 ```
@@ -41,6 +45,10 @@ External link: [Repo](https://github.com/pluvial/pluvial.xyz)
     <div class="block" style="background-color: var(--c{(2 * index + 1).toString(16)})" />
   {/each}
 </div>
+
+# Stuff
+
+<pre><code>{JSON.stringify($page.stuff, null, 2)}</code></pre>
 
 <style>
   .flex {

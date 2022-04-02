@@ -1,7 +1,10 @@
 <script>
-  export let stuff;
-
-  $: ({ links, externalLinks, backlinks } = stuff.page);
+  /** @type {Link[]} */
+  export let links;
+  /** @type {Link[]} */
+  export let externalLinks;
+  /** @type {Link[]} */
+  export let backlinks;
 </script>
 
 <footer>
@@ -37,8 +40,6 @@
       {/each}
     </ul>
   {/if}
-
-  <pre><code>{JSON.stringify(stuff, null, 2)}</code></pre>
 </footer>
 
 <style>

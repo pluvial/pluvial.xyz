@@ -22,6 +22,7 @@
   export let path;
 
   $: ({ pages } = $page.stuff);
+  $: ({ links, externalLinks, backlinks } = $page.stuff.page);
 
   const duration = 150;
   const delay = duration + 50;
@@ -42,7 +43,7 @@
   {#key path}
     <main in:fade={transitionIn} out:fade={transitionOut}>
       <slot />
-      <Footer stuff={$page.stuff} />
+      <Footer {links} {externalLinks} {backlinks} />
     </main>
   {/key}
   <!-- TODO: this container div won't scale with the content -->
