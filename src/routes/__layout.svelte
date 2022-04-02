@@ -29,7 +29,7 @@
   const transitionOut = { duration, easing: cubicIn };
 </script>
 
-<Switcher selected="new" visible={path === '/dropin-minimal-css'} />
+<Switcher selected="new" hidden={path !== '/dropin-minimal-css'} />
 
 <Header />
 

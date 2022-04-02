@@ -36,8 +36,8 @@
 
   const frameworks = frameworksStr.split(',');
 
+  export let hidden;
   export let selected = frameworks[0];
-  export let visible = false;
 
   let loading = false;
   let previous = selected;
@@ -57,17 +57,22 @@
   />
 </svelte:head>
 
-{#if visible}
-  <select
-    value={selected}
-    on:change={event => {
-      previous = selected;
-      loading = true;
-      selected = event.target.value;
-    }}
-  >
-    {#each frameworks as framework}
-      <option value={framework}>{framework}</option>
-    {/each}
-  </select>
-{/if}
+<select
+  class:hidden
+  value={selected}
+  on:change={event => {
+    previous = selected;
+    loading = true;
+    selected = event.target.value;
+  }}
+>
+  {#each frameworks as framework}
+    <option value={framework}>{framework}</option>
+  {/each}
+</select>
+
+<style>
+  .hidden {
+    visibility: hidden;
+  }
+</style>
