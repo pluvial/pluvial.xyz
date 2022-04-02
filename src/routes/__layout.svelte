@@ -39,6 +39,7 @@
   {#key path}
     <div class="container" in:fade={transitionIn} out:fade={transitionOut}>
       <slot />
+      <pre><code>{JSON.stringify($page.stuff, null, 2)}</code></pre>
     </div>
   {/key}
 </main>

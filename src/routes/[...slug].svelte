@@ -20,13 +20,11 @@
     }
     modules[slug] ??= await imports[path]();
     const module = modules[slug];
-    return { props: { ...props, component: module.default }, stuff: props.stuff };
+    return { props: { component: module.default, metadata: props.metadata }, stuff: props.stuff };
   }
 </script>
 
 <script>
-  import { page } from '$app/stores';
-
   /** @type {import('svelte').SvelteComponent} */
   export let component;
 
@@ -43,16 +41,6 @@
   /** @type {Metadata} */
   export let metadata;
 
-  /**
-   * @typedef Stuff
-   * @property {{ metadata: { title: string, description: string }, slug: string }[]} pages
-   * @property {{ [slug: string]: string[] }} links
-   * @property {{ [slug: string]: string[] }} backlinks
-   * 
-
-  /** @type {Stuff} */
-  export let stuff;
-
   const defaults = { title: 'pluvial.xyz', author: 'pluvial', description: 'pluvial.xyz' };
   const { title, author, description, links, externalLinks, backlinks } = {
     ...defaults,
@@ -66,41 +54,7 @@
   <meta name="description" content={description} />
 </svelte:head>
 
-{#if $page.url.pathname === '/'}
-  <section>
-    <svelte:component this={component} />
-
-    <!-- render page index -->
-    <h2>Pages</h2>
-    <ul>
-      {#each stuff.pages as page (page.slug)}
-        <li>
-          <a sveltekit:prefetch href="/{page.slug}">{page.metadata.title}</a>
-        </li>
-      {/each}
-    </ul>
-
-    <pre><code>{JSON.stringify(stuff, null, 2)}</code></pre>
-  </section>
-
-  <style>
-    section {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      flex: 1;
-      margin: var(--column-margin-top) auto 0 auto;
-    }
-
-    h1,
-    pre {
-      width: 100%;
-    }
-  </style>
-{:else}
-  <svelte:component this={component} />
-{/if}
+<svelte:component this={component} />
 
 <footer>
   {#if links.length}
