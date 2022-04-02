@@ -6,23 +6,8 @@ title: Welcome
   import Counter from '$lib/Counter.svelte';
 </script>
 
-<section>
-
 # Welcome to your new SvelteKit app
 
-## try editing **src/routes/index.svelte**
+## Try editing **content/welcome.svelte**
 
-  <Counter />
-</section>
-
-<style>
-  section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    margin: var(--column-margin-top) auto 0 auto;
-    white-space: nowrap;
-  }
-</style>
+<Counter />
