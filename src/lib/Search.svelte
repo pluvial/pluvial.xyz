@@ -1,7 +1,7 @@
 <script>
   import { createEventDispatcher, onMount, tick } from 'svelte';
 
-  export let documents;
+  export let pages;
 
   let searchIndex;
   let value;
@@ -12,7 +12,7 @@
       ?.search(value, { enrich: true, limit: 10 })
       .flatMap(({ result }) => result.map(({ id }) => id)) ?? [];
   // deduplicate results across different indices
-  $: results = [...new Set(resultIds)].map(id => documents[id]);
+  $: results = [...new Set(resultIds)].map(id => pages[id]);
 
   function reset() {
     selectedResultIndex = 0;
@@ -80,8 +80,8 @@
       cache: true,
     });
 
-    for (const document of documents) {
-      searchIndex.add(document);
+    for (const page of pages) {
+      searchIndex.add(page);
     }
   });
 </script>

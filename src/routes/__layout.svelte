@@ -12,7 +12,7 @@
   import { goto } from '$app/navigation';
   import { page } from '$app/stores';
   import Footer from '$lib/Footer.svelte';
-  import Header from '$lib/header/Header.svelte';
+  import Header from '$lib/Header.svelte';
   import Search from '$lib/Search.svelte';
   import Switcher from '$lib/Switcher.svelte';
   import '$lib/prism-themes/prism-xonokai.css';
@@ -20,6 +20,8 @@
 
   /** @type {string} */
   export let path;
+
+  $: ({ pages } = $page.stuff);
 
   const duration = 150;
   const delay = duration + 50;
@@ -32,9 +34,9 @@
 
 <Switcher selected="new" hidden={path !== '/dropin-minimal-css'} />
 
-<Header />
+<Header {pages} {path} />
 
-<Search documents={$page.stuff.pages} on:select={e => goto(e.detail.href)} />
+<Search {pages} on:select={e => goto(e.detail.href)} />
 
 <main>
   {#key path}

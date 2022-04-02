@@ -1,9 +1,11 @@
 <script>
-  import { page } from '$app/stores';
   import logo from './svelte-logo.svg';
 
+  export let pages;
+  export let path;
+
   // sort links by page slug
-  $: links = [...$page.stuff.pages].sort((a, b) => (a.slug > b.slug ? 1 : -1));
+  $: linkPages = [...pages].sort((a, b) => (a.slug > b.slug ? 1 : -1));
 </script>
 
 <header>
@@ -15,8 +17,8 @@
 
   <nav>
     <ul>
-      {#each links as linkPage (linkPage.slug)}
-        <li class:active={$page.url.pathname === linkPage.href}>
+      {#each linkPages as linkPage (linkPage.slug)}
+        <li class:active={path === linkPage.href}>
           <a sveltekit:prefetch href={linkPage.href}>{linkPage.metadata.title}</a>
         </li>
       {/each}
