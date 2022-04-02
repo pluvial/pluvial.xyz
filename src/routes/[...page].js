@@ -1,4 +1,3 @@
-import { defaults } from '$lib/metadata';
 import { ids, pages, links, backlinks, getPageBacklinks } from '$lib/pages';
 
 const stuff = { ids, pages, links, backlinks };
@@ -12,6 +11,6 @@ export async function get({ params: { page: slug } }) {
     return;
   }
   const page = pages[ids[slug]];
-  const metadata = { ...defaults, ...page.metadata, backlinks: getPageBacklinks(slug) };
+  const metadata = { ...page.metadata, backlinks: getPageBacklinks(slug) };
   return { body: { metadata, path: page.path, stuff } };
 }

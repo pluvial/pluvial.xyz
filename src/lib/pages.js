@@ -1,3 +1,9 @@
+export const defaults = {
+  title: 'pluvial.xyz',
+  author: 'pluvial',
+  description: 'pluvial.xyz',
+};
+
 const prefix = '/content/';
 const suffix = '.md';
 // vite does not support variables in glob imports, but the glob should match
@@ -63,9 +69,9 @@ export const pages = Object.entries(imports).map(([path, module], index) => {
     id: index,
     content,
     href,
-    metadata,
     path,
     slug,
+    metadata: { ...defaults, ...metadata },
     // html,
     // ...(css.code ? { css: css.code } : undefined),
   };
