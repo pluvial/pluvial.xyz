@@ -8,7 +8,8 @@
   const modules = {};
 
   /** @type {import('@sveltejs/kit').Load} */
-  export async function load({ params, props }) {
+  export async function load({ params, props: { metadata, stuff } }) {
+    // fallback to index.md for the '' route
     const slug = params.slug || 'index';
     // build the filename from the folder prefix and extension suffix
     const path = `${prefix}${slug}${suffix}`;
@@ -19,8 +20,8 @@
       return;
     }
     modules[slug] ??= await imports[path]();
-    const module = modules[slug];
-    return { props: { component: module.default, metadata: props.metadata }, stuff: props.stuff };
+    const { default: component } = modules[slug];
+    return { props: { ...metadata, component }, stuff };
   }
 </script>
 
@@ -28,24 +29,21 @@
   /** @type {import('svelte').SvelteComponent} */
   export let component;
 
-  /**
-   * @typedef Metadata
-   * @property {string} title
-   * @property {string} author
-   * @property {string} description
-   * @property {{ href: string, content: string }[]} links
-   * @property {{ href: string, content: string }[]} externalLinks
-   * @property {{ href: string, content: string }[]} backlinks
-   */
+  /** @type {string} */
+  export let title;
+  /** @type {string} */
+  export let author;
+  /** @type {string} */
+  export let description;
 
-  /** @type {Metadata} */
-  export let metadata;
+  /** @typedef {{ href: string, content: string }} Link */
 
-  const defaults = { title: 'pluvial.xyz', author: 'pluvial', description: 'pluvial.xyz' };
-  const { title, author, description, links, externalLinks, backlinks } = {
-    ...defaults,
-    ...metadata,
-  };
+  /** @type {Link[]} */
+  export let links;
+  /** @type {Link[]} */
+  export let externalLinks;
+  /** @type {Link[]} */
+  export let backlinks;
 </script>
 
 <svelte:head>
