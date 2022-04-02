@@ -23,18 +23,15 @@ declare namespace App {
 
 interface Page {
   id: number;
-  title: string;
-  content: string;
   href: string;
   path: string;
   slug: string;
-  metadata: PageMetadata;
-}
 
-interface PageMetadata {
+  content: string;
   title: string;
   author: string;
   description: string;
+
   links: Link[];
   externalLinks: Link[];
   backlinks: Link[];

@@ -51,7 +51,6 @@ export const pages = Object.entries(imports).map(([path, module], index) => {
   // const { default: component, metadata } = module;
   // const { html, css } = component.render();
   const metadata = { ...defaults, ...module.metadata };
-  const { title } = metadata;
   const slug = metadata.slug ?? normalizeSlug(pathToSlug(path));
   const href = slugToHref(slug);
   // collect link slugs into map
@@ -68,12 +67,11 @@ export const pages = Object.entries(imports).map(([path, module], index) => {
   const content = md.slice(Math.max(fmEnd, scriptEnd)).trim();
   return {
     id: index,
-    title,
     content,
     href,
     path,
     slug,
-    metadata,
+    ...metadata,
     // html,
     // ...(css.code ? { css: css.code } : undefined),
   };
@@ -87,9 +85,9 @@ export const ids = Object.fromEntries(pages.map(page => [page.slug, page.id]));
 pages.forEach(page => {
   // get the backlinks for a particular page, deriving the href from the slug,
   // and using the corresponding page title as the backlink content
-  page.metadata.backlinks =
+  page.backlinks =
     backlinks[page.slug]?.map(backlinkSlug => ({
       href: slugToHref(backlinkSlug),
-      content: pages[ids[backlinkSlug]].metadata.title,
+      content: pages[ids[backlinkSlug]].title,
     })) ?? [];
 });

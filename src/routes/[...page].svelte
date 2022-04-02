@@ -7,16 +7,16 @@
 
   /** @type {import('./[...page]').Load} */
   export async function load({ props: { page, stuff } }) {
-    const { metadata, path } = page;
-    if (!(path in imports)) {
+    const { path } = page;
+    if (!(page.path in imports)) {
       // TODO: render fallback content here, use a placeholder page for known
       // links, and a regular page not found otherwise
       console.warn(`Trying to render missing page: ${path}`);
       return;
     }
+    const { title, author, description } = page;
     modules[path] ??= await imports[path]();
     const { default: component } = modules[path];
-    const { title, author, description } = metadata;
     return { props: { title, author, description, component }, stuff: { page, ...stuff } };
   }
 </script>
