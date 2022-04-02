@@ -1,4 +1,4 @@
-import { ids, pages, links, backlinks, getPageBacklinks } from '$lib/pages';
+import { ids, pages, links, backlinks } from '$lib/pages';
 
 const stuff = { ids, pages, links, backlinks };
 
@@ -8,9 +8,7 @@ export async function get({ params: { page: slug } }) {
     // TODO: render fallback content here, use a placeholder page for known
     // links, and a regular page not found otherwise
     console.warn(`Trying to render missing page: ${slug}`);
-    return;
+    return { redirect: '/', status: 303 };
   }
-  const page = pages[ids[slug]];
-  const metadata = { ...page.metadata, backlinks: getPageBacklinks(slug) };
-  return { body: { metadata, path: page.path, stuff } };
+  return { body: { page: pages[ids[slug]], stuff } };
 }

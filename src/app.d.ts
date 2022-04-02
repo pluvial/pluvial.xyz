@@ -16,6 +16,8 @@ declare namespace App {
     pages: Page[];
     links: LinkMap;
     backlinks: LinkMap;
+
+    page: Page;
     metadata: PageMetadata;
   }
 }

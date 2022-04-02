@@ -81,12 +81,13 @@ export const pages = Object.entries(imports).map(([path, module], index) => {
 /** @type {IdMap} */
 export const ids = Object.fromEntries(pages.map(page => [page.slug, page.id]));
 
-/** Get the backlinks for a particular page, deriving the href from the slug, and
- * using the corresponding page title as the backlink content
- * @param {string} slug
- * @returns {Link[]} */
-export const getPageBacklinks = slug =>
-  backlinks[slug]?.map(backlinkSlug => ({
-    href: slugToHref(backlinkSlug),
-    content: pages[ids[backlinkSlug]].metadata.title,
-  })) ?? [];
+// do a second pass over the pages to populate the backlinks
+pages.forEach(page => {
+  // get the backlinks for a particular page, deriving the href from the slug,
+  // and using the corresponding page title as the backlink content
+  page.metadata.backlinks =
+    backlinks[page.slug]?.map(backlinkSlug => ({
+      href: slugToHref(backlinkSlug),
+      content: pages[ids[backlinkSlug]].metadata.title,
+    })) ?? [];
+});

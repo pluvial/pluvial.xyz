@@ -1,6 +1,4 @@
 <script context="module">
-  const prefix = '/content/';
-  const suffix = '.md';
   // vite does not support variables in glob imports, but the glob should match
   // const pattern = `${prefix}*${suffix}`
   const imports = import.meta.glob('/content/*.md');
@@ -8,7 +6,8 @@
   const modules = {};
 
   /** @type {import('./[...page]').Load} */
-  export async function load({ props: { metadata, path, stuff } }) {
+  export async function load({ props: { page, stuff } }) {
+    const { metadata, path } = page;
     if (!(path in imports)) {
       // TODO: render fallback content here, use a placeholder page for known
       // links, and a regular page not found otherwise
