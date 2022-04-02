@@ -50,7 +50,8 @@ export const pages = Object.entries(imports).map(([path, module], index) => {
   // TODO: review, html and css are not currently being used
   // const { default: component, metadata } = module;
   // const { html, css } = component.render();
-  const { metadata } = module;
+  const metadata = { ...defaults, ...module.metadata };
+  const { title } = metadata;
   const slug = metadata.slug ?? normalizeSlug(pathToSlug(path));
   const href = slugToHref(slug);
   // collect link slugs into map
@@ -67,11 +68,12 @@ export const pages = Object.entries(imports).map(([path, module], index) => {
   const content = md.slice(Math.max(fmEnd, scriptEnd)).trim();
   return {
     id: index,
+    title,
     content,
     href,
     path,
     slug,
-    metadata: { ...defaults, ...metadata },
+    metadata,
     // html,
     // ...(css.code ? { css: css.code } : undefined),
   };

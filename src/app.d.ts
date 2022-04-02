@@ -18,12 +18,12 @@ declare namespace App {
     backlinks: LinkMap;
 
     page: Page;
-    metadata: PageMetadata;
   }
 }
 
 interface Page {
   id: number;
+  title: string;
   content: string;
   href: string;
   path: string;

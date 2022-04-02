@@ -17,7 +17,7 @@
     modules[path] ??= await imports[path]();
     const { default: component } = modules[path];
     const { title, author, description } = metadata;
-    return { props: { title, author, description, component }, stuff: { metadata, ...stuff } };
+    return { props: { title, author, description, component }, stuff: { page, ...stuff } };
   }
 </script>
 

@@ -1,7 +1,7 @@
 <script>
   export let stuff;
 
-  $: ({ links, externalLinks, backlinks } = stuff.metadata);
+  $: ({ links, externalLinks, backlinks } = stuff.page.metadata);
 </script>
 
 <footer>
