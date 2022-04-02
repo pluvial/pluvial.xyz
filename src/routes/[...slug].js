@@ -4,7 +4,7 @@ const stuff = { ids, pages, links, backlinks };
 
 /** @type {import('@sveltejs/kit').RequestHandler} */
 export async function get({ params }) {
-  const slug = params.slug || 'index';
+  const { slug } = params;
   if (!(slug in ids)) {
     // TODO: render fallback content here, use a placeholder page for known
     // links, and a regular page not found otherwise

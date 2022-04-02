@@ -10,6 +10,10 @@ const importsRaw = import.meta.globEager('/content/*.md', { as: 'raw' });
 export const pathToSlug = path => path.slice(prefix.length, -suffix.length);
 // const pathToSlug = (path: string) => path.match(/([\w-]+)\.(md|svx)/i)?.[1] ?? null;
 
+/** normalize slug by converting 'index' to the empty slug
+ * @param {string} slug */
+export const normalizeSlug = slug => (slug === 'index' ? '' : slug);
+
 /** derive slug removing the leading '/' from href
  * @param {string} href */
 export const hrefToSlug = href => href.slice(1);
@@ -36,7 +40,7 @@ export const pages = Object.entries(imports).map(([path, module], index) => {
   // const { default: component, metadata } = module;
   // const { html, css } = component.render();
   const { metadata } = module;
-  const slug = metadata.slug ?? pathToSlug(path);
+  const slug = metadata.slug ?? normalizeSlug(pathToSlug(path));
   const href = slugToHref(slug);
   // collect link slugs into map
   links[slug] = metadata.links.map(({ href }) => hrefToSlug(href));
