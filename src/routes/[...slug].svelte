@@ -3,41 +3,30 @@
   const suffix = '.md';
   // vite does not support variables in glob imports, but the glob should match
   // const pattern = `${prefix}*${suffix}`
-  const importsPosts = import.meta.glob('/content/*.md');
+  const imports = import.meta.glob('/content/*.md');
   // resolved imports map indexed by slug
-  const resolvedPosts = {};
+  const modules = {};
 
   /** @type {import('@sveltejs/kit').Load} */
-  export async function load({ params, stuff, url }) {
-    const { ids, posts, backlinks } = stuff;
+  export async function load({ params, props }) {
     const slug = params.slug || 'index';
     // build the filename from the folder prefix and extension suffix
     const file = `${prefix}${slug}${suffix}`;
-    if (file in importsPosts) {
-      resolvedPosts[slug] ??= await importsPosts[file]();
-      const module = resolvedPosts[slug];
-      // merge metadata from .md module (frontmatter), and derived metadata calculated
-      // in $lib/posts.js, exposed via the posts.json endpoint
-      const metadata = {
-        ...module.metadata,
-        ...posts[ids[slug]].metadata,
-        // get the backlinks for this particular page, deriving the href from the slug,
-        // and using the corresponding page title as the backlink content
-        backlinks:
-          backlinks[slug]?.map(link => ({
-            href: `/${link}`,
-            content: posts[ids[link]].metadata.title,
-          })) ?? [],
-      };
-      return { props: { component: module.default, metadata, path: url.pathname, stuff } };
+    if (!(file in imports)) {
+      // TODO: render fallback content here, use a placeholder page for known
+      // links, and a regular page not found otherwise
+      console.warn(`Trying to render missing page: ${slug}, did not find ${file}`);
+      return;
     }
-    // TODO: render fallback content here, use a placeholder page for known links,
-    // and a regular page not found otherwise
-    console.warn(`Trying to render missing page: ${slug}, did not find ${file}`);
+    modules[slug] ??= await imports[file]();
+    const module = modules[slug];
+    return { props: { ...props, component: module.default }, stuff: props.stuff };
   }
 </script>
 
 <script>
+  import { page } from '$app/stores';
+
   /** @type {import('svelte').SvelteComponent} */
   export let component;
 
@@ -53,9 +42,6 @@
 
   /** @type {Metadata} */
   export let metadata;
-
-  /** @type {string} */
-  export let path;
 
   /**
    * @typedef Stuff
@@ -80,7 +66,7 @@
   <meta name="description" content={description} />
 </svelte:head>
 
-{#if path === '/'}
+{#if $page.url.pathname === '/'}
   <section>
     <svelte:component this={component} />
 

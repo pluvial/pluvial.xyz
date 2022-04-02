@@ -29,6 +29,7 @@ const config = {
         adapter(),
     prerender: {
       default: true,
+      entries: ['/'],
     },
     vite: {
       plugins: [zig()],

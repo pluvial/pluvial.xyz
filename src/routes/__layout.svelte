@@ -1,12 +1,7 @@
 <script context="module">
-  // cached to avoid fetching (even if from cache) on every page navigation
-  let promise;
-
   /** @type {import('@sveltejs/kit').Load} */
-  export async function load({ fetch, url }) {
-    promise ??= fetch('/posts.json').then(response => response.json());
-    const { ids, posts, links, backlinks } = await promise;
-    return { props: { path: url.pathname, posts }, stuff: { ids, posts, links, backlinks } };
+  export async function load({ url }) {
+    return { props: { path: url.pathname } };
   }
 </script>
 
@@ -14,6 +9,7 @@
   import { cubicIn, cubicOut } from 'svelte/easing';
   import { fade } from 'svelte/transition';
   import { goto } from '$app/navigation';
+  import { page } from '$app/stores';
   import Header from '$lib/header/Header.svelte';
   import Search from '$lib/Search.svelte';
   import Switcher from '$lib/Switcher.svelte';
@@ -23,10 +19,11 @@
   /** @type {string} */
   export let path;
 
-  export let posts;
+  $: posts = $page.stuff.posts;
 
-  const duration = 200;
+  const duration = 150;
   const delay = duration + 50;
+
   /** @type {import('svelte/transition').FadeParams} */
   const transitionIn = { duration, delay, easing: cubicOut };
   /** @type {import('svelte/transition').FadeParams} */
