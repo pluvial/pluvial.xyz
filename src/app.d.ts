@@ -24,6 +24,7 @@ interface Page {
   id: number;
   content: string;
   href: string;
+  path: string;
   slug: string;
   metadata: PageMetadata;
 }

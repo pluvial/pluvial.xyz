@@ -5,6 +5,11 @@ const suffix = '.md';
 const imports = import.meta.globEager('/content/*.md');
 const importsRaw = import.meta.globEager('/content/*.md', { as: 'raw' });
 
+/** derive the file path from the corresponding slug, and the base folder prefix
+ * and extension suffix, redirecting '' -> index
+ * @param {string} slug */
+export const slugToPath = slug => `${prefix}${slug || 'index'}${suffix}`;
+
 /** derive slug by slicing the prefix and suffix from the path
  * @param {string} path */
 export const pathToSlug = path => path.slice(prefix.length, -suffix.length);
@@ -59,6 +64,7 @@ export const pages = Object.entries(imports).map(([path, module], index) => {
     content,
     href,
     metadata,
+    path,
     slug,
     // html,
     // ...(css.code ? { css: css.code } : undefined),

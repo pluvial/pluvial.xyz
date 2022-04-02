@@ -4,23 +4,19 @@
   // vite does not support variables in glob imports, but the glob should match
   // const pattern = `${prefix}*${suffix}`
   const imports = import.meta.glob('/content/*.md');
-  // resolved imports map indexed by slug
+  // resolved imports map indexed by path
   const modules = {};
 
   /** @type {import('./[...slug]').Load} */
-  export async function load({ params, props: { metadata, stuff } }) {
-    // fallback to index.md for the '' route
-    const slug = params.slug || 'index';
-    // build the filename from the folder prefix and extension suffix
-    const path = `${prefix}${slug}${suffix}`;
+  export async function load({ props: { metadata, path, stuff } }) {
     if (!(path in imports)) {
       // TODO: render fallback content here, use a placeholder page for known
       // links, and a regular page not found otherwise
-      console.warn(`Trying to render missing page: ${slug}, did not find ${path}`);
+      console.warn(`Trying to render missing page: ${path}`);
       return;
     }
-    modules[slug] ??= await imports[path]();
-    const { default: component } = modules[slug];
+    modules[path] ??= await imports[path]();
+    const { default: component } = modules[path];
     const { title, author, description } = metadata;
     return { props: { title, author, description, component }, stuff: { metadata, ...stuff } };
   }

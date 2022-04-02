@@ -14,5 +14,5 @@ export async function get({ params }) {
   }
   const page = pages[ids[slug]];
   const metadata = { ...defaults, ...page.metadata, backlinks: getPageBacklinks(slug) };
-  return { body: { metadata, stuff } };
+  return { body: { metadata, path: page.path, stuff } };
 }
