@@ -1,4 +1,4 @@
-import { ids, posts, links, backlinks } from '$lib/posts';
+import { ids, posts, links, backlinks, getPostBacklinks } from '$lib/posts';
 
 const stuff = { ids, posts, links, backlinks };
 
@@ -14,13 +14,7 @@ export async function get({ params }) {
   const post = posts[ids[slug]];
   const metadata = {
     ...post.metadata,
-    // get the backlinks for this particular page, deriving the href from the
-    // slug, and using the corresponding page title as the backlink content
-    backlinks:
-      backlinks[slug]?.map(link => ({
-        href: `/${link}`,
-        content: posts[ids[link]].metadata.title,
-      })) ?? [],
+    backlinks: getPostBacklinks(slug),
   };
   return { body: { metadata, stuff } };
 }

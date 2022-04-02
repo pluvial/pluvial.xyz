@@ -5,15 +5,19 @@ const suffix = '.md';
 const imports = import.meta.globEager('/content/*.md');
 const importsRaw = import.meta.globEager('/content/*.md', { as: 'raw' });
 
-// derive slug by slicing the prefix and suffix from the path
-const pathToSlug = path => path.slice(prefix.length, -suffix.length);
+/** derive slug by slicing the prefix and suffix from the path
+ * @param {string} path */
+export const pathToSlug = path => path.slice(prefix.length, -suffix.length);
 // const pathToSlug = (path: string) => path.match(/([\w-]+)\.(md|svx)/i)?.[1] ?? null;
 
-// derive slug removing the leading '/' from href
-const hrefToSlug = href => href.slice(1);
+/** derive slug removing the leading '/' from href
+ * @param {string} href */
+export const hrefToSlug = href => href.slice(1);
 
-// derive href adding the leading '/' to slug
-const slugToHref = slug => `/${slug}`;
+//
+/** derive href adding the leading '/' to slug
+ * @param {string} slug */
+export const slugToHref = slug => `/${slug}`;
 
 // YAML frontmatter marker
 const fmMarker = '---\n';
@@ -61,3 +65,11 @@ export const posts = Object.entries(imports).map(([path, module], index) => {
 
 // map of post ids indexed by slug
 export const ids = Object.fromEntries(posts.map(post => [post.slug, post.id]));
+
+// get the backlinks for a particular page, deriving the href from the slug, and
+// using the corresponding page title as the backlink content
+export const getPostBacklinks = (/** @type {string} */ slug) =>
+  backlinks[slug]?.map(backlinkSlug => ({
+    href: slugToHref(backlinkSlug),
+    content: posts[ids[backlinkSlug]].metadata.title,
+  })) ?? [];
