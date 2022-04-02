@@ -11,10 +11,7 @@
   import { fade } from 'svelte/transition';
   import { goto } from '$app/navigation';
   import { page } from '$app/stores';
-  import Footer from '$lib/Footer.svelte';
-  import Header from '$lib/Header.svelte';
-  import Search from '$lib/Search.svelte';
-  import Switcher from '$lib/Switcher.svelte';
+  import { Footer, Header, Search, Switcher } from '$lib/components';
   import '$lib/prism-themes/prism-xonokai.css';
   import '../app.css';
 
