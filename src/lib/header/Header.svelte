@@ -49,24 +49,16 @@
     object-fit: contain;
   }
 
-  nav {
-    display: flex;
-    justify-content: center;
-  }
-
   ul {
-    position: relative;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     list-style: none;
   }
 
   li {
     position: relative;
-    height: 100%;
+    display: inline-block;
+    margin-left: 1em;
   }
 
   li.active::before {
@@ -83,9 +75,8 @@
 
   nav a {
     display: flex;
-    height: 100%;
     align-items: center;
-    padding: 0 1em;
+    padding: 0 0;
     font-weight: 700;
     font-size: 0.8rem;
     text-transform: uppercase;
