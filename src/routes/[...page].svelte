@@ -7,7 +7,7 @@
   // resolved imports map indexed by path
   const modules = {};
 
-  /** @type {import('./[...slug]').Load} */
+  /** @type {import('./[...page]').Load} */
   export async function load({ props: { metadata, path, stuff } }) {
     if (!(path in imports)) {
       // TODO: render fallback content here, use a placeholder page for known
