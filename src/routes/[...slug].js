@@ -1,6 +1,6 @@
-import { ids, posts, links, backlinks, getPostBacklinks } from '$lib/posts';
+import { ids, pages, links, backlinks, getPageBacklinks } from '$lib/pages';
 
-const stuff = { ids, posts, links, backlinks };
+const stuff = { ids, pages, links, backlinks };
 
 /** @type {import('@sveltejs/kit').RequestHandler} */
 export async function get({ params }) {
@@ -11,10 +11,10 @@ export async function get({ params }) {
     console.warn(`Trying to render missing page: ${slug}`);
     return;
   }
-  const post = posts[ids[slug]];
+  const page = pages[ids[slug]];
   const metadata = {
-    ...post.metadata,
-    backlinks: getPostBacklinks(slug),
+    ...page.metadata,
+    backlinks: getPageBacklinks(slug),
   };
   return { body: { metadata, stuff } };
 }

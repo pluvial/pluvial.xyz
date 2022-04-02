@@ -30,8 +30,8 @@ export const links = {};
 /** @type {{ [key: string]: string[]}} */
 export const backlinks = {};
 
-// list of posts in file-alphabetical order
-export const posts = Object.entries(imports).map(([path, module], index) => {
+// list of pages in file-alphabetical order
+export const pages = Object.entries(imports).map(([path, module], index) => {
   // TODO: review, html and css are not currently being used
   // const { default: component, metadata } = module;
   // const { html, css } = component.render();
@@ -63,13 +63,13 @@ export const posts = Object.entries(imports).map(([path, module], index) => {
   };
 });
 
-// map of post ids indexed by slug
-export const ids = Object.fromEntries(posts.map(post => [post.slug, post.id]));
+// map of page ids indexed by slug
+export const ids = Object.fromEntries(pages.map(page => [page.slug, page.id]));
 
 // get the backlinks for a particular page, deriving the href from the slug, and
 // using the corresponding page title as the backlink content
-export const getPostBacklinks = (/** @type {string} */ slug) =>
+export const getPageBacklinks = (/** @type {string} */ slug) =>
   backlinks[slug]?.map(backlinkSlug => ({
     href: slugToHref(backlinkSlug),
-    content: posts[ids[backlinkSlug]].metadata.title,
+    content: pages[ids[backlinkSlug]].metadata.title,
   })) ?? [];

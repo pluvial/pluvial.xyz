@@ -11,14 +11,14 @@
   export async function load({ params, props }) {
     const slug = params.slug || 'index';
     // build the filename from the folder prefix and extension suffix
-    const file = `${prefix}${slug}${suffix}`;
-    if (!(file in imports)) {
+    const path = `${prefix}${slug}${suffix}`;
+    if (!(path in imports)) {
       // TODO: render fallback content here, use a placeholder page for known
       // links, and a regular page not found otherwise
-      console.warn(`Trying to render missing page: ${slug}, did not find ${file}`);
+      console.warn(`Trying to render missing page: ${slug}, did not find ${path}`);
       return;
     }
-    modules[slug] ??= await imports[file]();
+    modules[slug] ??= await imports[path]();
     const module = modules[slug];
     return { props: { ...props, component: module.default }, stuff: props.stuff };
   }
@@ -45,7 +45,7 @@
 
   /**
    * @typedef Stuff
-   * @property {{ metadata: { title: string, description: string }, slug: string }[]} posts
+   * @property {{ metadata: { title: string, description: string }, slug: string }[]} pages
    * @property {{ [slug: string]: string[] }} links
    * @property {{ [slug: string]: string[] }} backlinks
    * 
@@ -73,9 +73,9 @@
     <!-- render page index -->
     <h2>Pages</h2>
     <ul>
-      {#each stuff.posts as post (post.slug)}
+      {#each stuff.pages as page (page.slug)}
         <li>
-          <a sveltekit:prefetch href="/{post.slug}">{post.metadata.title}</a>
+          <a sveltekit:prefetch href="/{page.slug}">{page.metadata.title}</a>
         </li>
       {/each}
     </ul>

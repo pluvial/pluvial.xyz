@@ -1,6 +1,7 @@
 <script context="module">
   /** @type {import('@sveltejs/kit').Load} */
   export async function load({ url }) {
+    // route transitions do not work correctly when using only $page.url.pathname
     return { props: { path: url.pathname } };
   }
 </script>
@@ -19,8 +20,6 @@
   /** @type {string} */
   export let path;
 
-  $: posts = $page.stuff.posts;
-
   const duration = 150;
   const delay = duration + 50;
 
@@ -34,7 +33,7 @@
 
 <Header />
 
-<Search documents={posts} on:select={e => goto(e.detail.href)} />
+<Search documents={$page.stuff.pages} on:select={e => goto(e.detail.href)} />
 
 <main>
   {#key path}
