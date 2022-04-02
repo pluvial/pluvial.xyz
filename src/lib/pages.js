@@ -18,7 +18,6 @@ export const normalizeSlug = slug => (slug === 'index' ? '' : slug);
  * @param {string} href */
 export const hrefToSlug = href => href.slice(1);
 
-//
 /** derive href adding the leading '/' to slug
  * @param {string} slug */
 export const slugToHref = slug => `/${slug}`;
@@ -29,12 +28,13 @@ const fmMarker = '---\n';
 const scriptMarker = '</script>';
 
 // maps of links and backlinks indexed by slug
-/** @type {{ [key: string]: string[]}} */
+/** @type {LinkMap} */
 export const links = {};
-/** @type {{ [key: string]: string[]}} */
+/** @type {LinkMap}} */
 export const backlinks = {};
 
 // list of pages in file-alphabetical order
+/** @type {Page[]} */
 export const pages = Object.entries(imports).map(([path, module], index) => {
   // TODO: review, html and css are not currently being used
   // const { default: component, metadata } = module;
@@ -66,11 +66,14 @@ export const pages = Object.entries(imports).map(([path, module], index) => {
 });
 
 // map of page ids indexed by slug
+/** @type {IdMap} */
 export const ids = Object.fromEntries(pages.map(page => [page.slug, page.id]));
 
-// get the backlinks for a particular page, deriving the href from the slug, and
-// using the corresponding page title as the backlink content
-export const getPageBacklinks = (/** @type {string} */ slug) =>
+/** Get the backlinks for a particular page, deriving the href from the slug, and
+ * using the corresponding page title as the backlink content
+ * @param {string} slug
+ * @returns {Link[]} */
+export const getPageBacklinks = slug =>
   backlinks[slug]?.map(backlinkSlug => ({
     href: slugToHref(backlinkSlug),
     content: pages[ids[backlinkSlug]].metadata.title,

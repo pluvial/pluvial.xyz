@@ -12,10 +12,10 @@ declare namespace App {
   // interface Session {}
 
   interface Stuff {
-    ids: { [slug: string]: number };
+    ids: IdMap;
     pages: Page[];
-    links: { [slug: string]: string[] };
-    backlinks: { [slug: string]: string[] };
+    links: LinkMap;
+    backlinks: LinkMap;
     metadata: PageMetadata;
   }
 }
@@ -37,7 +37,15 @@ interface PageMetadata {
   backlinks: Link[];
 }
 
+interface IdMap {
+  [slug: string]: number;
+}
+
 interface Link {
   href: string;
   content: string;
+}
+
+interface LinkMap {
+  [slug: string]: string[];
 }
