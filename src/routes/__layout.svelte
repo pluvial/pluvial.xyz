@@ -11,6 +11,7 @@
   import { fade } from 'svelte/transition';
   import { goto } from '$app/navigation';
   import { page } from '$app/stores';
+  import Footer from '$lib/Footer.svelte';
   import Header from '$lib/header/Header.svelte';
   import Search from '$lib/Search.svelte';
   import Switcher from '$lib/Switcher.svelte';
@@ -39,7 +40,7 @@
   {#key path}
     <div class="container" in:fade={transitionIn} out:fade={transitionOut}>
       <slot />
-      <pre><code>{JSON.stringify($page.stuff, null, 2)}</code></pre>
+      <Footer stuff={$page.stuff} />
     </div>
   {/key}
 </main>
