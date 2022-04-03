@@ -1,3 +1,7 @@
+---
+title: Server frameworks
+---
+
 # Server frameworks
 
 [Inertia.js - The Modern Monolith](https://inertiajs.com/)

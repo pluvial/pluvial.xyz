@@ -1,3 +1,7 @@
+---
+title: Computer Graphics
+---
+
 # Computer Graphics
 
 ## General

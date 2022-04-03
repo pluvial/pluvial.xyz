@@ -1,3 +1,7 @@
+---
+title: Security
+---
+
 # Security
 
 [[wargames-ctf|Wargames and CTF]]

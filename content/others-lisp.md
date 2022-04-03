@@ -1,3 +1,7 @@
+---
+title: Others
+---
+
 # Others
 
 [PicoLisp](https://picolisp.com/wiki/?home)

@@ -1,3 +1,7 @@
+---
+title: Data fetching
+---
+
 # Data fetching
 
 ## Fetch

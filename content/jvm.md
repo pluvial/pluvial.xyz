@@ -1,3 +1,7 @@
+---
+title: JVM
+---
+
 # JVM
 
 [GraalVM](https://www.graalvm.org/)

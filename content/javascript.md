@@ -1,3 +1,7 @@
+---
+title: JavaScript
+---
+
 # JavaScript
 
 [[data-fetching|Data fetching]]

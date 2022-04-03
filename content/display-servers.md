@@ -1,3 +1,7 @@
+---
+title: Display Servers
+---
+
 # Display Servers
 
 [[wayland|Wayland]]

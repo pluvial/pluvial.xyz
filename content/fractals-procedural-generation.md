@@ -1,3 +1,7 @@
+---
+title: Fractals and Procedural Generation
+---
+
 # Fractals and Procedural Generation
 
 [kchapelier/procedural-generation](https://github.com/kchapelier/procedural-generation)

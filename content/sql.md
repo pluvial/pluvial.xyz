@@ -1,3 +1,7 @@
+---
+title: SQL
+---
+
 # SQL
 
 [Part II. The SQL Language](https://www.postgresql.org/docs/13/sql.html)

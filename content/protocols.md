@@ -1,3 +1,7 @@
+---
+title: Protocols
+---
+
 # Protocols
 
 [[ableton-link|Ableton Link]]

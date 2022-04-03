@@ -1,3 +1,7 @@
+---
+title: SVG
+---
+
 # SVG
 
 [https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Introduction](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Introduction)

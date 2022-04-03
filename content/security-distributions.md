@@ -1,3 +1,7 @@
+---
+title: Security Distributions
+---
+
 # Security Distributions
 
 [Our Most Advanced Penetration Testing Distribution, Ever.](https://www.kali.org/)

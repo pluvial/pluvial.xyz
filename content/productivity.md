@@ -1,3 +1,7 @@
+---
+title: Productivity
+---
+
 # Productivity
 
 [[notion|Notion]]

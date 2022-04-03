@@ -1,3 +1,7 @@
+---
+title: WebGPU
+---
+
 # WebGPU
 
 [WebGPU](https://gpuweb.github.io/gpuweb/)

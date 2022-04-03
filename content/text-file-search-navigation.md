@@ -1,3 +1,7 @@
+---
+title: Text/File Search and Navigation
+---
+
 # Text/File Search and Navigation
 
 ## Text and file search

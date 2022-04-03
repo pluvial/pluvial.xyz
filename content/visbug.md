@@ -1,3 +1,7 @@
+---
+title: VisBug
+---
+
 # VisBug
 
 [VisBug](https://chrome.google.com/webstore/detail/visbug/cdockenadnadldjbbgcallicgledbeoc)

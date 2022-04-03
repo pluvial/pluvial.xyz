@@ -1,3 +1,7 @@
+---
+title: Observability, Logging and Monitoring
+---
+
 # Observability, Logging and Monitoring
 
 [Datadog](https://www.datadoghq.com/)

@@ -1,3 +1,7 @@
+---
+title: Video Editing and Synthesis
+---
+
 # Video Editing and Synthesis
 
 [Lumen - Analog-Style Software Video Synth](https://lumen-app.com/)

@@ -1,3 +1,7 @@
+---
+title: Web and Async
+---
+
 # Web and Async
 
 [flosse/rust-web-framework-comparison](https://github.com/flosse/rust-web-framework-comparison)

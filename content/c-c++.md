@@ -1,3 +1,7 @@
+---
+title: C and C++
+---
+
 # C and C++
 
 [GCC, the GNU Compiler Collection](https://gcc.gnu.org/)

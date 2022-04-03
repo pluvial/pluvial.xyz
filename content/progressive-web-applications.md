@@ -1,3 +1,7 @@
+---
+title: Progressive Web Applications (PWAs)
+---
+
 # Progressive Web Applications (PWAs)
 
 [Progressive web apps (PWAs)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)

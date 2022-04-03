@@ -1,3 +1,7 @@
+---
+title: Common LISP
+---
+
 # Common LISP
 
 [Welcome to Common-Lisp.net](https://common-lisp.net/)

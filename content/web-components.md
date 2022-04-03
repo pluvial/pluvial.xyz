@@ -1,3 +1,7 @@
+---
+title: Web Components
+---
+
 # Web Components
 
 [Website](https://www.webcomponents.org/)

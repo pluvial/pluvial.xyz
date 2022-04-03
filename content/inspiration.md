@@ -1,3 +1,7 @@
+---
+title: Inspiration
+---
+
 # Inspiration
 
 [Dribbble - Discover the World's Top Designers & Creative Professionals](https://dribbble.com/)

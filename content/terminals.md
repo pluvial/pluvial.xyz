@@ -1,3 +1,7 @@
+---
+title: Terminals
+---
+
 # Terminals
 
 [iTerm2 - macOS Terminal Replacement](https://www.iterm2.com/)

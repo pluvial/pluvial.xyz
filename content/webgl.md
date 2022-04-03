@@ -1,3 +1,7 @@
+---
+title: WebGL
+---
+
 # WebGL
 
 [WebGL - OpenGL ES for the Web](https://www.khronos.org/webgl/)

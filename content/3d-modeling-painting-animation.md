@@ -1,3 +1,7 @@
+---
+title: 3D Modeling, Painting, Animation
+---
+
 # 3D Modeling, Painting, Animation
 
 ## Blender

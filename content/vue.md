@@ -1,3 +1,7 @@
+---
+title: Vue
+---
+
 # Vue
 
 ## Resources

@@ -1,3 +1,7 @@
+---
+title: Design Systems
+---
+
 # Design Systems
 
 [BRAID](https://seek-oss.github.io/braid-design-system/)

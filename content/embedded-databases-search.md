@@ -1,3 +1,7 @@
+---
+title: Embedded Databases and Search
+---
+
 # Embedded Databases and Search
 
 [PouchDB, the JavaScript Database that Syncs!](https://pouchdb.com/)

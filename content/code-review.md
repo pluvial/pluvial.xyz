@@ -1,3 +1,7 @@
+---
+title: Code Review
+---
+
 # Code Review
 
 [Stickler CI - Automated Code Review from your Coding Standards Stickler](https://stickler-ci.com/)

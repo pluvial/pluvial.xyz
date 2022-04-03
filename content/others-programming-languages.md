@@ -1,3 +1,7 @@
+---
+title: Others
+---
+
 # Others
 
 [Languish - Programming Language Trends](https://tjpalmer.github.io/languish/)

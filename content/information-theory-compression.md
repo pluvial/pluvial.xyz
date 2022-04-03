@@ -1,3 +1,7 @@
+---
+title: Information Theory and Compression
+---
+
 # Information Theory and Compression
 
 [LZ4](https://lz4.github.io/lz4/)

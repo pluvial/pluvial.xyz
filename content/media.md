@@ -1,3 +1,7 @@
+---
+title: Media
+---
+
 # Media
 
 ## Audio, Video & Games

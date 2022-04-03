@@ -1,3 +1,7 @@
+---
+title: Algorithms
+---
+
 # Algorithms
 
 ## General

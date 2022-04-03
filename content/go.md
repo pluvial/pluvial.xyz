@@ -1,3 +1,7 @@
+---
+title: Go
+---
+
 # Go
 
 [The Go Programming Language](https://golang.org/)

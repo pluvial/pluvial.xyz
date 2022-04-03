@@ -1,3 +1,7 @@
+---
+title: Colors
+---
+
 # Colors
 
 [Color Palette Generator - Create Beautiful Color Schemes](https://colors.muz.li/)

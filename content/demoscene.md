@@ -1,3 +1,7 @@
+---
+title: Demoscene
+---
+
 # Demoscene
 
 [hg_sdf](http://mercury.sexy/hg_sdf/)

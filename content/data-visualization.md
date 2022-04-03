@@ -1,3 +1,7 @@
+---
+title: Data Visualization
+---
+
 # Data Visualization
 
 ## Libraries

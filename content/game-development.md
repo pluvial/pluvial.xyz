@@ -1,3 +1,7 @@
+---
+title: Game Development
+---
+
 # Game Development
 
 [[game-networking|Game Networking]]

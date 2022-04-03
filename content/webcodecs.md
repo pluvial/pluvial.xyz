@@ -1,3 +1,7 @@
+---
+title: WebCodecs
+---
+
 # WebCodecs
 
 [WICG/web-codecs](https://github.com/WICG/web-codecs)

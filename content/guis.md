@@ -1,3 +1,7 @@
+---
+title: GUIs
+---
+
 # GUIs
 
 [7GUIs](https://eugenkiss.github.io/7guis/)

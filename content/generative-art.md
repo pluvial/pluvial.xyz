@@ -1,3 +1,7 @@
+---
+title: Generative Art
+---
+
 # Generative Art
 
 [r/generative](https://www.reddit.com/r/generative/)

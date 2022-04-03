@@ -1,3 +1,7 @@
+---
+title: JSON RPC
+---
+
 # JSON RPC
 
 [https://www.jsonrpc.org/specification](https://www.jsonrpc.org/specification)

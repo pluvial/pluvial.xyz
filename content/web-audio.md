@@ -1,3 +1,7 @@
+---
+title: Web Audio
+---
+
 # Web Audio
 
 [notthetup/awesome-webaudio](https://github.com/notthetup/awesome-webaudio)

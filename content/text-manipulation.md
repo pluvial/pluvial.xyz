@@ -1,3 +1,7 @@
+---
+title: Text Manipulation
+---
+
 # Text Manipulation
 
 [dbohdan/structured-text-tools](https://github.com/dbohdan/structured-text-tools)

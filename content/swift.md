@@ -1,3 +1,7 @@
+---
+title: Swift
+---
+
 # Swift
 
 [https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html)

@@ -1,3 +1,7 @@
+---
+title: Nix
+---
+
 # Nix
 
 [NixOS - NixOS Linux](https://nixos.org/)

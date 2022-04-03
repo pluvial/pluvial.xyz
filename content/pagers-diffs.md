@@ -1,3 +1,7 @@
+---
+title: Pagers and Diffs
+---
+
 # Pagers and Diffs
 
 ## Pagers

@@ -1,3 +1,7 @@
+---
+title: Haskell
+---
+
 # Haskell
 
 [Kowainik - Haskell mini-patterns handbook](https://kowainik.github.io/posts/haskell-mini-patterns)

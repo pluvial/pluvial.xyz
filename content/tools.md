@@ -1,3 +1,7 @@
+---
+title: Tools
+---
+
 # Tools
 
 [[cli-terminal-utilities|CLI and Terminal Utilities]]

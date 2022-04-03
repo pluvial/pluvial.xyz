@@ -1,3 +1,7 @@
+---
+title: Web APIs
+---
+
 # Web APIs
 
 [HTML 5 JavaScript API Index](http://html5index.org/)

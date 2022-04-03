@@ -1,3 +1,7 @@
+---
+title: CSS in JS
+---
+
 # CSS in JS
 
 [MicheleBertoli/css-in-js](https://github.com/MicheleBertoli/css-in-js)

@@ -1,3 +1,7 @@
+---
+title: Elixir & Erlang
+---
+
 # Elixir & Erlang
 
 [[phoenix|Phoenix]]

@@ -1,3 +1,7 @@
+---
+title: Zig
+---
+
 # Zig
 
 [The Zig Programming Language](https://ziglang.org/)

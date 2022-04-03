@@ -1,3 +1,7 @@
+---
+title: GUIs
+---
+
 # GUIs
 
 [Are we GUI yet?](https://areweguiyet.com/)

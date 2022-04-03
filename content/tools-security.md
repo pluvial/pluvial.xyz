@@ -1,3 +1,7 @@
+---
+title: Tools
+---
+
 # Tools
 
 [Z4nzu/hackingtool](https://github.com/Z4nzu/hackingtool)

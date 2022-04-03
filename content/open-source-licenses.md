@@ -1,3 +1,7 @@
+---
+title: Open Source and Licenses
+---
+
 # Open Source and Licenses
 
 [GitHub - MunGell/awesome-for-beginners: A list of awesome beginners-friendly projects.](https://github.com/MunGell/awesome-for-beginners)

@@ -1,3 +1,7 @@
+---
+title: OSC
+---
+
 # OSC
 
 [Introduction to OSC | opensoundcontrol.org](http://opensoundcontrol.org/introduction-osc)

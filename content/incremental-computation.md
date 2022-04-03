@@ -1,3 +1,7 @@
+---
+title: Incremental Computation
+---
+
 # Incremental Computation
 
 [Adapton](http://adapton.org/)
