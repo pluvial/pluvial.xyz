@@ -1,7 +1,6 @@
 export const defaults = {
   title: 'pluvial.xyz',
   author: 'pluvial',
-  description: 'pluvial.xyz',
 };
 
 const prefix = '/content/';
@@ -65,13 +64,15 @@ export const pages = Object.entries(imports).map(([path, module], index) => {
   const scriptEnd = md.lastIndexOf(scriptMarker) + scriptMarker.length;
   // TODO: index html text elements only?
   const content = md.slice(Math.max(fmEnd, scriptEnd)).trim();
+  const description = metadata.description ?? content.split('\n').slice(0, 3).join('\n');
   return {
+    ...metadata,
     id: index,
     content,
+    description,
     href,
     path,
     slug,
-    ...metadata,
     // html,
     // ...(css.code ? { css: css.code } : undefined),
   };

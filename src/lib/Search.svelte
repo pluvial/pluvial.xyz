@@ -91,7 +91,7 @@
 
   {#if results.length > 0}
     <ul>
-      {#each results as { title, content, description, href }, index}
+      {#each results as { title, description, href }, index}
         <li>
           <a
             {href}
@@ -103,7 +103,7 @@
             }}
           >
             {title}
-            <pre>{description ?? content.split('\n').slice(0, 3).join('\n')}</pre>
+            <pre>{description}</pre>
           </a>
         </li>
       {/each}
