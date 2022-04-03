@@ -51,7 +51,13 @@
     object-fit: contain;
   }
 
+  nav {
+    width: 100%;
+    overflow: scroll;
+  }
+
   ul {
+    width: max-content;
     padding: 0;
     margin: 0;
     list-style: none;
