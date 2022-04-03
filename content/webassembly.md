@@ -1,6 +1,6 @@
 # WebAssembly (Wasm)
 
-[WASI](WebAssembl%203f86c/WASI%20c5b97.md)
+[[wasi|WASI]]
 
 [WebAssembly](https://webassembly.org/)
 

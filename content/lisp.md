@@ -1,16 +1,16 @@
 # LISP
 
-[Clojure](LISP%2031b89/Clojure%208b598.md)
+[[clojure|Clojure]]
 
-[ClojureScript](LISP%2031b89/ClojureScr%2065885.md)
+[[clojurescript|ClojureScript]]
 
-[Common LISP](LISP%2031b89/Common%20LIS%208eb98.md)
+[[common-lisp|Common LISP]]
 
-[Racket](LISP%2031b89/Racket%200347d.md)
+[[racket|Racket]]
 
-[Scheme](LISP%2031b89/Scheme%206b663.md)
+[[scheme|Scheme]]
 
-[Others](LISP%2031b89/Others%20e19d3.md)
+[[others-lisp|Others]]
 
 ## General
 

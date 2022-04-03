@@ -2,25 +2,25 @@
 
 ## UI & UX Design
 
-[Learning](Design%2034e73/Learning%20b28fe.md)
+[[learning-design|Learning]]
 
-[Inspiration](Design%2034e73/Inspiratio%20ff1a1.md)
+[[inspiration|Inspiration]]
 
-[Colors](Design%2034e73/Colors%2010e8c.md)
+[[colors|Colors]]
 
-[Fonts](Design%2034e73/Fonts%20ceaed.md)
+[[fonts|Fonts]]
 
-[Logos](Design%2034e73/Logos%20c4809.md)
+[[logos|Logos]]
 
-[Design Systems](Design%2034e73/Design%20Sys%205c9f1.md)
+[[design-systems|Design Systems]]
 
-[Adobe XD](Design%2034e73/Adobe%20XD%20699cf.md)
+[[adobe-xd|Adobe XD]]
 
-[Figma](Design%2034e73/Figma%207f73a.md)
+[[figma|Figma]]
 
-[Invision](Design%2034e73/Invision%2058a4d.md)
+[[invision|Invision]]
 
-[Others](Design%2034e73/Others%2085387.md)
+[[others-design|Others]]
 
 [Design Systems articles on building and maintaining design systems](https://www.designsystems.com/)
 

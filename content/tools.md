@@ -1,22 +1,22 @@
 # Tools
 
-[CLI and Terminal Utilities](Tools%209e8dc/CLI%20and%20Te%20186ca.md)
+[[cli-terminal-utilities|CLI and Terminal Utilities]]
 
-[Productivity](Tools%209e8dc/Productivi%201c1f9.md)
+[[productivity|Productivity]]
 
-[REPLs and Editors](Tools%209e8dc/REPLs%20and%20%208fbf8.md)
+[[repls-editors|REPLs and Editors]]
 
-[Text Editors](Tools%209e8dc/Text%20Edito%206095e.md)
+[[text-editors|Text Editors]]
 
-[Image and Photo Editors](Tools%209e8dc/Image%20and%20%205cc0f.md)
+[[image-photo-editors|Image and Photo Editors]]
 
-[Browsers](Tools%209e8dc/Browsers%20d87b6.md)
+[[browsers|Browsers]]
 
-[Build Systems](Tools%209e8dc/Build%20Syst%20eb72c.md)
+[[build-systems|Build Systems]]
 
-[Self-Hosted](Tools%209e8dc/Self-Hoste%2098f82.md)
+[[self-hosted|Self-Hosted]]
 
-[Linux](Tools%209e8dc/Linux%203f393.md)
+[[linux|Linux]]
 
 [a11y.css](http://ffoodd.github.io/a11y.css/)
 

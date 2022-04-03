@@ -62,7 +62,7 @@
 
 [ddj231/Handel](https://github.com/ddj231/Handel)
 
-[Nestup [[]_[]]](https://nestup.cutelab.nyc/)
+[Nestup](https://nestup.cutelab.nyc/)
 
 ## Video
 

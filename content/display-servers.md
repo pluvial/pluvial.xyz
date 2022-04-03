@@ -1,6 +1,6 @@
 # Display Servers
 
-[Wayland](Display%20Se%20bff5d/Wayland%208daba.md)
+[[wayland|Wayland]]
 
 [microsoft/wslg](https://github.com/microsoft/wslg)
 

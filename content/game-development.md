@@ -1,8 +1,8 @@
 # Game Development
 
-[Game Networking](Game%20Devel%2028970/Game%20Netwo%20fb3fe.md)
+[[game-networking|Game Networking]]
 
-[Godot](Game%20Devel%2028970/Godot%20474af.md)
+[[godot|Godot]]
 
 ## Resources
 

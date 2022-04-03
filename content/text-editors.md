@@ -1,10 +1,10 @@
 # Text Editors
 
-[Emacs](Text%20Edito%206095e/Emacs%20c94fa.md)
+[[emacs|Emacs]]
 
-[Vim](Text%20Edito%206095e/Vim%203249d.md)
+[[vim|Vim]]
 
-[Visual Studio Code](Text%20Edito%206095e/Visual%20Stu%20cce34.md)
+[[visual-studio-code|Visual Studio Code]]
 
 ## Terminal
 

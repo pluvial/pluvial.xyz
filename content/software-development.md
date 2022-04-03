@@ -1,6 +1,6 @@
 # Software Development
 
-[Open Source and Licenses](Software%20D%209cee2/Open%20Sourc%20f37c5.md)
+[[open-source-licenses|Open Source and Licenses]]
 
 [martinfowler.com](https://martinfowler.com/)
 

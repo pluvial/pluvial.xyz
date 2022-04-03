@@ -2,30 +2,30 @@
 
 ## Audio, Video & Games
 
-[Artists](Media%2007281/Artists%20c7673.md)
+[[artists|Artists]]
 
-[Demoscene](Media%2007281/Demoscene%203e11f.md)
+[[demoscene|Demoscene]]
 
-[Creative Coding](Media%2007281/Creative%20C%2087bfc.md)
+[[creative-coding|Creative Coding]]
 
-[Live Coding](Media%2007281/Live%20Codin%20151f2.md)
+[[live-coding|Live Coding]]
 
-[Audio and Music](Media%2007281/Audio%20and%20%20efc6a.md)
+[[audio-music|Audio and Music]]
 
-[3D Modeling, Painting, Animation](Media%2007281/3D%20Modelin%20f930f.md)
+[[3d-modeling-painting-animation|3D Modeling, Painting, Animation]]
 
-[Computer Graphics](Media%2007281/Computer%20G%200ef4d.md)
+[[computer-graphics|Computer Graphics]]
 
-[Data Visualization](Media%2007281/Data%20Visua%2020223.md)
+[[data-visualization|Data Visualization]]
 
-[DSP](Media%2007281/DSP%20c3150.md)
+[[dsp|DSP]]
 
-[Fractals and Procedural Generation](Media%2007281/Fractals%20a%20254f9.md)
+[[fractals-procedural-generation|Fractals and Procedural Generation]]
 
-[Game Development](Media%2007281/Game%20Devel%2028970.md)
+[[game-development|Game Development]]
 
-[Generative Art](Media%2007281/Generative%204b4b9.md)
+[[generative-art|Generative Art]]
 
-[Protocols](Media%2007281/Protocols%20bd9df.md)
+[[protocols|Protocols]]
 
-[Video Editing and Synthesis](Media%2007281/Video%20Edit%20bcd5a.md)
+[[video-editing-synthesis|Video Editing and Synthesis]]

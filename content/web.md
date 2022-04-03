@@ -1,62 +1,62 @@
 # Web
 
-[HTML](Web%20b391a/HTML%20b82cc.md)
+[[html|HTML]]
 
-[CSS](Web%20b391a/CSS%2076a7d.md)
+[[css|CSS]]
 
-[JavaScript](Web%20b391a/JavaScript%20c385c.md)
+[[javascript|JavaScript]]
 
-[Animations](Web%20b391a/Animations%20777ae.md)
+[[animations|Animations]]
 
-[Authentication](Web%20b391a/Authentica%2044c78.md)
+[[authentication|Authentication]]
 
-[Blogs and Presentations](Web%20b391a/Blogs%20and%20%20c8389.md)
+[[blogs-presentations|Blogs and Presentations]]
 
-[Cross-platform](Web%20b391a/Cross-plat%2021e33.md)
+[[cross-platform|Cross-platform]]
 
-[Desktop Frameworks](Web%20b391a/Desktop%20Fr%20a6d6e.md)
+[[desktop-frameworks|Desktop Frameworks]]
 
-[Mobile Frameworks](Web%20b391a/Mobile%20Fra%20efc62.md)
+[[mobile-frameworks|Mobile Frameworks]]
 
-[RPC](Web%20b391a/RPC%20d57b7.md)
+[[rpc|RPC]]
 
-[VisBug](Web%20b391a/VisBug%20ba3b8.md)
+[[visbug|VisBug]]
 
-[Web Frameworks](Web%20b391a/Web%20Framew%207a95a.md)
+[[web-frameworks|Web Frameworks]]
 
-[Web Performance](Web%20b391a/Web%20Perfor%20ec471.md)
+[[web-performance|Web Performance]]
 
-[Canvas](Web%20b391a/Canvas%2068142.md)
+[[canvas|Canvas]]
 
-[CSS Houdini](Web%20b391a/CSS%20Houdin%2089946.md)
+[[css-houdini|CSS Houdini]]
 
-[Progressive Web Applications (PWAs)](Web%20b391a/Progressiv%20f3b50.md)
+[[progressive-web-applications|Progressive Web Applications (PWAs)]]
 
-[SVG](Web%20b391a/SVG%204ec2a.md)
+[[svg|SVG]]
 
-[Web APIs](Web%20b391a/Web%20APIs%20b5242.md)
+[[web-apis|Web APIs]]
 
-[Web Components](Web%20b391a/Web%20Compon%20bf1a8.md)
+[[web-components|Web Components]]
 
-[Web Storage](Web%20b391a/Web%20Storag%201e041.md)
+[[web-storage|Web Storage]]
 
-[Web Workers](Web%20b391a/Web%20Worker%20bd5d0.md)
+[[web-workers|Web Workers]]
 
-[Web Audio](Web%20b391a/Web%20Audio%20f26b3.md)
+[[web-audio|Web Audio]]
 
-[WebAssembly (Wasm)](Web%20b391a/WebAssembl%203f86c.md)
+[[webassembly|WebAssembly (Wasm)]]
 
-[WebCodecs](Web%20b391a/WebCodecs%20c4335.md)
+[[webcodecs|WebCodecs]]
 
-[WebGL](Web%20b391a/WebGL%20fa6e0.md)
+[[webgl|WebGL]]
 
-[WebGPU](Web%20b391a/WebGPU%20ba9f7.md)
+[[webgpu|WebGPU]]
 
-[WebRTC](Web%20b391a/WebRTC%2099482.md)
+[[webrtc|WebRTC]]
 
-[WebTransport](Web%20b391a/WebTranspo%2023318.md)
+[[webtransport|WebTransport]]
 
-[WebSockets](Web%20b391a/WebSockets%2063890.md)
+[[websockets|WebSockets]]
 
 [Introduction | MobX](https://mobx.js.org/)
 

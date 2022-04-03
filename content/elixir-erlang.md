@@ -1,6 +1,6 @@
 # Elixir & Erlang
 
-[Phoenix](Elixir%20&%20E%20f9fbe/Phoenix%206a73a.md)
+[[phoenix|Phoenix]]
 
 ## Elixir
 

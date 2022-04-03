@@ -1,22 +1,22 @@
 # Web Frameworks
 
-[Angular](Web%20Framew%207a95a/Angular%20ed377.md)
+[[angular|Angular]]
 
-[Elm](Web%20Framew%207a95a/Elm%20325f7.md)
+[[elm|Elm]]
 
-[React](Web%20Framew%207a95a/React%202fbbe.md)
+[react|React]]
 
-[Stencil](Web%20Framew%207a95a/Stencil%207e874.md)
+[[stencil|Stencil]]
 
-[Svelte](Web%20Framew%207a95a/Svelte%20a8664.md)
+[[svelte|Svelte]]
 
-[Vue](Web%20Framew%207a95a/Vue%201b215.md)
+[[vue|Vue]]
 
-[Server frameworks](Web%20Framew%207a95a/Server%20fra%2067682.md)
+[[server-frameworks|Server frameworks]]
 
-[Template engines and Micro-frameworks](Web%20Framew%207a95a/Template%20e%20e8703.md)
+[[template-engines-micro-frameworks|Template engines and Micro-frameworks]]
 
-[Transpiled Languages](Web%20Framew%207a95a/Transpiled%20a2e7f.md)
+[[transpiled-languages|Transpiled Languages]]
 
 ## Cross-framework and Web Components
 

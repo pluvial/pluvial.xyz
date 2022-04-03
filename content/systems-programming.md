@@ -1,14 +1,14 @@
 # Systems Programming
 
-[Databases](Systems%20Pr%2031903/Databases%20e87e6.md)
+[[databases|Databases]]
 
-[Embedded and IoT](Systems%20Pr%2031903/Embedded%20a%20cfef2.md)
+[[embedded-iot|Embedded and IoT]]
 
-[Operating Systems](Systems%20Pr%2031903/Operating%20%2040aa2.md)
+[[operating-systems|Operating Systems]]
 
-[Virtual Machines and Emulators](Systems%20Pr%2031903/Virtual%20Ma%201e946.md)
+[[virtual-machines-emulators|Virtual Machines and Emulators]]
 
-[Display Servers](Systems%20Pr%2031903/Display%20Se%20bff5d.md)
+[[display-servers|Display Servers]]
 
 [Low-Level Academy](https://lowlvl.org/)
 

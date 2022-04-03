@@ -1,6 +1,6 @@
 # Data Science and Machine Learning
 
-[Computer Vision](Data%20Scien%2064db9/Computer%20V%2020d3c.md)
+[[computer-vision|Computer Vision]]
 
 [josephmisiti/awesome-machine-learning](https://github.com/josephmisiti/awesome-machine-learning)
 
