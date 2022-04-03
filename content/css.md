@@ -1,14 +1,14 @@
 # CSS
 
-[CSS in JS](CSS%2076a7d/CSS%20in%20JS%20ddf83.md)
+[[css-in-js|CSS in JS]]
 
-[Preprocessors](CSS%2076a7d/Preprocess%2071405.md)
+[[preprocessors|Preprocessors]]
 
-[Techniques](CSS%2076a7d/Techniques%20e735d.md)
+[[techniques|Techniques]]
 
-[Frameworks and Libraries](CSS%2076a7d/Frameworks%2075407.md)
+[[frameworks-libraries|Frameworks and Libraries]]
 
-[Design Systems](CSS%2076a7d/Design%20Sys%208df1e.md)
+[[design-systems-dev|Design Systems]]
 
 W3C - [CSS Snapshot 2018](https://www.w3.org/TR/css-2018/)
 

@@ -18,7 +18,7 @@
 
 ## Distributions
 
-[Security Distributions](Linux%203f393/Security%20D%20a7718.md)
+[[security-distributions|Security Distributions]]
 
 [DistroWatch.com: Put the fun back into computing. Use Linux, BSD.](https://distrowatch.com/)
 
@@ -46,7 +46,7 @@
 
 ## Functional
 
-[Nix](Linux%203f393/Nix%20910ee.md)
+[[nix|Nix]]
 
 [Guix](https://guix.gnu.org/)
 

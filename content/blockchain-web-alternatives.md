@@ -1,6 +1,10 @@
+---
+title: Blockchain and Web Alternatives
+---
+
 # Blockchain and Web Alternatives
 
-[Ethereum](Blockchain%20f81f4/Ethereum%201c47c.md)
+[[Ethereum|ethereum]]
 
 [Project Xanadu®](http://www.xanadu.net/)
 

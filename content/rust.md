@@ -1,14 +1,14 @@
 # Rust
 
-[CLIs](Rust%20ee45d/CLIs%20c09d2.md)
+[[clis|CLIs]]
 
-[GUIs](Rust%20ee45d/GUIs%205b48f.md)
+[[guis|GUIs]]
 
-[Web and Async](Rust%20ee45d/Web%20and%20As%20d9b27.md)
+[[web-async|Web and Async]]
 
-[WebAssembly and WebGL](Rust%20ee45d/WebAssembl%20db289.md)
+[[webassembly-webgl|WebAssembly and WebGL]]
 
-[Audio](Rust%20ee45d/Audio%2088290.md)
+[[audio|Audio]]
 
 [Rust](https://www.rust-lang.org/)
 

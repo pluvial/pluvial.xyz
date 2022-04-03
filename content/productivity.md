@@ -1,6 +1,6 @@
 # Productivity
 
-[Notion](Productivi%201c1f9/Notion%2030d15.md)
+[[notion|Notion]]
 
 [Building a Second Brain: Capture, Organize, and Retrieve Your Ideas Using Digital Notes](https://www.buildingasecondbrain.com/)
 

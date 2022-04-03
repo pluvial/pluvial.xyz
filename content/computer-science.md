@@ -1,9 +1,9 @@
 # Computer Science
 
-[Architecture](Computer%20S%20fe37e/Architectu%20a4aaf.md)
+[[architecture|Architecture]]
 
-[Algorithms](Computer%20S%20fe37e/Algorithms%209929b.md)
+[[algorithms|Algorithms]]
 
-[Books](Computer%20S%20fe37e/Books%20a612b.md)
+[[books|Books]]
 
-[Multi-threading](Computer%20S%20fe37e/Multi-thre%20d6c6f.md)
+[[multi-threading|Multi-threading]]

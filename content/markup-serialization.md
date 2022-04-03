@@ -1,10 +1,10 @@
 # Markup and Serialization
 
-[JSON](Markup%20and%2018699/JSON%20f45e8.md)
+[[json|JSON]]
 
-[Markdown](Markup%20and%2018699/Markdown%2019a60.md)
+[[markdown|Markdown]]
 
-[XML](Markup%20and%2018699/XML%20f8c82.md)
+[[xml|XML]]
 
 ## Authoring and transforming
 

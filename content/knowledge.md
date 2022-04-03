@@ -1,63 +1,63 @@
 # Knowledge
 
-[Classics](Knowledge%206cff5/Classics%20a4b8b.md)
+[[classics|Classics]]
 
-[Learning](Knowledge%206cff5/Learning%2019886.md)
+[[learning|Learning]]
 
-[News](Knowledge%206cff5/News%2085c5e.md)
+[[news|News]]
 
-[People and Blogs](Knowledge%206cff5/People%20and%20b9a60.md)
+[[people-blogs|People and Blogs]]
 
-[Tools](Knowledge%206cff5/Tools%209e8dc.md)
+[[tools|Tools]]
 
-[Biology](Knowledge%206cff5/Biology%208ef5d.md)
+[[biology|Biology]]
 
-[Mathematics](Knowledge%206cff5/Mathematic%2052e53.md)
+[[mathematics|Mathematics]]
 
-[Physics](Knowledge%206cff5/Physics%202f033.md)
+[[physics|Physics]]
 
-[CI/CD](Knowledge%206cff5/CI%20CD%20ddb28.md)
+[[ci-cd|CI/CD]]
 
-[CLIs and TUIs](Knowledge%206cff5/CLIs%20and%20T%2075db8.md)
+[[clis-tuis|CLIs and TUIs]]
 
-[GUIs](Knowledge%206cff5/GUIs%20b22e9.md)
+[[guis|GUIs]]
 
-[Computer Science](Knowledge%206cff5/Computer%20S%20fe37e.md)
+[[computer-science|Computer Science]]
 
-[Data Science and Machine Learning](Knowledge%206cff5/Data%20Scien%2064db9.md)
+[[data-science-machine-learning|Data Science and Machine Learning]]
 
-[Design](Knowledge%206cff5/Design%2034e73.md)
+[[design|Design]]
 
-[Computer Architecture and Hardware](Knowledge%206cff5/Computer%20A%208c675.md)
+[[computer-architecture-hardware|Computer Architecture and Hardware]]
 
-[Infrastructure](Knowledge%206cff5/Infrastruc%2045971.md)
+[[infrastructure|Infrastructure]]
 
-[Media](Knowledge%206cff5/Media%2007281.md)
+[[media|Media]]
 
-[Programming Languages](Knowledge%206cff5/Programmin%20aa953.md)
+[[programming-languages|Programming Languages]]
 
-[P2P and Distributed Systems](Knowledge%206cff5/P2P%20and%20Di%20b1364.md)
+[[p2p-distributed-systems|P2P and Distributed Systems]]
 
-[Security](Knowledge%206cff5/Security%2018a05.md)
+[[security|Security]]
 
-[Software Development](Knowledge%206cff5/Software%20D%209cee2.md)
+[[software-development|Software Development]]
 
-[Systems Programming](Knowledge%206cff5/Systems%20Pr%2031903.md)
+[[systems-programming|Systems Programming]]
 
-[Information Theory and Compression](Knowledge%206cff5/Informatio%20c1932.md)
+[[information-theory-compression|Information Theory and Compression]]
 
-[Incremental Computation](Knowledge%206cff5/Incrementa%201ff00.md)
+[[incremental-computation|Incremental Computation]]
 
-[Literate programming](Knowledge%206cff5/Literate%20p%20668bd.md)
+[[literate-programming|Literate programming]]
 
-[.NET](Knowledge%206cff5/NET%205de59.md)
+[[dotnet|.NET]]
 
-[Elixir & Erlang](Knowledge%206cff5/Elixir%20&%20E%20f9fbe.md)
+[[elixir-erlang|Elixir & Erlang]]
 
-[JVM](Knowledge%206cff5/JVM%209e731.md)
+[[jvm|JVM]]
 
-[Mobile Development](Knowledge%206cff5/Mobile%20Dev%20c4937.md)
+[[mobile-development|Mobile Development]]
 
-[Web](Knowledge%206cff5/Web%20b391a.md)
+[[web|Web]]
 
-[Recursos Web Development](Knowledge%206cff5/Recursos%20W%200882f.md)
+[[recursos-web-development|Recursos Web Development]]

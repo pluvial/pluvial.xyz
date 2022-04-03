@@ -1,6 +1,6 @@
 # Mathematics
 
-[Linear Algebra](Mathematic%2052e53/Linear%20Alg%20cf95f.md)
+[[linear-algebra|Linear Algebra]]
 
 [plus.maths.org](https://plus.maths.org/content/)
 

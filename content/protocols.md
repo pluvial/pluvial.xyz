@@ -1,10 +1,10 @@
 # Protocols
 
-[Ableton Link](Protocols%20bd9df/Ableton%20Li%209d221.md)
+[[ableton-link|Ableton Link]]
 
-[MIDI](Protocols%20bd9df/MIDI%2014e52.md)
+[[midi|MIDI]]
 
-[OSC](Protocols%20bd9df/OSC%20a504e.md)
+[[osc|OSC]]
 
 [O2 Home](https://rbdannenberg.github.io/o2/)
 

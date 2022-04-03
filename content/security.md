@@ -1,10 +1,10 @@
 # Security
 
-[Wargames and CTF](Security%2018a05/Wargames%20a%20bf583.md)
+[[wargames-ctf|Wargames and CTF]]
 
-[Resources](Security%2018a05/Resources%203a4b6.md)
+[[resources|Resources]]
 
-[Tools](Security%2018a05/Tools%20c5d29.md)
+[[tools-security|Tools]]
 
 [Hacking Articles - Raj Chandel's Blog](https://www.hackingarticles.in/)
 

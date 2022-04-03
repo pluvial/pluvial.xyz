@@ -1,28 +1,28 @@
 # Infrastructure
 
-[Articles](Infrastruc%2045971/Articles%20afe94.md)
+[[articles|Articles]]
 
-[Big data and distributed computing](Infrastruc%2045971/Big%20data%20a%20cab09.md)
+[[big-data-distributed-computing|Big data and distributed computing]]
 
-[Containers](Infrastruc%2045971/Containers%20b0cfb.md)
+[[containers|Containers]]
 
-[Databases & DBaaS](Infrastruc%2045971/Databases%20%206aebd.md)
+[[databases-dbaas|Databases & DBaaS]]
 
-[Deployment](Infrastruc%2045971/Deployment%204b19c.md)
+[[deployment|Deployment]]
 
-[Free services](Infrastruc%2045971/Free%20servi%20d9997.md)
+[[free-services|Free services]]
 
-[Infrastructure as Code](Infrastruc%2045971/Infrastruc%207f5d6.md)
+[[infrastructure-as-code|Infrastructure as Code]]
 
-[Messaging and Event Streaming](Infrastruc%2045971/Messaging%20%203675b.md)
+[[messaging-event-streaming|Messaging and Event Streaming]]
 
-[Observability, Logging and Monitoring](Infrastruc%2045971/Observabil%203ea5b.md)
+[[observability-logging-monitoring|Observability, Logging and Monitoring]]
 
-[Search](Infrastruc%2045971/Search%20e030e.md)
+[[search|Search]]
 
-[Serverless, PaaS & BaaS](Infrastruc%2045971/Serverless%2094e07.md)
+[[serverless-paas-baas|Serverless, PaaS & BaaS]]
 
-[Load Balancing and Reverse Proxies](Infrastruc%2045971/Load%20Balan%208ff23.md)
+[[load-balancing-reverse-proxies|Load Balancing and Reverse Proxies]]
 
 [Open Infrastructure Foundation (OpenInfra Foundation): Open Source Infrastructure Foundation](https://openinfra.dev/)
 

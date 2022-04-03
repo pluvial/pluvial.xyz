@@ -1,6 +1,6 @@
 # Computer Architecture and Hardware
 
-[RISC-V](Computer%20A%208c675/RISC-V%204fc4c.md)
+[[risc-v|RISC-V]]
 
 ## Embedded, Microcontrollers, FPGAs, DSP
 

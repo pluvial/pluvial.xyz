@@ -1,36 +1,36 @@
 # JavaScript
 
-[Data fetching](JavaScript%20c385c/Data%20fetch%20fa06d.md)
+[[data-fetching|Data fetching]]
 
-[Documentation](JavaScript%20c385c/Documentat%2054604.md)
+[[documentation|Documentation]]
 
-[Embedded Databases and Search](JavaScript%20c385c/Embedded%20D%209ccdd.md)
+[[embedded-databases-search|Embedded Databases and Search]]
 
-[Functional](JavaScript%20c385c/Functional%20ef2d5.md)
+[[functional|Functional]]
 
-[GraphQL](JavaScript%20c385c/GraphQL%20ac888.md)
+[[graphql|GraphQL]]
 
-[JSON RPC](JavaScript%20c385c/JSON%20RPC%2044f7b.md)
+[[json-rpc|JSON RPC]]
 
-[Deno](JavaScript%20c385c/Deno%20162cc.md)
+[[deno|Deno]]
 
-[Node](JavaScript%20c385c/Node%2005931.md)
+[[node|Node]]
 
-[Packages](JavaScript%20c385c/Packages%2096d07.md)
+[[packages|Packages]]
 
-[Routing](JavaScript%20c385c/Routing%20d2290.md)
+[[routing|Routing]]
 
-[Scripting and CLIs](JavaScript%20c385c/Scripting%20%20affb8.md)
+[[scripting-clis|Scripting and CLIs]]
 
-[State Management](JavaScript%20c385c/State%20Mana%206dc78.md)
+[[state-management|State Management]]
 
-[Testing and Automation](JavaScript%20c385c/Testing%20an%20564fe.md)
+[[testing-automation|Testing and Automation]]
 
-[Text Editors](JavaScript%20c385c/Text%20Edito%20485e0.md)
+[[text-editors-js|Text Editors]]
 
-[Tooling](JavaScript%20c385c/Tooling%20159d7.md)
+[[tooling|Tooling]]
 
-[TypeScript](JavaScript%20c385c/TypeScript%20e21c6.md)
+[[typescript|TypeScript]]
 
 [Standard ECMA-262](https://www.ecma-international.org/publications/standards/Ecma-262.htm)
 

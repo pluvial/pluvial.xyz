@@ -1,16 +1,16 @@
 # CI/CD
 
-[Code Review](CI%20CD%20ddb28/Code%20Revie%203d603.md)
+[[code-review|Code Review]]
 
-[Version Control](CI%20CD%20ddb28/Version%20Co%20d4101.md)
+[[version-control|Version Control]]
 
-[Azure DevOps](CI%20CD%20ddb28/Azure%20DevO%20595fb.md)
+[[azure-devops|Azure DevOps]]
 
-[Circle CI](CI%20CD%20ddb28/Circle%20CI%20ebd16.md)
+[[circle-ci|Circle CI]]
 
-[GitHub](CI%20CD%20ddb28/GitHub%20469df.md)
+[[github|GitHub]]
 
-[Travis CI](CI%20CD%20ddb28/Travis%20CI%201e4b5.md)
+[[travis-ci|Travis CI]]
 
 [ligurio/awesome-ci](https://github.com/ligurio/awesome-ci)
 

@@ -1,14 +1,14 @@
 # CLI and Terminal Utilities
 
-[Pagers and Diffs](CLI%20and%20Te%20186ca/Pagers%20and%207f30d.md)
+[[pagers-diffs|Pagers and Diffs]]
 
-[Shells](CLI%20and%20Te%20186ca/Shells%20af987.md)
+[[shells|Shells]]
 
-[Terminals](CLI%20and%20Te%20186ca/Terminals%20528a3.md)
+[[terminals|Terminals]]
 
-[Text/File Search and Navigation](CLI%20and%20Te%20186ca/Text%20File%20%20967d8.md)
+[[text-file-search-navigation|Text/File Search and Navigation]]
 
-[Text Manipulation](CLI%20and%20Te%20186ca/Text%20Manip%20b4e69.md)
+[[text-manipulation|Text Manipulation]]
 
 [Terminals Are Sexy](https://terminalsare.sexy/)
 

@@ -1,44 +1,44 @@
 # Programming Languages
 
-[Compilers and Interpreters](Programmin%20aa953/Compilers%20%208fcf8.md)
+[[compilers-interpreters|Compilers and Interpreters]]
 
-[Parsers, Macros and Source transformation](Programmin%20aa953/Parsers,%20M%20ec1e4.md)
+[[parsers-macros-source-transformation|Parsers, Macros and Source transformation]]
 
-[Markup and Serialization](Programmin%20aa953/Markup%20and%2018699.md)
+[[markup-serialization|Markup and Serialization]]
 
-[Visual languages](Programmin%20aa953/Visual%20lan%2054335.md)
+[[visual-languages|Visual languages]]
 
-[Others](Programmin%20aa953/Others%20ce3c6.md)
+[[others-programming-languages|Others]]
 
-[C and C++](Programmin%20aa953/C%20and%20C++%2007ed9.md)
+[[c-c++|C and C++]]
 
-[Dart](Programmin%20aa953/Dart%2034c8e.md)
+[[dart|Dart]]
 
-[Go](Programmin%20aa953/Go%20ff93a.md)
+[[go|Go]]
 
-[Haskell](Programmin%20aa953/Haskell%205b8be.md)
+[[haskell|Haskell]]
 
-[LISP](Programmin%20aa953/LISP%2031b89.md)
+[[lisp|LISP]]
 
-[Lua](Programmin%20aa953/Lua%20cd9fa.md)
+[[lua|Lua]]
 
-[Nim](Programmin%20aa953/Nim%201cbab.md)
+[[nim|Nim]]
 
-[OCaml and Standard ML](Programmin%20aa953/OCaml%20and%20%2033df9.md)
+[[ocaml-standard-ml|OCaml and Standard ML]]
 
-[PHP](Programmin%20aa953/PHP%2053cef.md)
+[[php|PHP]]
 
-[Python](Programmin%20aa953/Python%2057e4a.md)
+[[python|Python]]
 
-[Rust](Programmin%20aa953/Rust%20ee45d.md)
+[[rust|Rust]]
 
-[Scala](Programmin%20aa953/Scala%204fc3f.md)
+[[scala|Scala]]
 
-[SQL](Programmin%20aa953/SQL%2077a36.md)
+[[sql|SQL]]
 
-[Swift](Programmin%20aa953/Swift%2058d60.md)
+[[swift|Swift]]
 
-[Zig](Programmin%20aa953/Zig%20eda82.md)
+[[zig|Zig]]
 
 [Rosetta Code](http://rosettacode.org/wiki/Rosetta_Code)
 
