@@ -1,3 +1,7 @@
+---
+title: Logos
+---
+
 # Logos
 
 [Free Logo Maker - Create a Custom Logo Design](https://www.namecheap.com/logo-maker/)

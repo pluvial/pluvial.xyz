@@ -1,3 +1,7 @@
+---
+title: Mathematics
+---
+
 # Mathematics
 
 [[linear-algebra|Linear Algebra]]

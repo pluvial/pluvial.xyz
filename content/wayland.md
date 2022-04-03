@@ -1,3 +1,7 @@
+---
+title: Wayland
+---
+
 # Wayland
 
 [Wayland](https://wayland.freedesktop.org/)

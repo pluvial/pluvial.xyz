@@ -1,3 +1,7 @@
+---
+title: Decentralized Communication
+---
+
 # Decentralized Communication
 
 [Fediverse](https://en.wikipedia.org/wiki/Fediverse)

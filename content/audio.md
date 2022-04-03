@@ -1,3 +1,7 @@
+---
+title: Audio
+---
+
 # Audio
 
 [rust.audio](https://rust.audio/)

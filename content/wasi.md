@@ -1,3 +1,7 @@
+---
+title: WASI
+---
+
 # WASI
 
 [WASI](https://wasi.dev/)

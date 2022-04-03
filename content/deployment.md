@@ -1,3 +1,7 @@
+---
+title: Deployment
+---
+
 # Deployment
 
 ## Static websites and functions

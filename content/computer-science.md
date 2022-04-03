@@ -1,3 +1,7 @@
+---
+title: Computer Science
+---
+
 # Computer Science
 
 [[architecture|Architecture]]

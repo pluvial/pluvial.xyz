@@ -1,3 +1,7 @@
+---
+title: Lua
+---
+
 # Lua
 
 [The Programming Language Lua](http://www.lua.org/)

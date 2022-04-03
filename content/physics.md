@@ -1,3 +1,7 @@
+---
+title: Physics
+---
+
 # Physics
 
 ## The Theoretical Minimum

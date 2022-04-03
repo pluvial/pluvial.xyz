@@ -1,3 +1,7 @@
+---
+title: People and Blogs
+---
+
 # People and Blogs
 
 [Bret Victor](http://worrydream.com/)

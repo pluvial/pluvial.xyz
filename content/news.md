@@ -1,3 +1,7 @@
+---
+title: News
+---
+
 # News
 
 [Hacker News](https://news.ycombinator.com/)

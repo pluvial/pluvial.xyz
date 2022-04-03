@@ -1,3 +1,7 @@
+---
+title: Classics
+---
+
 # Classics
 
 [Systems Software Research is Irrelevant (aka utah2000 or utah2k)](http://doc.cat-v.org/bell_labs/utah2000/utah2000.html)

@@ -1,3 +1,7 @@
+---
+title: CI/CD
+---
+
 # CI/CD
 
 [[code-review|Code Review]]

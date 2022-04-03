@@ -1,3 +1,7 @@
+---
+title: PHP
+---
+
 # PHP
 
 [PHP: Hypertext Preprocessor](https://www.php.net/)

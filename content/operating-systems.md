@@ -1,3 +1,7 @@
+---
+title: Operating Systems
+---
+
 # Operating Systems
 
 [Expanded Main Page](https://wiki.osdev.org/Main_Page)

@@ -1,3 +1,7 @@
+---
+title: Blogs and Presentations
+---
+
 # Blogs and Presentations
 
 ## Static generators

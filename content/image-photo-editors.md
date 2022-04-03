@@ -1,3 +1,7 @@
+---
+title: Image and Photo Editors
+---
+
 # Image and Photo Editors
 
 [Photopea | Online Photo Editor](https://www.photopea.com/)

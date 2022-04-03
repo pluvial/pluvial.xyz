@@ -1,3 +1,7 @@
+---
+title: Animations
+---
+
 # Animations
 
 [sergey-pimenov/awesome-web-animation](https://github.com/sergey-pimenov/awesome-web-animation)

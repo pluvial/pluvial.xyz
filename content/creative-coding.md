@@ -1,3 +1,7 @@
+---
+title: Creative Coding
+---
+
 # Creative Coding
 
 ## Resources

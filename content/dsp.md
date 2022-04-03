@@ -1,3 +1,7 @@
+---
+title: DSP
+---
+
 # DSP
 
 [olilarkin/awesome-musicdsp](https://github.com/olilarkin/awesome-musicdsp)

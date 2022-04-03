@@ -1,3 +1,7 @@
+---
+title: Data Science and Machine Learning
+---
+
 # Data Science and Machine Learning
 
 [[computer-vision|Computer Vision]]

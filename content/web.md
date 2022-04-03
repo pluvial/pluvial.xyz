@@ -1,3 +1,7 @@
+---
+title: Web
+---
+
 # Web
 
 [[html|HTML]]

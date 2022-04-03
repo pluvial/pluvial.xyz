@@ -1,3 +1,7 @@
+---
+title: Live Coding
+---
+
 # Live Coding
 
 ## General

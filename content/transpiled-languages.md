@@ -1,3 +1,7 @@
+---
+title: Transpiled Languages
+---
+
 # Transpiled Languages
 
 [PureScript](https://www.purescript.org/)

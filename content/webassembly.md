@@ -1,3 +1,7 @@
+---
+title: WebAssembly (Wasm)
+---
+
 # WebAssembly (Wasm)
 
 [[wasi|WASI]]

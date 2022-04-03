@@ -1,3 +1,7 @@
+---
+title: Wargames and CTF
+---
+
 # Wargames and CTF
 
 [apsdehal/awesome-ctf](https://github.com/apsdehal/awesome-ctf)

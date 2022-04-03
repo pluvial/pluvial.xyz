@@ -1,3 +1,7 @@
+---
+title: Browsers
+---
+
 # Browsers
 
 [Vivaldi Browser - Fast, private browser with unique features](https://vivaldi.com/)

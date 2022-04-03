@@ -1,3 +1,7 @@
+---
+title: Free services
+---
+
 # Free services
 
 [Free for developers](https://free-for.dev/#/)

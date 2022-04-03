@@ -1,3 +1,7 @@
+---
+title: Racket
+---
+
 # Racket
 
 [Racket](https://racket-lang.org/)

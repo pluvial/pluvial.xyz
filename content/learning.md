@@ -1,3 +1,7 @@
+---
+title: Learning
+---
+
 # Learning
 
 [Academind - Online Learning, Real-Life Success](https://www.academind.com/)

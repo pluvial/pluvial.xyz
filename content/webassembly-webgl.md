@@ -1,3 +1,7 @@
+---
+title: WebAssembly and WebGL
+---
+
 # WebAssembly and WebGL
 
 [rustwasm/awesome-rust-and-webassembly](https://github.com/rustwasm/awesome-rust-and-webassembly)

@@ -1,3 +1,7 @@
+---
+title: P2P and Distributed Systems
+---
+
 # P2P and Distributed Systems
 
 [[blockchain-web-alternatives|Blockchain and Web Alternatives]]

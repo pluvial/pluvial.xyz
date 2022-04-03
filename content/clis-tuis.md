@@ -1,3 +1,7 @@
+---
+title: CLIs and TUIs
+---
+
 # CLIs and TUIs
 
 [willmcgugan/rich](https://github.com/willmcgugan/rich)

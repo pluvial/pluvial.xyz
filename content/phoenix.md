@@ -1,3 +1,7 @@
+---
+title: Phoenix
+---
+
 # Phoenix
 
 [Phoenix Framework](https://www.phoenixframework.org/)

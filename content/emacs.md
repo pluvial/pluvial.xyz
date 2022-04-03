@@ -1,3 +1,7 @@
+---
+title: Emacs
+---
+
 # Emacs
 
 - [Manuals](https://www.gnu.org/software/emacs/manual/)

@@ -1,3 +1,7 @@
+---
+title: Computer Architecture and Hardware
+---
+
 # Computer Architecture and Hardware
 
 [[risc-v|RISC-V]]

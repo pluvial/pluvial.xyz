@@ -1,3 +1,7 @@
+---
+title: Infrastructure as Code
+---
+
 # Infrastructure as Code
 
 [Pulumi - Modern Infrastructure as Code](https://www.pulumi.com/)

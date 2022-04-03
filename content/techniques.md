@@ -1,3 +1,7 @@
+---
+title: Techniques
+---
+
 # Techniques
 
 [http://www.zeldman.com/2018/05/02/transcript-intrinsic-web-design-with-jen-simmons-the-big-web-show/](http://www.zeldman.com/2018/05/02/transcript-intrinsic-web-design-with-jen-simmons-the-big-web-show/)

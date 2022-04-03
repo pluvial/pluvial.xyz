@@ -1,3 +1,7 @@
+---
+title: Scripting and CLIs
+---
+
 # Scripting and CLIs
 
 ## Scripting

@@ -1,3 +1,7 @@
+---
+title: State Synchronization
+---
+
 # State Synchronization
 
 ## CRDTs and OTs, decentralized databases, consensus, and conflict resolution

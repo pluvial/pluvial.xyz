@@ -1,3 +1,7 @@
+---
+title: Artists
+---
+
 # Artists
 
 [nucliweb/People-You-Should-Follow-on-CodePen](https://github.com/nucliweb/People-You-Should-Follow-on-CodePen)

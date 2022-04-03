@@ -1,3 +1,7 @@
+---
+title: CLI and Terminal Utilities
+---
+
 # CLI and Terminal Utilities
 
 [[pagers-diffs|Pagers and Diffs]]

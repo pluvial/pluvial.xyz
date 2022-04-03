@@ -1,3 +1,7 @@
+---
+title: Python
+---
+
 # Python
 
 [Welcome to Python.org](https://www.python.org/)

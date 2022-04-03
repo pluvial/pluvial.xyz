@@ -1,3 +1,7 @@
+---
+title: Version Control
+---
+
 # Version Control
 
 [Git](https://git-scm.com/)

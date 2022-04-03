@@ -1,3 +1,7 @@
+---
+title: Functional
+---
+
 # Functional
 
 ## Resources

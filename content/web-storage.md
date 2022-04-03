@@ -1,3 +1,7 @@
+---
+title: Web Storage
+---
+
 # Web Storage
 
 [Storage for the web](https://web.dev/storage-for-the-web/)

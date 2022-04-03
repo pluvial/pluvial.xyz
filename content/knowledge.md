@@ -1,3 +1,7 @@
+---
+title: Knowledge
+---
+
 # Knowledge
 
 [[classics|Classics]]

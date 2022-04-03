@@ -1,3 +1,7 @@
+---
+title: Web Performance
+---
+
 # Web Performance
 
 [Web Performance](https://developer.mozilla.org/en-US/docs/Web/Performance)

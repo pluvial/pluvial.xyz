@@ -1,3 +1,7 @@
+---
+title: Load Balancing and Reverse Proxies
+---
+
 # Load Balancing and Reverse Proxies
 
 [Envoy Proxy - Home](https://www.envoyproxy.io/)

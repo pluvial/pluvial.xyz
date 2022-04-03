@@ -1,3 +1,7 @@
+---
+title: Nim
+---
+
 # Nim
 
 [Nim Programming Language](https://nim-lang.org/)

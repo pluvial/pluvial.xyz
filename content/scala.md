@@ -1,3 +1,7 @@
+---
+title: Scala
+---
+
 # Scala
 
 [Website](https://www.scala-lang.org/)

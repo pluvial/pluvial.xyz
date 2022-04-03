@@ -1,3 +1,7 @@
+---
+title: Shells
+---
+
 # Shells
 
 [The Bash Hackers Wiki](https://wiki.bash-hackers.org/)

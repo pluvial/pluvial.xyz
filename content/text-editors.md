@@ -1,3 +1,7 @@
+---
+title: Text Editors
+---
+
 # Text Editors
 
 [[emacs|Emacs]]

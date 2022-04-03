@@ -1,3 +1,7 @@
+---
+title: Fonts
+---
+
 # Fonts
 
 [Generate font pairing using neural nets](https://fontjoy.com/)

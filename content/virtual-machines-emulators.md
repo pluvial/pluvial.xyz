@@ -1,3 +1,7 @@
+---
+title: Virtual Machines and Emulators
+---
+
 # Virtual Machines and Emulators
 
 ## VMs

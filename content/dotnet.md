@@ -1,3 +1,7 @@
+---
+title: .NET
+---
+
 # .NET
 
 [Blazor | Build client web apps with C# | .NET](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)

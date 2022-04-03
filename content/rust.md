@@ -1,3 +1,7 @@
+---
+title: Rust
+---
+
 # Rust
 
 [[clis|CLIs]]
