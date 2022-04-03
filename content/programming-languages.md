@@ -14,7 +14,7 @@ title: Programming Languages
 
 [[others-programming-languages|Others]]
 
-[[c-c++|C and C++]]
+[[c-cpp|C and C++]]
 
 [[dart|Dart]]
 
