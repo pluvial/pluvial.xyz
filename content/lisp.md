@@ -14,7 +14,7 @@ title: LISP
 
 [[scheme|Scheme]]
 
-[[others-lisp|Others]]
+[[lisp-other|Other LISPs]]
 
 ## General
 

@@ -1,8 +1,8 @@
 ---
-title: Others
+title: Other LISPs
 ---
 
-# Others
+# Other LISPs
 
 [PicoLisp](https://picolisp.com/wiki/?home)
 

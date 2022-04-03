@@ -6,7 +6,7 @@ title: Design
 
 ## UI & UX Design
 
-[[learning-design|Learning]]
+[[design-learning|Learning]]
 
 [[inspiration|Inspiration]]
 
@@ -24,7 +24,7 @@ title: Design
 
 [[invision|Invision]]
 
-[[others-design|Others]]
+[[design-other|Other Design Tools]]
 
 [Design Systems articles on building and maintaining design systems](https://www.designsystems.com/)
 

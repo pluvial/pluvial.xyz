@@ -1,8 +1,8 @@
 ---
-title: Packages
+title: JavaScript Packages
 ---
 
-# Packages
+# JavaScript Packages
 
 ## Package managers
 

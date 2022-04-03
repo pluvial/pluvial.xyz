@@ -1,8 +1,8 @@
 ---
-title: Documentation
+title: JavaScript Documentation
 ---
 
-# Documentation
+# JavaScript Documentation
 
 ## Aggregators
 

@@ -1,8 +1,8 @@
 ---
-title: State Management
+title: JavaScript State Management
 ---
 
-# State Management
+# JavaScript State Management
 
 [More than 100 different counter applications...](https://gist.github.com/srdjan/1d10cbd42a2d695f696dee6b47fdc5e0)
 

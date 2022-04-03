@@ -1,8 +1,8 @@
 ---
-title: Others
+title: Other Design Tools
 ---
 
-# Others
+# Other Design Tools
 
 ## Code-oriented tools
 

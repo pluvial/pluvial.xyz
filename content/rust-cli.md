@@ -1,8 +1,8 @@
 ---
-title: CLIs
+title: Rust CLI
 ---
 
-# CLIs
+# Rust CLI
 
 [Command Line Applications in Rust](https://rust-cli.github.io/book/)
 

@@ -6,11 +6,11 @@ title: JavaScript
 
 [[data-fetching|Data fetching]]
 
-[[documentation|Documentation]]
+[[javascript-documentation|JavaScript Documentation]]
 
-[[embedded-databases-search|Embedded Databases and Search]]
+[[javascript-embedded-databases-search|Embedded Databases and Search]]
 
-[[functional|Functional]]
+[[javascript-functional|Functional JavaScript]]
 
 [[graphql|GraphQL]]
 
@@ -20,19 +20,19 @@ title: JavaScript
 
 [[node|Node]]
 
-[[packages|Packages]]
+[[javascript-packages|JavaScript Packages]]
 
 [[routing|Routing]]
 
-[[scripting-clis|Scripting and CLIs]]
+[[javascript-scripting-clis|Scripting and CLIs]]
 
-[[state-management|State Management]]
+[[javascript-state-management|JavaScript State Management]]
 
 [[testing-automation|Testing and Automation]]
 
-[[text-editors-js|Text Editors]]
+[[javascript-text-editors|JavaScript Text Editors]]
 
-[[tooling|Tooling]]
+[[javascript-tooling|JavaScript Tooling]]
 
 [[typescript|TypeScript]]
 

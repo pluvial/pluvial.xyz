@@ -24,7 +24,7 @@ title: Knowledge
 
 [[clis-tuis|CLIs and TUIs]]
 
-[[guis|GUIs]]
+[[gui|GUIs]]
 
 [[computer-science|Computer Science]]
 

@@ -1,8 +1,8 @@
 ---
-title: Functional
+title: Functional JavaScript
 ---
 
-# Functional
+# Functional JavaScript
 
 ## Resources
 

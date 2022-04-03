@@ -1,8 +1,8 @@
 ---
-title: Scripting and CLIs
+title: JavaScript Scripting and CLIs
 ---
 
-# Scripting and CLIs
+# JavaScript Scripting and CLIs
 
 ## Scripting
 

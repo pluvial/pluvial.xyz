@@ -1,8 +1,8 @@
 ---
-title: Text Editors
+title: JavaScript Text Editors
 ---
 
-# Text Editors
+# JavaScript Text Editors
 
 [Selection API](https://developer.mozilla.org/en-US/docs/Web/API/Selection_API)
 

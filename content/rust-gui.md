@@ -1,5 +1,5 @@
 ---
-title: GUIs
+title: Rust GUI
 ---
 
 # GUIs

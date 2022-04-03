@@ -12,7 +12,7 @@ title: Programming Languages
 
 [[visual-languages|Visual languages]]
 
-[[others-programming-languages|Others]]
+[[programming-languages-other|Other Programming Languages]]
 
 [[c-cpp|C and C++]]
 

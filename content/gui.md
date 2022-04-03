@@ -1,5 +1,5 @@
 ---
-title: GUIs
+title: GUI
 ---
 
 # GUIs

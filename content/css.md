@@ -6,9 +6,9 @@ title: CSS
 
 [[css-in-js|CSS in JS]]
 
-[[preprocessors|Preprocessors]]
+[[css-preprocessors|CSS Preprocessors]]
 
-[[techniques|Techniques]]
+[[css-techniques|CSS Techniques]]
 
 [[frameworks-libraries|Frameworks and Libraries]]
 

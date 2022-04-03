@@ -1,8 +1,8 @@
 ---
-title: Audio
+title: Rust Audio
 ---
 
-# Audio
+# Rust Audio
 
 [rust.audio](https://rust.audio/)
 

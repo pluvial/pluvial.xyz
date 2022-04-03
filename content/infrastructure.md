@@ -4,7 +4,7 @@ title: Infrastructure
 
 # Infrastructure
 
-[[articles|Articles]]
+[[infrastructure-articles|Infrastructure Articles]]
 
 [[big-data-distributed-computing|Big data and distributed computing]]
 

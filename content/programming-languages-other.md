@@ -1,8 +1,8 @@
 ---
-title: Others
+title: Other Programming Languages
 ---
 
-# Others
+# Other Programming Languages
 
 [Languish - Programming Language Trends](https://tjpalmer.github.io/languish/)
 

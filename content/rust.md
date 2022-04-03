@@ -4,15 +4,15 @@ title: Rust
 
 # Rust
 
-[[clis|CLIs]]
+[[rust-cli|Rust CLI]]
 
-[[guis|GUIs]]
+[[rust-gui|Rust GUI]]
 
-[[web-async|Web and Async]]
+[[rust-web-async|Rust Web and Async]]
 
-[[webassembly-webgl|WebAssembly and WebGL]]
+[[rust-webassembly-webgl|Rust WebAssembly and WebGL]]
 
-[[audio|Audio]]
+[[rust-audio|Rust Audio]]
 
 [Rust](https://www.rust-lang.org/)
 
