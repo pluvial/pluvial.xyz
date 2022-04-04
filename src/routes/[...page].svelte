@@ -8,7 +8,7 @@
   /** @type {import('./[...page]').Load} */
   export async function load({ props: { page } }) {
     const { path } = page;
-    if (!(page.path in imports)) {
+    if (!(path in imports)) {
       // TODO: render fallback content here, use a placeholder page for known
       // links, and a regular page not found otherwise
       console.warn(`Trying to render missing page: ${path}`);

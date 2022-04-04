@@ -8,5 +8,6 @@ export async function get({ params: { page: slug } }) {
     console.warn(`Trying to render missing page: ${slug}`);
     return { redirect: '/', status: 303 };
   }
-  return { body: { page: pages[ids[slug]] } };
+  const { path, title, author, description, links, externalLinks, backlinks } = pages[ids[slug]];
+  return { body: { page: { path, title, author, description, links, externalLinks, backlinks } } };
 }
