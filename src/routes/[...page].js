@@ -1,6 +1,4 @@
-import { ids, pages, links, backlinks } from '$lib/pages';
-
-const stuff = { ids, pages, links, backlinks };
+import { pages, ids } from '$lib/pages';
 
 /** @type {import('./[...page]').RequestHandler} */
 export async function get({ params: { page: slug } }) {
@@ -10,5 +8,5 @@ export async function get({ params: { page: slug } }) {
     console.warn(`Trying to render missing page: ${slug}`);
     return { redirect: '/', status: 303 };
   }
-  return { body: { page: pages[ids[slug]], stuff } };
+  return { body: { page: pages[ids[slug]] } };
 }

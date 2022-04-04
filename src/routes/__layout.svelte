@@ -1,8 +1,17 @@
 <script context="module">
+  // cached to avoid fetching (even if from cache) on every page navigation
+  let promise;
+
   /** @type {import('./__layout').Load} */
-  export async function load({ url }) {
-    // route transitions do not work correctly when using only $page.url.pathname
-    return { props: { path: url.pathname } };
+  export async function load({ fetch, url }) {
+    promise ??= fetch('/pages.json').then(response => response.json());
+    const { pages, ids, links, backlinks } = await promise;
+    // route transitions do not work correctly when using only
+    // $page.url.pathname in template, use url.pathname in load function instead
+    return {
+      props: { pages, path: url.pathname },
+      stuff: { pages, ids, links, backlinks },
+    };
   }
 </script>
 
@@ -15,10 +24,13 @@
   import '$lib/prism-themes/prism-xonokai.css';
   import '../app.css';
 
+  /** @type {Page[]} */
+  export let pages;
+
   /** @type {string} */
   export let path;
 
-  $: ({ pages } = $page.stuff);
+  // get page data from stuff injected by the [...page].svelte load function
   $: ({ links, externalLinks, backlinks } = $page.stuff.page);
 
   const duration = 150;

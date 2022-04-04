@@ -6,7 +6,7 @@
   const modules = {};
 
   /** @type {import('./[...page]').Load} */
-  export async function load({ props: { page, stuff } }) {
+  export async function load({ props: { page } }) {
     const { path } = page;
     if (!(page.path in imports)) {
       // TODO: render fallback content here, use a placeholder page for known
@@ -17,7 +17,10 @@
     const { title, author, description } = page;
     modules[path] ??= await imports[path]();
     const { default: component } = modules[path];
-    return { props: { title, author, description, component }, stuff: { page, ...stuff } };
+    return {
+      props: { title, author, description, component },
+      stuff: { page },
+    };
   }
 </script>
 
