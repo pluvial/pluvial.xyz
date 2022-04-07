@@ -29,9 +29,6 @@
 
   function keydown(event) {
     switch (event.key) {
-      case 'Enter':
-        selectResult();
-        break;
       case 'Escape':
         event.target.blur();
         break;
@@ -52,10 +49,6 @@
         }
         break;
     }
-  }
-
-  function submit(event) {
-    selectResult();
   }
 
   onMount(async () => {
@@ -93,7 +86,7 @@
   });
 </script>
 
-<form on:submit|preventDefault={submit}>
+<form on:submit|preventDefault={selectResult}>
   <label
     >Search:
     <input bind:value type="text" on:keydown={keydown} />
