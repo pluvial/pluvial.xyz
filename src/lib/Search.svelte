@@ -32,6 +32,9 @@
       case 'Enter':
         selectResult();
         break;
+      case 'Escape':
+        event.target.blur();
+        break;
       case 'ArrowDown':
         event.preventDefault();
         if (selectedResultIndex === results.length - 1) {
@@ -49,6 +52,10 @@
         }
         break;
     }
+  }
+
+  function submit(event) {
+    selectResult();
   }
 
   onMount(async () => {
@@ -86,33 +93,35 @@
   });
 </script>
 
-<div class="search">
-  <input bind:value type="text" on:keydown={keydown} />
+<form on:submit|preventDefault={submit}>
+  <label
+    >Search:
+    <input bind:value type="text" on:keydown={keydown} />
+  </label>
 
   {#if results.length > 0}
     <ul>
-      {#each results as { title, description, href }, index}
-        <li>
-          <a
-            {href}
-            class:selected={selectedResultIndex === index}
-            on:click|preventDefault={async () => {
-              selectedResultIndex = index;
-              await tick();
-              selectResult();
-            }}
+      {#each results as { title, description, href }, index (href)}
+        <li
+          class:selected={selectedResultIndex === index}
+          on:click|preventDefault={async () => {
+            selectedResultIndex = index;
+            await tick();
+            selectResult();
+          }}
+        >
+          <a {href}
+            >{title}
+            <pre>{description}</pre></a
           >
-            {title}
-            <pre>{description}</pre>
-          </a>
         </li>
       {/each}
     </ul>
   {/if}
-</div>
+</form>
 
 <style>
-  .search {
+  form {
     position: relative;
   }
 
@@ -127,6 +136,13 @@
     z-index: 1;
     background-color: #000d;
     padding: 0.8em;
+    /* initially not visible, only when input is focused */
+    opacity: 0;
+    transition: opacity 200ms;
+  }
+
+  label:focus-within ~ ul {
+    opacity: 1;
   }
 
   li {
@@ -135,9 +151,11 @@
 
   a {
     text-decoration: none;
+    transition: color 150ms;
   }
 
-  .selected {
+  .selected a,
+  a:hover {
     color: var(--accent-color);
   }
 
