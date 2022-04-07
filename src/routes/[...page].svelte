@@ -6,15 +6,13 @@
   const modules = {};
 
   /** @type {import('./[...page]').Load} */
-  export async function load({ props: { page } }) {
-    const { path } = page;
-    if (!(path in imports)) {
+  export async function load({ props: page }) {
+    if (!page.path) {
       // TODO: render fallback content here, use a placeholder page for known
       // links, and a regular page not found otherwise
-      console.warn(`Trying to render missing page: ${path}`);
-      return;
+      return { error: 'Page not found', status: 404 }
     }
-    const { title, author, description } = page;
+    const { path, title, author, description } = page;
     modules[path] ??= await imports[path]();
     const { default: component } = modules[path];
     return {

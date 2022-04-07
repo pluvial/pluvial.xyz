@@ -31,7 +31,8 @@
   export let path;
 
   // get page data from stuff injected by the [...page].svelte load function
-  $: ({ links, externalLinks, backlinks } = $page.stuff.page);
+  $: stuff = $page.stuff;
+  $: ({ links, externalLinks, backlinks } = stuff.page ?? stuff.pages[0]);
 
   const duration = 150;
   const delay = duration + 50;

@@ -9,5 +9,5 @@ export async function get({ params: { page: slug } }) {
     return { redirect: '/', status: 303 };
   }
   const { path, title, author, description, links, externalLinks, backlinks } = pages[ids[slug]];
-  return { body: { page: { path, title, author, description, links, externalLinks, backlinks } } };
+  return { body: { path, title, author, description, links, externalLinks, backlinks } };
 }
