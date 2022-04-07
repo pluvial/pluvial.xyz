@@ -10,8 +10,6 @@ title: Desktop Frameworks
 
 [webview/webview](https://github.com/zserge/webview)
 
-[Boscop/web-view](https://github.com/Boscop/web-view)
-
 [GitHub - webview/webview_rust: [wip] Rust Bindings to webview](https://github.com/webview/webview_rust)
 
 [GitHub - Boscop/web-view: Rust bindings for webview, a tiny cross-platform library to render web-based GUIs for desktop applications](https://github.com/Boscop/web-view)

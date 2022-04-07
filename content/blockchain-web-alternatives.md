@@ -18,6 +18,8 @@ title: Blockchain and Web Alternatives
 
 [ZeroNet](https://zeronet.io/)
 
+[HelloZeroNet/ZeroNet](https://github.com/HelloZeroNet/ZeroNet)
+
 [I2P Anonymous Network](https://geti2p.net/en/)
 
 [Freenet](https://freenetproject.org/index.html)
@@ -47,10 +49,6 @@ title: Blockchain and Web Alternatives
 [Holochain](https://holochain.org/)
 
 [Holo | Cloud Hosting Market Powered by Holochain](https://holo.host/)
-
-[ZeroNet](https://zeronet.io/)
-
-[HelloZeroNet/ZeroNet](https://github.com/HelloZeroNet/ZeroNet)
 
 [Scalable Blockchain Infrastructure: Billions of transactions & counting](https://solana.com/)
 

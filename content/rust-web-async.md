@@ -1,8 +1,8 @@
 ---
-title: Web and Async
+title: Rust Web and Async
 ---
 
-# Web and Async
+# Rust Web and Async
 
 [flosse/rust-web-framework-comparison](https://github.com/flosse/rust-web-framework-comparison)
 
@@ -47,8 +47,6 @@ title: Web and Async
 [sunng87/handlebars-rust](https://github.com/sunng87/handlebars-rust)
 
 [botika/yarte](https://github.com/botika/yarte)
-
-[Pauan/rust-dominator](https://github.com/Pauan/rust-dominator)
 
 [Files · master · xmpp-rs / xmpp-rs](https://gitlab.com/xmpp-rs/xmpp-rs/tree/master/minidom-rs)
 
