@@ -3,6 +3,7 @@
 
   export let pages;
 
+  let input;
   let searchIndex;
   let value;
   let selectedResultIndex = 0;
@@ -86,10 +87,21 @@
   });
 </script>
 
+<!-- focus the search input when pressing '/' -->
+<svelte:window
+  on:keydown={event => {
+    if (event.key === '/') {
+      event.preventDefault();
+      input.focus();
+      input.select();
+    }
+  }}
+/>
+
 <form on:submit|preventDefault={selectResult}>
   <label
     >Search:
-    <input bind:value type="text" on:keydown={keydown} />
+    <input bind:this={input} bind:value type="text" on:keydown={keydown} />
   </label>
 
   {#if results.length > 0}
