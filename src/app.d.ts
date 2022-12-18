@@ -1,23 +1,22 @@
-/// <reference types="@sveltejs/kit" />
-
-// See https://kit.svelte.dev/docs/types#the-app-namespace
+// See https://kit.svelte.dev/docs/types#app
 // for information about these interfaces
+// and what to do when importing types
 declare namespace App {
-  interface Locals {
-    userid: string;
-  }
-
+  // interface Error {}
+  // interface Locals {}
+  // interface PageData {}
   // interface Platform {}
 
-  // interface Session {}
-
-  interface Stuff {
+  // interface Stuff {
+  interface PageData {
     ids: IdMap;
     pages: Page[];
     links: LinkMap;
     backlinks: LinkMap;
 
-    page: Page;
+    page?: Page;
+
+    path: string;
   }
 }
 

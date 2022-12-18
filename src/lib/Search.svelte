@@ -1,10 +1,14 @@
 <script>
   import { createEventDispatcher, onMount, tick } from 'svelte';
 
+  /** @type {Page[]} */
   export let pages;
 
+  /** @type {HTMLInputElement} */
   let input;
+  /** @type {import('flexsearch').Document}*/
   let searchIndex;
+  /** @type {string}*/
   let value;
   let selectedResultIndex = 0;
 
@@ -28,10 +32,11 @@
     reset();
   }
 
-  function keydown(event) {
+  /** @param {KeyboardEvent} event */
+  function inputKeydown(event) {
     switch (event.key) {
       case 'Escape':
-        event.target.blur();
+        /** @type {HTMLInputElement} */ (event.target).blur();
         break;
       case 'ArrowDown':
         event.preventDefault();
@@ -48,6 +53,21 @@
         } else {
           selectedResultIndex -= 1;
         }
+        break;
+    }
+  }
+
+  /** @param {KeyboardEvent} event */
+  function itemKeydown(event) {
+    const target = /** @type {HTMLLIElement} */ (event.target);
+    switch (event.key) {
+      case 'Escape':
+        target.blur();
+        break;
+      case 'Tab':
+        // TODO: fix this
+        if (!event.shiftKey) selectedResultIndex += 1;
+        else selectedResultIndex -= 1;
         break;
     }
   }
@@ -101,7 +121,7 @@
 <form on:submit|preventDefault={selectResult}>
   <label
     >Search:
-    <input bind:this={input} bind:value type="text" on:keydown={keydown} />
+    <input bind:this={input} bind:value type="text" on:keydown={inputKeydown} />
   </label>
 
   {#if results.length > 0}
@@ -114,6 +134,7 @@
             await tick();
             selectResult();
           }}
+          on:keydown={itemKeydown}
         >
           <a {href}
             >{title}
@@ -146,7 +167,7 @@
     transition: opacity 200ms;
   }
 
-  label:focus-within ~ ul {
+  form:focus-within ul {
     opacity: 1;
   }
 

@@ -267,7 +267,7 @@ q r s t u v w x y z {'{'} | } ~ </pre>
       <article id="text__inline">
         <h1>Inline elements</h1>
         <div>
-          <a href="#!">This is a text link</a>.<br />
+          <a href="#text__inline">This is a text link</a>.<br />
           <strong>Strong is used to indicate strong importance.</strong><br />
           <em>This text has added emphasis.</em><br />
           The <b>b element</b> is stylistically different text from normal text, without any special

@@ -26,6 +26,7 @@ const config = {
         adapter(),
     prerender: {
       entries: ['/'],
+      handleMissingId: 'warn',
     },
   },
 };

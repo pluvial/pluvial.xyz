@@ -1,20 +1,3 @@
-<script context="module">
-  // cached to avoid fetching (even if from cache) on every page navigation
-  let promise;
-
-  /** @type {import('./__layout').Load} */
-  export async function load({ fetch, url }) {
-    promise ??= fetch('/pages.json').then(response => response.json());
-    const { pages, ids, links, backlinks } = await promise;
-    // route transitions do not work correctly when using only
-    // $page.url.pathname in template, use url.pathname in load function instead
-    return {
-      props: { pages, path: url.pathname },
-      stuff: { pages, ids, links, backlinks },
-    };
-  }
-</script>
-
 <script>
   import { cubicIn, cubicOut } from 'svelte/easing';
   import { fade } from 'svelte/transition';
@@ -22,17 +5,15 @@
   import { page } from '$app/stores';
   import { Footer, Header, Search, Switcher } from '$lib/components';
   import '$lib/prism-themes/prism-xonokai.css';
-  import '../app.css';
+  import './styles.css';
 
-  /** @type {Page[]} */
-  export let pages;
+  /** @type {import('./$types').LayoutData} */
+  export let data;
 
-  /** @type {string} */
-  export let path;
+  $: ({ pages, path } = data);
 
-  // get page data from stuff injected by the [...page].svelte load function
-  $: stuff = $page.stuff;
-  $: ({ links, externalLinks, backlinks } = stuff.page ?? stuff.pages[0]);
+  // get page data injected by the [...page].svelte load function
+  $: ({ links, externalLinks, backlinks } = $page.data.page ?? pages[0]);
 
   const duration = 150;
   const delay = duration + 50;

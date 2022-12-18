@@ -1,7 +1,9 @@
 <script>
   import logo from './svelte-logo.svg';
 
+  /** @type {Page[]} */
   export let pages;
+  /** @type {string} */
   export let path;
 
   // sort links by page slug
@@ -19,7 +21,7 @@
     <ul>
       {#each linkPages as linkPage (linkPage.slug)}
         <li class:active={path === linkPage.href}>
-          <a sveltekit:prefetch href={linkPage.href}>{linkPage.title}</a>
+          <a href={linkPage.href}>{linkPage.title}</a>
         </li>
       {/each}
     </ul>

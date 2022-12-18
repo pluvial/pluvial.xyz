@@ -208,8 +208,6 @@ title: Containers
 
 [gVisor](https://gvisor.dev/)
 
-[https://gvisor.dev/](https://gvisor.dev/)
-
 [GitHub - google/gvisor: Application Kernel for Containers](https://github.com/google/gvisor)
 
 [Home - Virtlet](https://docs.virtlet.cloud/)
