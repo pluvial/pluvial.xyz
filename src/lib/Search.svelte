@@ -73,9 +73,9 @@
   }
 
   onMount(async () => {
-    const { default: FlexSearch } = await import('flexsearch');
+    const { default: Document } = await import('flexsearch/document');
     // options from flexsearch documentation example
-    searchIndex = new FlexSearch.Document({
+    searchIndex = new Document({
       id: 'id',
       index: [
         {

@@ -48,6 +48,9 @@
   "pnpm": {
     "overrides": {
       "zx": "^4.3.0"
+    },
+    "patchedDependencies": {
+      "flexsearch@0.7.31": "patches/flexsearch@0.7.31.patch"
     }
   }
 }
