@@ -24,6 +24,14 @@
     value = '';
   }
 
+  function next() {
+    selectedResultIndex = (selectedResultIndex + 1) % results.length;
+  }
+
+  function previous() {
+    selectedResultIndex = (selectedResultIndex + results.length - 1) % results.length;
+  }
+
   const dispatch = createEventDispatcher();
 
   function selectResult() {
@@ -40,19 +48,11 @@
         break;
       case 'ArrowDown':
         event.preventDefault();
-        if (selectedResultIndex === results.length - 1) {
-          selectedResultIndex = 0;
-        } else {
-          selectedResultIndex += 1;
-        }
+        next();
         break;
       case 'ArrowUp':
         event.preventDefault();
-        if (selectedResultIndex === 0) {
-          selectedResultIndex = results.length - 1;
-        } else {
-          selectedResultIndex -= 1;
-        }
+        previous();
         break;
     }
   }
@@ -66,8 +66,8 @@
         break;
       case 'Tab':
         // TODO: fix this
-        if (!event.shiftKey) selectedResultIndex += 1;
-        else selectedResultIndex -= 1;
+        if (event.shiftKey) previous();
+        else next();
         break;
     }
   }
@@ -121,7 +121,13 @@
 <form on:submit|preventDefault={selectResult}>
   <label
     >Search:
-    <input bind:this={input} bind:value type="text" on:keydown={inputKeydown} />
+    <input
+      bind:this={input}
+      bind:value
+      type="text"
+      on:focus={() => (selectedResultIndex = 0)}
+      on:keydown={inputKeydown}
+    />
   </label>
 
   {#if results.length > 0}
@@ -129,11 +135,8 @@
       {#each results as { title, description, href }, index (href)}
         <li
           class:selected={selectedResultIndex === index}
-          on:click|preventDefault={async () => {
-            selectedResultIndex = index;
-            await tick();
-            selectResult();
-          }}
+          on:mouseenter={() => (selectedResultIndex = index)}
+          on:click|preventDefault={() => selectResult()}
           on:keydown={itemKeydown}
         >
           <a {href}

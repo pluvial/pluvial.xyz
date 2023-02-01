@@ -13,7 +13,7 @@
     <ul>
       {#each links as link (link.href)}
         <li>
-          <a sveltekit:prefetch href={link.href}>{link.content}</a>
+          <a href={link.href}>{link.content}</a>
         </li>
       {/each}
     </ul>
@@ -35,7 +35,7 @@
     <ul>
       {#each backlinks as { href, content } (href)}
         <li>
-          <a sveltekit:prefetch {href}>{content}</a>
+          <a {href}>{content}</a>
         </li>
       {/each}
     </ul>

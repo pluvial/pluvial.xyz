@@ -4,9 +4,23 @@ title: Classics
 
 # Classics
 
+[Cat-v.org Random Contrarian Insurgent Organization](http://cat-v.org/)
+
 [Systems Software Research is Irrelevant (aka utah2000 or utah2k)](http://doc.cat-v.org/bell_labs/utah2000/utah2000.html)
 
 [software that sucks less | suckless.org software that sucks less](https://suckless.org/)
+
+[The Original Hacker's Dictionary](http://www.dourish.com/goodies/jargon.html)
+
+[Jargon File Resources](http://catb.org/jargon/)
+
+[Some AI Koans](http://www.catb.org/jargon/html/koans.html)
+
+[The Tao of Programming](https://www.mit.edu/~xela/tao.html)
+
+[C2 WikiWikiWeb](https://wiki.c2.com/)
+
+[Usenet Archives](https://usenetarchives.com/)
 
 [How Complex Systems Fail](https://how.complexsystems.fail/)
 
@@ -67,22 +81,6 @@ title: Classics
 [Harvey OS](https://harvey-os.org/)
 
 [Harvey-OS/harvey](https://github.com/Harvey-OS/harvey)
-
-[Cat-v.org Random Contrarian Insurgent Organization](http://cat-v.org/)
-
-[software that sucks less | suckless.org software that sucks less](https://suckless.org/)
-
-[The Original Hacker's Dictionary](http://www.dourish.com/goodies/jargon.html)
-
-[Jargon File Resources](http://catb.org/jargon/)
-
-[Some AI Koans](http://www.catb.org/jargon/html/koans.html)
-
-[The Tao of Programming](https://www.mit.edu/~xela/tao.html)
-
-[C2 WikiWikiWeb](https://wiki.c2.com/)
-
-[Usenet Archives](https://usenetarchives.com/)
 
 [The Anti-Capitalist Software License](https://anticapitalist.software/)
 
