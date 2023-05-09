@@ -12,3 +12,5 @@ vite.config.ts.timestamp-*
 *.wasm
 zig-cache/
 zig-out/
+
+raw.json
