@@ -5,6 +5,12 @@
   export let externalLinks;
   /** @type {Link[]} */
   export let backlinks;
+
+  /** @param links {Link[]} */
+  function dedupe(links) {
+    const set = new Set();
+    return links.filter(({ href }) => (set.has(href) ? false : (set.add(href), true)));
+  }
 </script>
 
 <footer>
@@ -22,7 +28,7 @@
   {#if externalLinks.length}
     <p>External Links:</p>
     <ul>
-      {#each externalLinks as link (link.href)}
+      {#each dedupe(externalLinks) as link (link.href)}
         <li>
           <a href={link.href} rel="external">{link.content}</a>
         </li>
