@@ -71,3 +71,17 @@ title: Transpiled Languages
 [The Scala Programming Language](https://www.scala-lang.org/)
 
 [Scala.js](https://www.scala-js.org/)
+
+[Elm - delightful language for reliable web applications](https://elm-lang.org/)
+
+[Imba - The friendly full-stack language!](https://imba.io/)
+
+[Mint](https://mint-lang.com/)
+
+[Marko](https://markojs.com/)
+
+[Idyll Documentation | An overview.](https://idyll-lang.org/docs)
+
+[LiveScript - a language which compiles to JavaScript](https://livescript.net/#)
+
+[Cheatsheet | Civet](https://civet.dev/cheatsheet#functions)

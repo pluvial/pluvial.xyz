@@ -99,3 +99,67 @@ title: Emacs
 [The Animated Guide to Paredit](http://danmidwood.com/content/2014/11/21/animated-paredit.html)
 
 [Parinfer](https://shaunlebron.github.io/parinfer/)
+
+[Overview - Emacs NG - A new approach to Emacs](https://emacs-ng.github.io/emacs-ng/)
+
+[emacs-ng/emacs-ng: A new approach to Emacs - Including TypeScript, Threading, Async I/O, and WebRender.](https://github.com/emacs-ng/emacs-ng)
+
+[Emacsair! Magit, the magical Git interface](https://emacsair.me/2017/09/01/the-magical-git-interface/)
+
+[Emacsair! A walk through the Magit interface](https://emacsair.me/2017/09/01/magit-walk-through/)
+
+[Mastering Eshell - Mastering Emacs](https://www.masteringemacs.org/article/complete-guide-mastering-eshell)
+
+[mituharu / emacs-mac — Bitbucket](https://bitbucket.org/mituharu/emacs-mac/src/master/)
+
+[Org mode for Emacs](https://orgmode.org/)
+
+[flyingmachine/emacs-for-clojure](https://github.com/flyingmachine/emacs-for-clojure/)
+
+[How to Use Emacs, an Excellent Clojure Editor | Clojure for the Brave and True](https://www.braveclojure.com/basic-emacs/)
+
+[Batteries included with Emacs (2020) | Hacker News](https://news.ycombinator.com/item?id=29342176)
+
+[Batteries included with Emacs | Karthinks](https://karthinks.com/software/batteries-included-with-emacs/)
+
+[The Craft of Text Editing](http://www.finseth.com/craft/)
+
+[Why Emacs: Redux | Hacker News](https://news.ycombinator.com/item?id=29239452)
+
+[Emacs Redux | Return to the Essence of Text Editing](https://emacsredux.com/)
+
+[gccemacs](https://akrl.sdf.org/gccemacs.html)
+
+[Why Emacs? - (think)](https://batsov.com/articles/2011/11/19/why-emacs/)
+
+[The Emacs-28 release branch has been created | Hacker News](https://news.ycombinator.com/item?id=28717552)
+
+[Spacemacs: Emacs advanced Kit focused on Evil](https://www.spacemacs.org/)
+
+[Pen, a GPL Copilot for Emacs | Hacker News](https://news.ycombinator.com/item?id=27709659)
+
+[Emacs: Mastering Eshell | Hacker News](https://news.ycombinator.com/item?id=32481533)
+
+[What's New in Emacs 28.1? - Mastering Emacs](https://www.masteringemacs.org/article/whats-new-in-emacs-28-1)
+
+[Emacs by Ernst de Hart (ehartc) | ZEEF](https://emacs.zeef.com/ehartc)
+
+[Run programs in Emacs buffer, seeing their output inline, interactively | Hacker News](https://news.ycombinator.com/item?id=32969253)
+
+[ch11ng/exwm: Emacs X Window Manager](https://github.com/ch11ng/exwm)
+
+[ch11ng/xelb: X protocol Emacs Lisp Binding](https://github.com/ch11ng/xelb)
+
+[A Lisp REPL as my main shell - TIB AV-Portal](https://av.tib.eu/media/53556)
+
+[joaotavora/sly: Sylvester the Cat's Common Lisp IDE](https://github.com/joaotavora/sly/)
+
+[Death to the Shell](http://howardism.org/Technical/Emacs/piper-presentation-transcript.html)
+
+[CLiki: SLIME](https://www.cliki.net/SLIME)
+
+[SLIME: The Superior Lisp Interaction Mode for Emacs](https://slime.common-lisp.dev/)
+
+[Practicalli Spacemacs - Practicalli Spacemacs](https://practical.li/spacemacs/)
+
+[Practicalli Doom Emacs - Practicalli Doom Emacs](https://practical.li/doom-emacs/)

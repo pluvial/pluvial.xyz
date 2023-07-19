@@ -47,3 +47,7 @@ title: Books
 [Concepts, Techniques, and Models of Computer Programming](https://www.info.ucl.ac.be/~pvr/book.html)
 
 [Mozart Programming System](http://mozart2.org/)
+
+[Books - Google Sheets](https://docs.google.com/spreadsheets/d/13Zt9rJ2CZsfOKqznvSUzPFtCS7AxKwQO8vG0P0RMGHI/edit#gid=0)
+
+[Open orders](https://www.bookdepository.com/account/order/history/1)

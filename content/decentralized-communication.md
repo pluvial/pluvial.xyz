@@ -87,3 +87,23 @@ title: Decentralized Communication
 [matrix-org/synapse](https://github.com/matrix-org/synapse)
 
 [vector-im/riot-web](https://github.com/vector-im/riot-web)
+
+[Increasing the surface area of blogging | Hacker News](https://news.ycombinator.com/item?id=31186346)
+
+[Increasing the surface area of blogging](https://tomcritchlow.com/2022/04/21/new-rss/)
+
+[bloggers.scripting.com](http://bloggers.scripting.com/)
+
+[Maya's subscriptions](https://maya.land/blogroll.opml)
+
+[tomcritchlow.com Web Feed](https://tomcritchlow.com/feed.xml)
+
+[What is a feed? (a.k.a. RSS) | About Feeds](https://aboutfeeds.com/)
+
+[Blogroll Graph](https://jacobw.xyz/projects/blog_graph/)
+
+[Ton's Blogroll (human and machine readable, you can import this file into your feed reader)](https://zylstra.org/opml/tonzylstra.opml)
+
+[lensterxyz/lenster: Lenster is a decentralized, and permissionless social media app built with Lens Protocol 🌿](https://github.com/lensterxyz/lenster)
+
+[Lens Protocol](https://www.lens.xyz/)

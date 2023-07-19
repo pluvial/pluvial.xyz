@@ -75,3 +75,41 @@ title: WASI
 [bytecodealliance/wasi](https://github.com/bytecodealliance/wasi)
 
 [bytecodealliance/cargo-wasi](https://github.com/bytecodealliance/cargo-wasi)
+
+[WASI |](https://wasi.dev/)
+
+[https://wasi.dev/polyfill/polyfill.js](https://wasi.dev/polyfill/polyfill.js)
+
+[WASI Web Polyfill](https://wasi.dev/polyfill/)
+
+[wasmer-js/wasmer_wasi_js.js at main · wasmerio/wasmer-js](https://github.com/wasmerio/wasmer-js/blob/main/pkg/wasmer_wasi_js.js)
+
+[WebAssembly bare bones WASI browser polyfill - WebAssembly Tutor](https://www.wasmtutor.com/webassembly-barebones-wasi)
+
+[WebAssembly/wasi-sdk: WASI-enabled WebAssembly C/C++ toolchain](https://github.com/WebAssembly/wasi-sdk)
+
+[wisp/wasi.js at master · mbrock/wisp](https://github.com/mbrock/wisp/blob/master/web/wasi.js)
+
+[bytecodealliance/wasi-nn: High-level bindings for wasi-nn system calls](https://github.com/bytecodealliance/wasi-nn)
+
+[bytecodealliance/rustix: Safe Rust bindings to POSIX-ish APIs](https://github.com/bytecodealliance/rustix)
+
+[WASI: a New Kind of System Interface](https://www.infoq.com/presentations/wasi-system-interface/)
+
+[WASI: A New Kind of System Interface | Hacker News](https://news.ycombinator.com/item?id=30527685)
+
+[nodejs/uvwasi: WASI syscall API built atop libuv](https://github.com/nodejs/uvwasi)
+
+[wasienv/wasienv: Wasienv: WASI Development Toolchain for C/C++](https://github.com/wasienv/wasienv)
+
+[Runno](https://runno.dev/)
+
+[Runno](https://runno.dev/wasi)
+
+[runno/packages/wasi-motor at main · taybenlor/runno](https://github.com/taybenlor/runno/tree/main/packages/wasi-motor)
+
+[zython/packages/wasi-js at main · sagemathinc/zython](https://github.com/sagemathinc/zython/tree/main/packages/wasi-js)
+
+[libapps-mirror/wasi-js-bindings at main · libapps/libapps-mirror](https://github.com/libapps/libapps-mirror/tree/main/wasi-js-bindings)
+
+[apps/libapps - Git at Google](https://chromium.googlesource.com/apps/libapps)

@@ -89,3 +89,27 @@ title: Infrastructure
 [Automated Functional Testing - Software Testing Tool - Testim.io](https://www.testim.io/)
 
 [Prisma - Database tools for modern application development](https://www.prisma.io/)
+
+[AIaC by Firefly - AI-powered IaC Generator](https://aiac.dev/)
+
+[gofireflyio/aiac: Artificial Intelligence Infrastructure-as-Code Generator.](https://github.com/gofireflyio/aiac)
+
+[Architecture Notes — System Design & Software Architectures Explained](https://architecturenotes.co/)
+
+[LibreOps](https://libreops.cc/)
+
+[MRSK — Deploy web apps anywhere](https://mrsk.dev/)
+
+[ESMCDN](https://esm.sh/)
+
+[ESMPlayground](https://code.esm.sh/)
+
+[jsDelivr - A free, fast, and reliable CDN for JS and open source](https://www.jsdelivr.com/)
+
+[esm.run by jsDelivr - A New-Age CDN for JavaScript modules](https://www.jsdelivr.com/esm)
+
+[Implement DNS in a weekend](https://implement-dns.wizardzines.com/)
+
+[Introducing "Implement DNS in a Weekend"](https://jvns.ca/blog/2023/05/12/introducing-implement-dns-in-a-weekend/)
+
+[Cicada: TypeScript-powered CI Pipelines](https://cicada.build/)

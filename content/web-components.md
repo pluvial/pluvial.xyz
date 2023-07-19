@@ -36,3 +36,15 @@ Collections:
 [mfreed7/declarative-shadow-dom](https://github.com/mfreed7/declarative-shadow-dom)
 
 [Declarative Shadow DOM](https://web.dev/declarative-shadow-dom/)
+
+[svelte-l1yxxqnt by anonymous - WebComponents.dev](https://studio.webcomponents.dev/edit/nJBTJF0Ub0jR02r3sYji/src/index.svelte?p=README.md)
+
+[Adding Components to Eleventy with WebC—zachleat.com](https://www.zachleat.com/web/webc-in-eleventy/)
+
+[11ty/webc: Single File Web Components](https://github.com/11ty/webc)
+
+[Quick start — Enhance](https://enhance.dev/docs/)
+
+[Enhance](https://github.com/enhance-dev)
+
+[webcomponents.org](https://www.webcomponents.org/)

@@ -326,3 +326,289 @@ title: Svelte
 [joshnuss/micro-svelte-compiler](https://github.com/joshnuss/micro-svelte-compiler)
 
 [Svelte 3 Under the hood](https://cam.st/2019/05/09/svelte-3-under-the-hood/)
+
+[community/CODE_OF_CONDUCT.md at main · sveltejs/community · GitHub](https://github.com/sveltejs/community/blob/main/CODE_OF_CONDUCT.md)
+
+[How Liam Cain built Obsidian's most popular plugin - YouTube](https://www.youtube.com/watch?v=fo6BKY2xR2w&t=1834s)
+
+[lihautan - YouTube](https://www.youtube.com/c/lihautan/videos)
+
+[rgossiaux/svelte-headlessui: Unofficial Svelte port of the Headless UI component library](https://github.com/rgossiaux/svelte-headlessui)
+
+[ekzhang/percival: 📝 Web-based, reactive Datalog notebooks for data analysis and visualization](https://github.com/ekzhang/percival)
+
+[Percival](https://percival.ink/)
+
+[snuffyDev/svelte-flatlist: A draggable, customizable, mobile-friendly menu that's simple and easy to use.](https://github.com/snuffyDev/svelte-flatlist)
+
+[Svelte-Flatlist docs](https://svelte-flatlist.netlify.app/)
+
+[Kyohei Hamaguchi （濱口恭平） / @tnzk](https://tnzk.org/t/2021-07-11-svelte-webcomponents-pitfalls)
+
+[tnzk (Kyohei)](https://github.com/tnzk)
+
+[rfcs/0007-markup-constants.md at master · sveltejs/rfcs · GitHub](https://github.com/sveltejs/rfcs/blob/master/text/0007-markup-constants.md)
+
+[rfcs/0000-style-directives.md at style-directives · plmrry/rfcs · GitHub](https://github.com/plmrry/rfcs/blob/style-directives/text/0000-style-directives.md)
+
+[svelte/CHANGELOG.md at master · sveltejs/svelte · GitHub](https://github.com/sveltejs/svelte/blob/master/CHANGELOG.md)
+
+[Posts Archive - Geoff Rich](https://geoffrich.net/archive/)
+
+[Svelte's lifecycle methods can be used anywhere - Geoff Rich](https://geoffrich.net/posts/svelte-lifecycle-examples/)
+
+[The many meanings of $ in Svelte - Geoff Rich](https://geoffrich.net/posts/svelte-$-meanings/)
+
+[NOVASland/NOVAS: NOVAS is a comprehensive build tool that enables developers of all experience levels to efficiently set up Svelte applications in a Deno runtime.](https://github.com/NOVASland/NOVAS)
+
+[Svelte Society - YouTube](https://www.youtube.com/c/SvelteSociety/videos)
+
+[Maricris Bonzo - NFT Marketplace with Svelte and Magic - YouTube](https://www.youtube.com/watch?v=NigFFcK3WnI)
+
+[Maurice de Beijer - Build Reliable Svelte Applications using Cypress - YouTube](https://www.youtube.com/watch?v=v--NEzfAtsI)
+
+[Sid Nagavarapu - Our Journey in bringing Svelte to enterprise - YouTube](https://www.youtube.com/watch?v=eVEX8Js6CMk)
+
+[Jakob Rosenberg & Ghost - Routify 3 - YouTube](https://www.youtube.com/watch?v=bSqtcoQixJs)
+
+[[BETA] Routify 3](https://v3.ci.routify.dev/docs#guide/concepts/meta)
+
+[roxiness/routify at next](https://github.com/roxiness/routify/tree/next)
+
+[roxiness/routify: Automated Svelte routes](https://github.com/roxiness/routify)
+
+[roxiness](https://github.com/roxiness)
+
+[roxiness/stackmix: A collection of templates for Routify.](https://github.com/roxiness/stackmix)
+
+[roxiness/spank: Slap the pages out of a SPA](https://github.com/roxiness/spank)
+
+[ivanhofer/typesafe-i18n: A fully type-safe and lightweight internationalization library for all your TypeScript and JavaScript projects.](https://github.com/ivanhofer/typesafe-i18n)
+
+[bluwy (Bjorn Lu)](https://github.com/bluwy/)
+
+[(1) Dan Gohman (@Sunfishcode) / Twitter](https://twitter.com/Sunfishcode)
+
+[Geoff Rich on Twitter: "2021 was the year I leaned hard into @SvelteJS and became more involved in the Svelte community. Here's a rundown of everything I wrote about Svelte in 2021, including accessible animations, actions, and style scoping. Read on to see if there's anything you missed!" / Twitter](https://twitter.com/geoffrich_/status/1475968586405404677)
+
+[(1) Dr. Abiira Nathan on Twitter: "I love @sveltejs but somehow I can't figure out how to store my JWT token in a user session in sveltekit for ssr. @SvelteSociety any articles or links to useful resources? Trust me I have read the docs like 10 times but handle?? and getSeession can't sink in." / Twitter](https://twitter.com/abiiranathan/status/1488769097030590464)
+
+[Notus Svelte](https://demos.creative-tim.com/notus-svelte/admin/dashboard)
+
+[Site not found · GitHub Pages](https://russellgoldenberg.github.io/svelte-keyboard/)
+
+[HugoDaniel/renyi-entropy at linea-svelte](https://github.com/HugoDaniel/renyi-entropy/tree/linea-svelte)
+
+[renyi-entropy/projects/linea-app/src/routes at linea-svelte · HugoDaniel/renyi-entropy · GitHub](https://github.com/HugoDaniel/renyi-entropy/tree/linea-svelte/projects/linea-app/src/routes)
+
+[What's new in Svelte: February 2022](https://svelte.dev/blog/whats-new-in-svelte-february-2022)
+
+[nodify-at/svelte-formify](https://github.com/nodify-at/svelte-formify)
+
+[AgnosticUI/agnosticui: AgnosticUI is a set of UI primitives that start their lives in clean HTML and CSS. These standards compliant components are then copied to our framework implementations in: React, Vue 3, Angular, and Svelte.](https://github.com/AgnosticUI/agnosticui)
+
+[Understanding AgnosticUI | Agnostic](https://www.agnosticui.com/docs/understand.html#clean-css)
+
+[CaptainCodeman/svelte-transition: Svelte Transition Component](https://github.com/captaincodeman/svelte-transition)
+
+[maciekgrzybek/svelte-inview: A Svelte action that monitors an element enters or leaves the viewport.🔥](https://github.com/maciekgrzybek/svelte-inview)
+
+[DockYard/svelte-inline-compile](https://github.com/DockYard/svelte-inline-compile)
+
+[Building an iOS app with Svelte, Capacitor and Firebase](https://harryherskowitz.com/2022/01/05/tapedrop-app.html)
+
+[Free online puzzle games - Puzzlez.io](https://puzzlez.io/)
+
+[Closed Caption Creator | Subtitle Editor](https://www.closedcaptioncreator.com/)
+
+[0ql/coffeetyper: Rewrite of coffeetyper.netlify.app](https://github.com/0ql/Coffeetyper)
+
+[Donkeytype](https://donkeytype.com/)
+
+[https://above.cool/](https://above.cool/)
+
+[base.report | modern research platform for serious investors](https://base.report/)
+
+[String](https://string.kampsy.xyz/)
+
+[jakobwesthoff/the_raytracer_challenge_repl: A WebAssembly (WASM) based REPL interface for my Raytracer Challenge in Rust project](https://github.com/jakobwesthoff/the_raytracer_challenge_repl)
+
+[Geographic projections](https://www.geo-projections.com/)
+
+[stefanreifenberg (stefanreifenberg) / Repositories](https://github.com/stefanreifenberg?tab=repositories)
+
+[Pianisto](https://pianisto.net/)
+
+[Team Tale](https://teamtale.app/)
+
+[Svelte Summit Fall 2022](https://www.sveltesummit.com/)
+
+[Zap](https://simonbinder.eu/zap/)
+
+[What's new in Svelte: March 2022](https://svelte.dev/blog/whats-new-in-svelte-march-2022)
+
+[j2l/walk-and-graph-svelte-components: CLI node script to walk svelte and js files, to draw a beautiful JPG of your dependencies aka "imports". No external dependency, only FS (Node).](https://github.com/j2l/walk-and-graph-svelte-components)
+
+[honeybeeSunshine/svelte-GridTiles: drag and drop resizable tiles on a responsive grid](https://github.com/honeybeeSunshine/svelte-GridTiles)
+
+[alex-knyaz/Miscellaneous-svelte-components: Miscellaneous svelte components](https://github.com/alex-knyaz/Miscellaneous-svelte-components/)
+
+[seeReadCode/stirstack: Starter template for an SPA-like MVC web app w/ Svelte, Tailwind, Inertia.js, Ruby on Rails](https://github.com/seeReadCode/stirstack)
+
+[Rezi/fluid-grid](https://github.com/Rezi/fluid-grid)
+
+[Fluid Grid](https://fluid-grid.com/)
+
+[Recreate svelte knobby - YouTube](https://www.youtube.com/watch?v=CkuF7Q1BhOk)
+
+[stordahl/svelte-code-input: A simple text input that behaves like a code editor](https://github.com/stordahl/svelte-code-input)
+
+[carbon-design-system/sveld: Generate TypeScript definitions for your Svelte components](https://github.com/carbon-design-system/sveld)
+
+[sveld](https://sveld.onrender.com/)
+
+[skayo/svelte-tiny-virtual-list: A tiny but mighty list virtualization library for Svelte, with zero dependencies 💪 Supports variable heights/widths, sticky items, scrolling to index, and more!](https://github.com/Skayo/svelte-tiny-virtual-list)
+
+[skayo/svelte-infinite-loading: An infinite scroll component for Svelte, to help you implement an infinite scroll list more easily.](https://github.com/Skayo/svelte-infinite-loading)
+
+[v1ack/svelte-virtual-scroll-list: Virtualized scrolling for big lists](https://github.com/v1ack/svelte-virtual-scroll-list)
+
+[sveltejs/svelte-virtual-list: A virtual list component for Svelte apps](https://github.com/sveltejs/svelte-virtual-list#:~:text=README.md-,svelte%2Dvirtual%2Dlist%20(demo),your%20page%20nice%20and%20light.)
+
+[Svelvet](https://www.svelvet.io/)
+
+[https://svelte-command-palette.vercel.app/](https://svelte-command-palette.vercel.app/)
+
+[rohitpotato/svelte-command-palette: Dead simple command palette for svelte](https://github.com/rohitpotato/svelte-command-palette)
+
+[Mordon | Mail Must Move](https://www.mordon.app/)
+
+[brysonbw/vscode-jot-down](https://github.com/brysonbw/vscode-jot-down)
+
+[https://onwritingcode.com/](https://onwritingcode.com/)
+
+[novacbn/svelte-in-motion: Remotion clone, but in Svelte!](https://github.com/novacbn/svelte-in-motion)
+
+[Nico-Mayer/svelte-terminal: A Terminal Like Website](https://github.com/Nico-Mayer/svelte-terminal)
+
+[bulletlist](https://bulletlist.com/about)
+
+[probablykasper/remind-me-again: Toggleable cron reminders app for Mac, Linux and Windows](https://github.com/probablykasper/remind-me-again)
+
+[Heyweek](https://www.heyweek.com/)
+
+[ADEO Design System: Building a Web Component library with Svelte and Rollup | by Mohamed MOKHTARI | ADEO Tech Blog | Medium](https://medium.com/adeo-tech/adeo-design-system-building-a-web-component-library-with-svelte-and-rollup-72d65de50163)
+
+[The Svelte Handbook](https://thevalleyofcode.com/svelte/)
+
+[Code your website faster with CSS-like utilities | Stylify CSS](https://stylifycss.com/)
+
+[pilcrowOnPaper/lucia-auth: Authentication, simple and clean](https://github.com/pilcrowOnPaper/lucia-auth)
+
+[skeletonlabs/skeleton: A fully featured UI toolkit for Svelte + Tailwind.](https://github.com/skeletonlabs/skeleton)
+
+[Skeleton — UI Toolkit for Svelte + Tailwind](https://www.skeleton.dev/)
+
+[restspace/svelte-schema-form: JSON Schema based form generator in Svelte](https://github.com/restspace/svelte-schema-form)
+
+[wobsoriano/svelte-gesture: 👇 Bread n butter utility for component-tied mouse/touch gestures in Svelte.](https://github.com/wobsoriano/svelte-gesture)
+
+[ThaUnknown/snap-layout: Lightweight, fast, layout snapping module. Made with Svelte.](https://github.com/ThaUnknown/snap-layout)
+
+[ThaUnknown/universal-title-bar](https://github.com/ThaUnknown/universal-title-bar)
+
+[chientrm/json2dir: Convert JSON object to directory tree. Auto mkdir recursively.](https://github.com/chientrm/json2dir)
+
+[rohitpotato/svelte-command-palette: Dead simple command palette for svelte](https://github.com/rohitpotato/svelte-command-palette)
+
+[untemps/svelte-use-drop-outside: Svelte action to drop an element outside an area](https://github.com/untemps/svelte-use-drop-outside)
+
+[muonw/powertable: ▦ PowerTable is a JavaScript component that turns JSON data into an interactive HTML table. Inspired by DataTables. Powered by Svelte.](https://github.com/muonw/powertable)
+
+[rajasegar/svelte-slides: A Reveal.js boilerplate with Svelte, TailwindCSS and Vite](https://github.com/rajasegar/svelte-slides)
+
+[pngwn/MDsveX: A markdown preprocessor for Svelte.](https://github.com/pngwn/mdsvex)
+
+[Svelte Society - YouTube](https://www.youtube.com/c/SvelteSociety/videos)
+
+[Building Svelte Society: Monorepos with 🐧 - YouTube](https://www.youtube.com/watch?v=gKxz7R9dX0w)
+
+[Default Shortcuts for Browsers: Chrome, Safari, Firefox](https://www.defaultshortcuts.com/)
+
+[Svelte Recipes 👩‍🍳](https://svelte.recipes/)
+
+[Everything Svelte](https://www.everythingsvelte.com/#pricing)
+
+[rfcs/ts-typing-props-slots-events.md at ts-typedefs-within-svelte-components · dummdidumm/rfcs · GitHub](https://github.com/dummdidumm/rfcs/blob/ts-typedefs-within-svelte-components/text/ts-typing-props-slots-events.md)
+
+[AlexWarnes/svelte-kbc: Keyboard controls for svelte apps.](https://github.com/AlexWarnes/svelte-kbc)
+
+[ParthJadhav/Verve: Verve is a lightweight and blazingly fast launcher for accessing and opening applications, files and documents. ⚡](https://github.com/ParthJadhav/verve)
+
+[Linear Regression](https://mlu-explain.github.io/linear-regression/)
+
+[Your go-to for design inspiration | nocode.gallery](https://nocode.gallery/)
+
+[lettier (lettier) / Repositories](https://github.com/lettier?tab=repositories)
+
+[CaptainCodeman/svelte-form-helper: Lightweight helpers for form validation with Svelte](https://github.com/captaincodeman/svelte-form-helper)
+
+[Dapper UI](https://dapper-ui.dev/)
+
+[Bastian/dapper-ui: A sleek and modern UI component library for Svelte. Work in Progress!](https://github.com/Bastian/dapper-ui)
+
+[Teil UI - Introduction](https://sidharth-anand.github.io/teil-ui/docs/getting-started/introduction)
+
+[sidharth-anand/teil-ui: A high quality, comprehensive svelte headless low-level UI component library with an emphasis on accessibility, customisation, and developer experience.](https://github.com/sidharth-anand/teil-ui)
+
+[Neodrag: One draggable to rule them all](https://www.neodrag.dev/)
+
+[PuruVJ/neodrag: One Draggable to rule them all 💍](https://github.com/puruvj/neodrag)
+
+[maciekgrzybek/svelte-inview: A Svelte action that monitors an element enters or leaves the viewport.🔥](https://github.com/maciekgrzybek/svelte-inview)
+
+[drbh/html2svelte: ✏️ Convert HTML to Svelte components in a snap](https://github.com/drbh/html2svelte)
+
+[Svelvet](https://www.svelvet.io/)
+
+[annaghi/xstate-svelte-workshop: State Modeling in Svelte with XState](https://github.com/annaghi/xstate-svelte-workshop)
+
+[feat: route level config by dummdidumm · Pull Request #8740 · sveltejs/kit](https://github.com/sveltejs/kit/pull/8740)
+
+[What's new in Svelte: March 2023](https://svelte.dev/blog/whats-new-in-svelte-march-2023)
+
+[Introduction / Welcome to Svelte • Svelte Tutorial](https://learn.svelte.dev/tutorial/welcome-to-svelte)
+
+[CaptainCodeman/svelte-signature-pad: Capture smoothed signatures as SVG paths in Svelte](https://github.com/captaincodeman/svelte-signature-pad)
+
+[stordahl/svelte-right-click: A Custom Context Menu for your Svelte Application](https://github.com/stordahl/svelte-right-click)
+
+[https://svelte-right-click.vercel.app/](https://svelte-right-click.vercel.app/)
+
+[yashash-pugalia/win11-svelte: Recreating Windows 11 with Svelte.](https://github.com/yashash-pugalia/win11-svelte)
+
+[Windows 11 in Svelte](https://win11-svelte.vercel.app/)
+
+[snuffyDev/Wolfensvelte-3D: Wolfenstein 3D, reimagined in Svelte - rendered with the DOM](https://github.com/snuffyDev/Wolfensvelte-3D/)
+
+[Mokshit06/sveltris: Piece together any framework with Svelte (like Tetris)](https://github.com/mokshit06/sveltris)
+
+[jiangfengming/svelte-vite-ssr: svelte-vite-ssr is a project template for building Svelte applications with a powerful router, SSR (Server-Side Rendering), CSR (Client-Side Rendering), HMR (Hot Module Replacement), link rel="preload" directives, and other useful features.](https://github.com/jiangfengming/svelte-vite-ssr)
+
+[Svelte Hack · Winners](https://hack.sveltesociety.dev/winners)
+
+[wh0am1-dev/svelte-zdog: svelte components for zdog 3D renders](https://github.com/wh0am1-dev/svelte-zdog)
+
+[svelte-zdog · docs](https://carlos-aguilar.com/svelte-zdog/)
+
+[TGlide/radix-svelte: A port of Radix UI for Svelte](https://github.com/TGlide/radix-svelte)
+
+[Radix Svelte](https://www.radix-svelte.com/)
+
+[jiangfengming/svelte-vite-ssr: svelte-vite-ssr is a project template for building Svelte applications with a powerful router, SSR (Server-Side Rendering), CSR (Client-Side Rendering), HMR (Hot Module Replacement), link rel="preload" directives, and other useful features.](https://github.com/jiangfengming/svelte-vite-ssr)
+
+[jiangfengming/svelte-pilot: A Svelte router that supports Server-Side Rendering (SSR).](https://github.com/jiangfengming/svelte-pilot)
+
+[shadcn/ui](https://ui.shadcn.com/)
+
+[shadcn-svelte](https://www.shadcn-svelte.com/)
