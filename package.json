@@ -42,5 +42,8 @@
     "patchedDependencies": {
       "flexsearch@0.7.31": "patches/flexsearch@0.7.31.patch"
     }
-  }
+  },
+  "workspaces": [
+    "plugins"
+  ]
 }
