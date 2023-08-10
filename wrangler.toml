@@ -4,7 +4,7 @@ account_id = 'f6e9b9e1c57fe88281bd5409924e8311'
 main = "./workers-site/index.js"
 site.bucket = "./build"
 
-build.command = "npm i && npm run build"
+build.command = "npm i && npm run patch && npm run build"
 
 compatibility_date = "2022-12-01"
 compatibility_flags = []
