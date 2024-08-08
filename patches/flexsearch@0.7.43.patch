@@ -1,0 +1,20 @@
+diff --git a/package.json b/package.json
+index c154e54029c94be444916fb2249941e7182d80ed..29fc91c90a31147960d1f6cb9d7297c5fe6774f7 100644
+--- a/package.json
++++ b/package.json
+@@ -34,6 +34,15 @@
+     "dist/flexsearch.bundle.module.min.js": "./dist/flexsearch.bundle.module.min.js",
+     "worker_threads": false
+   },
++  "exports": {
++    ".": {
++      "types": "./index.d.ts",
++      "import": "./dist/module/index.js"
++    },
++    "./document": {
++      "import": "./dist/module/document.js"
++    }
++  },
+   "types": "./index.d.ts",
+   "scripts": {
+     "build": "npm run copy && npm run build:bundle",
