@@ -7,8 +7,8 @@ const prefix = '/content/';
 const suffix = '.md';
 // vite does not support variables in glob imports, but the glob should match
 // const pattern = `${prefix}*${suffix}`
-const imports = import.meta.globEager('/content/*.md');
-const importsRaw = import.meta.globEager('/content/*.md', { as: 'raw' });
+const imports = import.meta.glob('/content/*.md', { eager: true });
+const importsRaw = import.meta.glob('/content/*.md', { eager: true, query: '?raw' });
 
 /** derive the file path from the corresponding slug, and the base folder prefix
  * and extension suffix, redirecting '' -> index
@@ -59,7 +59,7 @@ export const pages = Object.entries(imports).map(([path, module], index) => {
     const linkSlug = hrefToSlug(href);
     backlinks[linkSlug] = backlinks[linkSlug]?.concat(slug) ?? [slug];
   });
-  const md = importsRaw[path];
+  const md = importsRaw[path].default;
   const fmEnd = md.lastIndexOf(fmMarker) + fmMarker.length;
   const scriptEnd = md.lastIndexOf(scriptMarker) + scriptMarker.length;
   // TODO: index html text elements only?
