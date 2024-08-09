@@ -4,7 +4,7 @@
 
 Deployed automatically when pushing to the `main` branch:
 
-- Main: [pluvial.xyz](https://pluvial.xyz) (Vercel)
+- Main: [pluvial.xyz](https://pluvial.xyz) (Cloudflare Pages)
 
 - Cloudflare Pages: [https://pluvial-xyz.pages.dev](https://pluvial-xyz.pages.dev)
 
