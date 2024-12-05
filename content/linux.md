@@ -242,7 +242,7 @@ title: Linux
 
 [mutiny(7)](https://www.mutiny.red/)
 
-[glaucus - A simple and lightweight Linux® distribution based on musl libc and toybox](https://www.glaucuslinux.org/)
+[glaucus - A simple and lightweight Linux® distribution based on musl libc and toybox](https://glaucuslinux.org/)
 
 [Home | Carbs Linux](https://carbslinux.org/)
 
